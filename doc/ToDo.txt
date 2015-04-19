@@ -1,0 +1,14 @@
+ToDo
+####
+
+00 Aufgaben Verteilung
+	10 Quellcode Kommentare
+	20 Dokumentation
+	30 Testen
+		-Prodokoll
+	40 Programmieren
+	
+10 Revisionskontrolle
+20 Meilensteine
+30 Nächsten Termiene
+40 E-Mail's austauschen

@@ -1,0 +1,22 @@
+GitHowto
+########
+
+Buch : http://git-scm.com/book/de/v1
+
+-Versions Kontrolle?
+	-protokolliert Änderungen
+	-jedem Zeitpunkt auf Versionen und Änderungen zugreifen
+	-nachzuvollziehen, wer zuletzt welche Änderung
+
+-Fast jede Operation ist lokal
+-Die drei Zustände
+	-working-directory
+		-Arbeits Verzeichnis
+	-staging-area
+		-Index/ markierst Dateien für den nächsten Commit
+	-git-directory
+		dauerhaft im Git Verzeichnis (d.h. der lokalen Datenbank) gespeichert
+
+-Git Repository erstellen
+	-git clone git://github.com/grany/distanz.git
+	-git init
