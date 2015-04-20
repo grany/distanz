@@ -12,3 +12,15 @@ ToDo
 20 Meilensteine
 30 Nächsten Termiene
 40 E-Mail's austauschen
+
+
+29.4
+	Windows -- Franz
+	Git Accouns + clone jeder
+	Bereinigung des vorhanden Quellcods
+	Link Liste jeder
+	Grapik
+		welche?
+	Quellcod 
+	e-Mail
+
