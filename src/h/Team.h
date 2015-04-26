@@ -1,5 +1,3 @@
-#include "head.h"
-
 #ifndef TEAM_H
 #define TEAM_H
 
@@ -8,10 +6,13 @@
   * class Team
   * 
   */
+#include <vector>
+
 class Stein;
 class Koenig;
 class Team;
 class SpielBrett;
+class Feld;
 
 
 class Team

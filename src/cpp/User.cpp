@@ -1,9 +1,8 @@
-#include "../h/head.h"
+
 
 #ifndef USER_C
 #define USER_C
-
-
+#include "../h/User.h"
 // Constructors/Destructors
 //  
 

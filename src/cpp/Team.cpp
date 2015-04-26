@@ -1,10 +1,12 @@
-#include "../h/head.h"
+
 #ifndef TEAM_C
 #define TEAM_C
 
-
 // Constructors/Destructors
 //  
+#include "../h/Team.h"
+#include "../h/Stein.h"
+#include "../h/Koenig.h"
 
 Team::Team (SpielBrett *br, bool f, Feld *s1, Feld *s2, Feld *s3, Feld *k, Team *g=nullptr ) {
 	brett=br;
@@ -40,12 +42,12 @@ std::vector<unsigned short int> Team::distanzen (Stein *anfrage ){
   * @param new_var the new value of Sieg
   */
  void Team::setSieg ( bool new_var )   {
-     Sieg = new_var;
+     this->Sieg = new_var;
      //Gewonnen
  }
 
  void Team::setGegner ( Team *new_var ){
-	 gegner=new_var;
+	 this->gegner=new_var;
  }
 Team* Team::getGegner(){
 	return gegner;

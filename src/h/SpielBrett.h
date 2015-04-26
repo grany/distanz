@@ -2,24 +2,28 @@
 #ifndef SPIELBRETT_H
 #define SPIELBRETT_H
 
-#include "head.h"
 /**
   * class SpielBrett
   * Bildet ein 8x8 Spielbrett (Schachbrett) ab
   */
 
-class Feld;
-class Team;
+#include "Feld.h"
+#include "Team.h"
 
 class SpielBrett
 {
 private:
-	Feld *Brett;
+	static const short int dimmension = 8;
+	Feld** Brett;
 	Team *schwarz, *weis;
 
+	void initBrett();
 public:
 
-  SpielBrett ( );
+  SpielBrett ();
+  ~SpielBrett ( );
+  Team* getWeis();
+  Team* getSchwarz();
 
 };
 

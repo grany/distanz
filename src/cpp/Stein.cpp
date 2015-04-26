@@ -1,16 +1,20 @@
 #ifndef STEIN_C
 #define STEIN_C
-#include "../h/head.h"
 
 // Constructors/Destructors
 //  
+
+#include "../h/Feld.h"
+#include "../h/Team.h"
+#include "../h/Stein.h"
 
 Stein::Stein (Feld *startplatz, Team *mt) {
 	this->ort=startplatz;
 	this->geffangen=false;
 	mteam=mt;
 }
-
+Stein::Stein(){}
+Stein::~Stein(){}
 void Stein::setGeffangen(){
 	geffangen=true;
 }

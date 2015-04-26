@@ -1,16 +1,18 @@
-
 #ifndef STEIN_C
 #define STEIN_C
-
-#include "../h/head.h"
-
+#include "../h/Feld.h"
 Feld::Feld(short int nx, short int ny){
 	this->pos.x=nx;
 	this->pos.y=ny;
 	this->gast=nullptr;
 	this->besetzt=false;
 }
-Feld::~Feld(){}
+Feld::Feld(){
+	this->pos.x=-1;
+	this->pos.y=-1;
+	this->gast=nullptr;
+	this->besetzt=false;
+}
 
 bool Feld::getBesetzt(){
 

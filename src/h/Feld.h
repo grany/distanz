@@ -2,13 +2,11 @@
 #ifndef FELD_H
 #define FELD_H
 
-#include "head.h"
-
 /**
   * class Feld
   * Stellt ein Feld auf einem Spielbrett dar
   */
-
+#include "../h/Possition.h"
 class Stein;
 
 class Feld
@@ -23,20 +21,14 @@ public:
   /**
    * Initialisiert Feld
    */
+  Feld();
   Feld(short int nx, short int ny);
-
-  /**
-   * Aufreumen
-   */
-  ~Feld ( );
-
-
   /**
    * Setzt Stein auf das Feld
    * und Markiert das Feld als Besetzt.
    * Fals das Feld besetzt ist werden die Gäste/Steine getauscht.
    */
-  void setStein (Stein *stein );
+  void setStein (Stein *newstein );
 
   /**
    *Löscht Zeiger auf Gast

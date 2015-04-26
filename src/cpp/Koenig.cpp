@@ -1,17 +1,16 @@
 
 #ifndef KOEING_C
 #define KOEING_C
-#include "../h/head.h"
 
-// Constructors/Destructors
-//  
-Koenig::Koenig(Feld *startplatz, Team *mt) {
-	this->ort=startplatz;
-	this->geffangen=false;
-	mteam=mt;
-}
+#include "../h/Koenig.h"
+#include "../h/Feld.h"
+#include "../h/Team.h"
+// Constructors
 
-void Koenig::zihenach(Feld *ziehe){
+Koenig::Koenig() : Stein(){}
+Koenig::Koenig(Feld* startplatz, Team* mt) :Stein(startplatz, mt){}
+
+void Koenig::ziehenach(Feld *ziehe){
 	if(ziehe->getBesetzt()){
 		if(ziehe->getGast()->getMteam()==this->mteam){
 			ziehe->getGast()->setFrei();

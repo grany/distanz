@@ -1,17 +1,14 @@
-#include "head.h"
-
 #ifndef STEIN_H
 #define STEIN_H
 
 
-
-
+class Team;
+class Feld;
 /**
   * class Stein
   * 
   */
 class Stein;
-class Team;
 
 class Stein
 {
@@ -24,9 +21,8 @@ public:
   /**
    * Constructor
    */
-  Stein();
   Stein (Feld *startplatz, Team *mt);
-
+  Stein();
   /**
    * Setzt den Stein Geffangen
    * geffangen -> true
