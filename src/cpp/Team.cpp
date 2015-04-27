@@ -7,6 +7,7 @@
 #include "../h/Team.h"
 #include "../h/Stein.h"
 #include "../h/Koenig.h"
+#include "../h/Possition.h"
 
 Team::Team (SpielBrett *br, bool f, Feld *s1, Feld *s2, Feld *s3, Feld *k, Team *g=nullptr ) {
 	brett=br;
@@ -33,9 +34,32 @@ Team::~Team ( ) {
    * @return unsigned short
    * @param  anfrage
    */
-std::vector<unsigned short int> Team::distanzen (Stein *anfrage ){
-	  return std::vector<unsigned short int>(1);
+int* Team::distanzen (Stein *anfrage ){
+	Possition a, b, c;
+	int* arr = new int[3];
+	if(helfer1 != anfrage){
+		a = helfer1->getOrt()->getPos();
+	}else{
+		a = koenig->getOrt()->getPos();
+	}
+	if(helfer2 !=anfrage){
+		b = helfer2->getOrt()->getPos();
+	}else{
+		b = koenig->getOrt()->getPos();
+	}
+	if(helfer3 != anfrage){
+		c =helfer3->getOrt()->getPos();
+	}else{
+		c = koenig->getOrt()->getPos();
+	}
+	*arr=(a.y-b.y)+((a.x-b.x)-(a.y-b.y));
+	arr++;
+	*arr=(a.y-c.y)+((a.x-c.x)-(a.y-c.y));
+	arr++;
+	*arr=(b.y-c.y)+((b.x-c.x)-(b.y-c.y));
+	  return arr;
   }
+
 
  /**
   * Set the value of Sieg

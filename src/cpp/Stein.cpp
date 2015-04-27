@@ -23,8 +23,10 @@ bool Stein::getGeffangen ( )   {
   }
 
 Feld* Stein::zuege(){
-
+	int* arr = this->mteam->distanzen(this);
 	// Implementieren!!!!!!
+
+	delete arr;
 	return new Feld(1, 2);
 }
 void Stein::setFrei(){
@@ -47,5 +49,8 @@ void Stein::zihenach(Feld *ziehe){
 }
 Team* Stein::getMteam(){
 	return mteam;
+}
+Feld* Stein::getOrt(){
+	return ort;
 }
 #endif

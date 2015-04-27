@@ -7,12 +7,13 @@
   * 
   */
 #include <vector>
+#include "Feld.h"
 
 class Stein;
 class Koenig;
 class Team;
 class SpielBrett;
-class Feld;
+
 
 
 class Team
@@ -41,7 +42,7 @@ public:
     * @return vector
     * @param  anfrage
     */
-   std::vector<unsigned short int> distanzen (Stein *anfrage );
+   int* distanzen (Stein *anfrage );
 
   /**
    * Set the value of Sieg
