@@ -36,7 +36,7 @@ Team::~Team ( ) {
    */
 int* Team::distanzen (Stein *anfrage ){
 	Possition a, b, c;
-	int* arr = new int[3];
+	int* arr = new int[6];
 	if(helfer1 != anfrage){
 		a = helfer1->getOrt()->getPos();
 	}else{
@@ -52,11 +52,21 @@ int* Team::distanzen (Stein *anfrage ){
 	}else{
 		c = koenig->getOrt()->getPos();
 	}
-	*arr=(a.y-b.y)+((a.x-b.x)-(a.y-b.y));
+	//a - b
+	*arr=a.y-b.y;
 	arr++;
-	*arr=(a.y-c.y)+((a.x-c.x)-(a.y-c.y));
+	*arr=a.x-b.x;
 	arr++;
-	*arr=(b.y-c.y)+((b.x-c.x)-(b.y-c.y));
+	// a -c
+	*arr=a.y-c.y;
+	arr++;
+	*arr=a.x-c.x;
+	arr++;
+	//b - c
+	*arr=b.y-c.y;
+	arr++;
+	*arr=b.x-c.x;
+
 	  return arr;
   }
 
