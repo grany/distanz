@@ -9,8 +9,8 @@
 
 struct Possition
 {
-  short int x;
-  short int y;
+  unsigned short int x;
+  unsigned short int y;
 
 };
 
