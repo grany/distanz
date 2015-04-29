@@ -24,7 +24,9 @@ bool Stein::getGeffangen ( )   {
 
 Feld* Stein::zuege(){
 	int* arr = this->mteam->distanzen(this);
-	// Implementieren!!!!!!
+	if((this->ort->pos.x + *arr)<= ){
+		this->ort->pos.x
+	}
 
 	delete arr;
 	return new Feld(1, 2);
