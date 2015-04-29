@@ -4,6 +4,8 @@
 
 // Constructors/Destructors
 //  
+
+#include <cmath>
 #include "../h/Team.h"
 #include "../h/Stein.h"
 #include "../h/Koenig.h"
@@ -52,8 +54,9 @@ int* Team::distanzen (Stein *anfrage ){
 	}else{
 		c = koenig->getOrt()->getPos();
 	}
+	abs(1);
 	//a - b
-	*arr=a.y-b.y;
+	*arr=(a.y-b.y);
 	arr++;
 	*arr=a.x-b.x;
 	arr++;
