@@ -8,11 +8,12 @@
   */
 #include <vector>
 #include "Feld.h"
+#include "SpielBrett.h"
 
 class Stein;
 class Koenig;
 class Team;
-class SpielBrett;
+
 
 
 
@@ -42,7 +43,7 @@ public:
     * @return vector
     * @param  anfrage
     */
-   int* distanzen (Stein *anfrage );
+   void distanzen (const Stein &anfrage, int &arr );
 
   /**
    * Set the value of Sieg
@@ -57,6 +58,8 @@ public:
    * Gibt Pointer auf Gegnerisches Team Aus
    */
   Team* getGegner ();
+
+  SpielBrett* getBrett();
 };
 
 #endif // TEAM_H

@@ -1,7 +1,7 @@
 #ifndef STEIN_H
 #define STEIN_H
 
-
+#include <vector>
 class Team;
 class Feld;
 /**
@@ -55,7 +55,7 @@ public:
    * Gibt ein Array von ereichbaren Feldern zurück
    * @return Feld
    */
-  Feld* zuege ( );
+  std::vector<Feld*> zuege ( );
   virtual ~Stein();
 
 };
