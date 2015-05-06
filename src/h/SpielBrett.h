@@ -24,6 +24,7 @@ public:
   ~SpielBrett ( );
   Team* getWeis();
   Team* getSchwarz();
+  Feld* getFeld(int x, int y);
 
 };
 

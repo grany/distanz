@@ -7,6 +7,8 @@
 #include "../h/Feld.h"
 #include "../h/Team.h"
 #include "../h/Stein.h"
+#include <cmath>
+#include <vector>
 
 Stein::Stein (Feld *startplatz, Team *mt) {
 	this->ort=startplatz;
@@ -22,14 +24,40 @@ bool Stein::getGeffangen ( )   {
     return geffangen;
   }
 
-Feld* Stein::zuege(){
-	int* arr = this->mteam->distanzen(this);
-	if((this->ort->pos.x + *arr)<= ){
-		this->ort->pos.x
-	}
+std::vector<Feld*> Stein::zuege(){
+	int arr[6];
+	std::vector<Feld*> zue;
+	zue.reserve(12);
+	this->mteam->distanzen(*this,arr);
+	short int i = 6;
 
-	delete arr;
-	return new Feld(1, 2);
+	while(i){
+		int px = this->ort->getPos().x + *arr;
+		int mx = this->ort->getPos().x - *arr;
+		arr++;
+		int py = this->ort->getPos().y + *arr;
+		int my = this->ort->getPos().y - *arr;
+		arr++;
+		if(px <= 8 ){
+			if(py <= 8 ){
+					zue.push_back(this->mteam->getBrett()->getFeld(px, py));
+			}
+			if(my >= 0){
+					zue.push_back(this->mteam->getBrett()->getFeld(px, my));
+			}
+		}
+		if(mx >= 0 ){
+					if(py <= 8 ){
+							zue.push_back(this->mteam->getBrett()->getFeld(mx, py));
+					}
+					if(my >= 0){
+							zue.push_back(this->mteam->getBrett()->getFeld(mx, my));
+					}
+		}
+		i--;
+	}
+	zue.capacity();
+	return zue;
 }
 void Stein::setFrei(){
 	geffangen=false;

@@ -11,6 +11,10 @@
 	 schwarz = new Team(this, false, &Brett[0][1], &Brett[0][4], &Brett[0][5], &Brett[0][2], weis );
 	 weis->setGegner(schwarz);
 }
+ Feld* SpielBrett::getFeld(int x, int y){
+
+	 return &this->Brett[x][y];
+ }
 
  void SpielBrett::initBrett(){
 	 Brett = new Feld*[dimmension];

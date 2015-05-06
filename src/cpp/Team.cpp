@@ -36,41 +36,38 @@ Team::~Team ( ) {
    * @return unsigned short
    * @param  anfrage
    */
-int* Team::distanzen (Stein *anfrage ){
+void Team::distanzen (const Stein &anfrage, int &arr[] ){
 	Possition a, b, c;
-	int* arr = new int[6];
-	if(helfer1 != anfrage){
+
+	if(helfer1 != &anfrage){
 		a = helfer1->getOrt()->getPos();
 	}else{
 		a = koenig->getOrt()->getPos();
 	}
-	if(helfer2 !=anfrage){
+	if(helfer2 !=&anfrage){
 		b = helfer2->getOrt()->getPos();
 	}else{
 		b = koenig->getOrt()->getPos();
 	}
-	if(helfer3 != anfrage){
+	if(helfer3 != &anfrage){
 		c =helfer3->getOrt()->getPos();
 	}else{
 		c = koenig->getOrt()->getPos();
 	}
-	abs(1);
 	//a - b
-	*arr=(a.y-b.y);
+	*arr=std::abs(a.y-b.y);
 	arr++;
-	*arr=a.x-b.x;
+	*arr=std::abs(a.x-b.x);
 	arr++;
 	// a -c
-	*arr=a.y-c.y;
+	*arr=std::abs(a.y-c.y);
 	arr++;
-	*arr=a.x-c.x;
+	*arr=std::abs(a.x-c.x);
 	arr++;
 	//b - c
-	*arr=b.y-c.y;
+	*arr=std::abs(b.y-c.y);
 	arr++;
-	*arr=b.x-c.x;
-
-	  return arr;
+	*arr=std::abs(b.x-c.x);
   }
 
 
@@ -88,5 +85,8 @@ int* Team::distanzen (Stein *anfrage ){
  }
 Team* Team::getGegner(){
 	return gegner;
+}
+SpielBrett* Team::getBrett(){
+	return this->brett;
 }
 #endif
