@@ -36,7 +36,7 @@ Team::~Team ( ) {
    * @return unsigned short
    * @param  anfrage
    */
-void Team::distanzen (const Stein &anfrage, int &arr[] ){
+void Team::distanzen (const Stein &anfrage, int *arr ){
 	Possition a, b, c;
 
 	if(helfer1 != &anfrage){

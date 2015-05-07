@@ -13,7 +13,7 @@
 class Stein;
 class Koenig;
 class Team;
-
+class SpielBrett;
 
 
 
@@ -43,7 +43,7 @@ public:
     * @return vector
     * @param  anfrage
     */
-   void distanzen (const Stein &anfrage, int &arr );
+   void distanzen (const Stein &anfrage, int *arr );
 
   /**
    * Set the value of Sieg

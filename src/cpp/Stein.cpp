@@ -15,7 +15,6 @@ Stein::Stein (Feld *startplatz, Team *mt) {
 	this->geffangen=false;
 	mteam=mt;
 }
-Stein::Stein(){}
 Stein::~Stein(){}
 void Stein::setGeffangen(){
 	geffangen=true;
@@ -25,7 +24,7 @@ bool Stein::getGeffangen ( )   {
   }
 
 std::vector<Feld*> Stein::zuege(){
-	int arr[6];
+	int *arr= new int[6];
 	std::vector<Feld*> zue;
 	zue.reserve(12);
 	this->mteam->distanzen(*this,arr);
@@ -34,10 +33,10 @@ std::vector<Feld*> Stein::zuege(){
 	while(i){
 		int px = this->ort->getPos().x + *arr;
 		int mx = this->ort->getPos().x - *arr;
-		arr++;
+		++arr;
 		int py = this->ort->getPos().y + *arr;
 		int my = this->ort->getPos().y - *arr;
-		arr++;
+		++arr;
 		if(px <= 8 ){
 			if(py <= 8 ){
 					zue.push_back(this->mteam->getBrett()->getFeld(px, py));
@@ -56,6 +55,7 @@ std::vector<Feld*> Stein::zuege(){
 		}
 		i--;
 	}
+	delete arr;
 	zue.capacity();
 	return zue;
 }

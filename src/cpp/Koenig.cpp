@@ -7,7 +7,6 @@
 #include "../h/Team.h"
 // Constructors
 
-Koenig::Koenig() : Stein(){}
 Koenig::Koenig(Feld* startplatz, Team* mt) :Stein(startplatz, mt){}
 
 void Koenig::ziehenach(Feld *ziehe){

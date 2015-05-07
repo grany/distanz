@@ -9,6 +9,7 @@
 
 #include "Feld.h"
 #include "Team.h"
+class Team;
 
 class SpielBrett
 {
