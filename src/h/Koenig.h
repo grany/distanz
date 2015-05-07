@@ -15,7 +15,7 @@ class Koenig : public Stein
 public:
 
 	Koenig();
-	Koenig(Feld *startplatz, Team *mt);
+	Koenig(int id, Feld *startplatz, Team *mt);
   /**
    * Implementiert zusetzlich die Befreiung von Team-Mitglidern
    * @param  helfer

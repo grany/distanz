@@ -16,11 +16,11 @@ Team::Team (SpielBrett *br, bool f, Feld *s1, Feld *s2, Feld *s3, Feld *k, Team 
 	Farbe=f;
 	Sieg=false;
 	gegner=g;
-	helfer1 = new Stein(s1, this);
-	helfer2 = new Stein(s2, this);
-	helfer3 = new Stein(s3, this);
+	helfer1 = new Stein(1, s1, this);
+	helfer2 = new Stein(2, s2, this);
+	helfer3 = new Stein(3, s3, this);
 
-	koenig = new Koenig(k, this);
+	koenig = new Koenig(4, k, this);
 
 }
 

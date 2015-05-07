@@ -16,13 +16,15 @@ protected:
 	bool geffangen;
 	Feld *ort;
 	Team *mteam;
+	const int id;
 public:
 
   /**
    * Constructor
    */
-  Stein (Feld *startplatz, Team *mt);
-  Stein();
+  Stein (int id, Feld *startplatz, Team *mt);
+
+  int getid();
   /**
    * Setzt den Stein Geffangen
    * geffangen -> true

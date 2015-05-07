@@ -7,7 +7,7 @@
 #include "../h/Team.h"
 // Constructors
 
-Koenig::Koenig(Feld* startplatz, Team* mt) :Stein(startplatz, mt){}
+Koenig::Koenig(int id, Feld* startplatz, Team* mt) :Stein(id, startplatz, mt){}
 
 void Koenig::ziehenach(Feld *ziehe){
 	if(ziehe->getBesetzt()){

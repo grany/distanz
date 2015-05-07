@@ -15,7 +15,7 @@ int main(int _argc, char *argv[]){
 	SpielBrett *br = new SpielBrett();
 	Team *we = br->getWeis();
 	Team *sc = br->getSchwarz();
-
+	sc->
 	delete br;
 	return 1;
 }

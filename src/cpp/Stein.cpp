@@ -10,10 +10,13 @@
 #include <cmath>
 #include <vector>
 
-Stein::Stein (Feld *startplatz, Team *mt) {
+Stein::Stein (int id, Feld *startplatz, Team *mt) : id(id) {
 	this->ort=startplatz;
 	this->geffangen=false;
 	mteam=mt;
+}
+int Stein::getid(){
+	return id;
 }
 Stein::~Stein(){}
 void Stein::setGeffangen(){
