@@ -7,7 +7,7 @@
   * Stellt ein Feld auf einem Spielbrett dar
   */
 #include "../h/Possition.h"
-class Stein;
+#include "Stein.h"
 
 class Feld
 {

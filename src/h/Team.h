@@ -44,7 +44,7 @@ public:
     * @param  anfrage
     */
    void distanzen (const Stein &anfrage, int *arr );
-   Stein getStein(char s)
+   Stein& getStein(int id);
 
   /**
    * Set the value of Sieg

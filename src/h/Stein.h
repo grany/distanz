@@ -8,7 +8,6 @@ class Feld;
   * class Stein
   * 
   */
-class Stein;
 
 class Stein
 {

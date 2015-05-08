@@ -21,7 +21,7 @@
 	 for(short int i = 0; i < dimmension; i++ ){
 		 Brett[i] = new Feld[dimmension];
 		 for(short int j = 0; j < dimmension; j++ ){
-			 Brett[i][j] = Feld(j, i);
+			 Brett[i][j] = Feld(i, j);
 		 }
 	 }
  }
@@ -34,9 +34,6 @@ Team* SpielBrett::getSchwarz(){
 }
 SpielBrett::~SpielBrett ( ) {
 	for(short int i = 0; i < dimmension; i++ ){
-			 for(short int j = 0; j < dimmension; j++ ){
-				 delete &Brett[i][j];
-			 }
 			 delete[] Brett[i];
 	}
 	delete[] Brett;

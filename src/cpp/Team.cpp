@@ -55,19 +55,16 @@ void Team::distanzen (const Stein &anfrage, int *arr ){
 		c = koenig->getOrt()->getPos();
 	}
 	//a - b
-	*arr=std::abs(a.y-b.y);
-	arr++;
-	*arr=std::abs(a.x-b.x);
-	arr++;
+	arr[0]=std::abs(a.x-b.x);
+	arr[1]=std::abs(a.y-b.y);
+
 	// a -c
-	*arr=std::abs(a.y-c.y);
-	arr++;
-	*arr=std::abs(a.x-c.x);
-	arr++;
+	arr[2]=std::abs(a.x-c.x);
+	arr[3]=std::abs(a.y-c.y);
+
 	//b - c
-	*arr=std::abs(b.y-c.y);
-	arr++;
-	*arr=std::abs(b.x-c.x);
+	arr[4]=std::abs(b.x-c.x);
+	arr[5]=std::abs(b.y-c.y);
   }
 
 
@@ -79,7 +76,19 @@ void Team::distanzen (const Stein &anfrage, int *arr ){
      this->Sieg = new_var;
      //Gewonnen
  }
-
+ Stein& Team::getStein(int id){
+	 switch(id){
+	 case 1: return *helfer1;
+	 	 	 break;
+	 case 2: return *helfer2;
+	 	 	 	 break;
+	 case 3: return *helfer3;
+	 	 	 	 break;
+	 case 4: return *koenig;
+	 	 	 	 break;
+	 }
+	 return *helfer1;
+ }
  void Team::setGegner ( Team *new_var ){
 	 this->gegner=new_var;
  }

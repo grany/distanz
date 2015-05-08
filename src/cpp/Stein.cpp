@@ -4,6 +4,8 @@
 // Constructors/Destructors
 //  
 
+#include <iostream>
+
 #include "../h/Feld.h"
 #include "../h/Team.h"
 #include "../h/Stein.h"
@@ -27,39 +29,42 @@ bool Stein::getGeffangen ( )   {
   }
 
 std::vector<Feld*> Stein::zuege(){
-	int *arr= new int[6];
+	int arr[6]= {};
 	std::vector<Feld*> zue;
 	zue.reserve(12);
 	this->mteam->distanzen(*this,arr);
-	short int i = 6;
 
-	while(i){
-		int px = this->ort->getPos().x + *arr;
-		int mx = this->ort->getPos().x - *arr;
-		++arr;
-		int py = this->ort->getPos().y + *arr;
-		int my = this->ort->getPos().y - *arr;
-		++arr;
-		if(px <= 8 ){
-			if(py <= 8 ){
+	for(short int i = 0; i<5; i++){
+		int px = this->ort->getPos().x + arr[i];
+		int mx = this->ort->getPos().x - arr[i];
+		std::cout<<"px::"<<px<<" : mx "<<mx<<std::endl;
+
+		int py = this->ort->getPos().y + arr[i+1];
+		int my = this->ort->getPos().y - arr[i+1];
+		std::cout<<"py::"<<py<<" : my "<<my<<std::endl;
+		std::cout<<arr[i]<<":"<<arr[i+1]<<std::endl;
+		if(px <= 8 && px >=0 ){
+			if(py <= 8 && py >=0 ){
 					zue.push_back(this->mteam->getBrett()->getFeld(px, py));
+					std::cout<<"px py"<<std::endl;
 			}
-			if(my >= 0){
+			if(my >= 0 && my <= 8){
 					zue.push_back(this->mteam->getBrett()->getFeld(px, my));
+					std::cout<<"px my"<<std::endl;
 			}
 		}
-		if(mx >= 0 ){
-					if(py <= 8 ){
+		if(mx >= 0 && mx <= 8){
+					if(py <= 8 && py >=0 ){
 							zue.push_back(this->mteam->getBrett()->getFeld(mx, py));
+							std::cout<<"mx py"<<std::endl;
 					}
-					if(my >= 0){
+					if(my >= 0 && my <= 8){
 							zue.push_back(this->mteam->getBrett()->getFeld(mx, my));
+							std::cout<<"mx my"<<std::endl;
 					}
 		}
-		i--;
 	}
-	delete arr;
-	zue.capacity();
+	zue.shrink_to_fit();
 	return zue;
 }
 void Stein::setFrei(){
