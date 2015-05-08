@@ -11,6 +11,7 @@
 #include "../h/Stein.h"
 #include <cmath>
 #include <vector>
+#include <algorithm>
 
 Stein::Stein (int id, Feld *startplatz, Team *mt) : id(id) {
 	this->ort=startplatz;
@@ -28,6 +29,10 @@ bool Stein::getGeffangen ( )   {
     return geffangen;
   }
 
+bool sortPointer(Feld* a, Feld* b){
+	return a < b;
+}
+
 std::vector<Feld*> Stein::zuege(){
 	int arr[6]= {};
 	std::vector<Feld*> zue;
@@ -37,12 +42,12 @@ std::vector<Feld*> Stein::zuege(){
 	for(short int i = 0; i<5; i++){
 		int px = this->ort->getPos().x + arr[i];
 		int mx = this->ort->getPos().x - arr[i];
-		std::cout<<"px::"<<px<<" : mx "<<mx<<std::endl;
 
 		int py = this->ort->getPos().y + arr[i+1];
 		int my = this->ort->getPos().y - arr[i+1];
-		std::cout<<"py::"<<py<<" : my "<<my<<std::endl;
-		std::cout<<arr[i]<<":"<<arr[i+1]<<std::endl;
+		std::cout<<"y:"<<py<<" "<<my<<" "<<arr[i]<<std::endl;
+
+
 		if(px <= 8 && px >=0 ){
 			if(py <= 8 && py >=0 ){
 					zue.push_back(this->mteam->getBrett()->getFeld(px, py));
@@ -64,7 +69,12 @@ std::vector<Feld*> Stein::zuege(){
 					}
 		}
 	}
-	zue.shrink_to_fit();
+
+	std::sort(zue.begin(), zue.end(),sortPointer);
+	std::vector<Feld*>::iterator it;
+	it = std::unique(zue.begin(), zue.end());
+	std::cout<<"???"<<std::endl;
+	zue.resize(std::distance(zue.begin(),it));
 	return zue;
 }
 void Stein::setFrei(){
