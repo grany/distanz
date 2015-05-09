@@ -45,27 +45,22 @@ std::vector<Feld*> Stein::zuege(){
 
 		int py = this->ort->getPos().y + arr[i+1];
 		int my = this->ort->getPos().y - arr[i+1];
-		std::cout<<"y:"<<py<<" "<<my<<" "<<arr[i]<<std::endl;
 
 
 		if(px <= 8 && px >=0 ){
 			if(py <= 8 && py >=0 ){
 					zue.push_back(this->mteam->getBrett()->getFeld(px, py));
-					std::cout<<"px py"<<std::endl;
 			}
 			if(my >= 0 && my <= 8){
 					zue.push_back(this->mteam->getBrett()->getFeld(px, my));
-					std::cout<<"px my"<<std::endl;
 			}
 		}
 		if(mx >= 0 && mx <= 8){
 					if(py <= 8 && py >=0 ){
 							zue.push_back(this->mteam->getBrett()->getFeld(mx, py));
-							std::cout<<"mx py"<<std::endl;
 					}
 					if(my >= 0 && my <= 8){
 							zue.push_back(this->mteam->getBrett()->getFeld(mx, my));
-							std::cout<<"mx my"<<std::endl;
 					}
 		}
 	}
@@ -73,7 +68,6 @@ std::vector<Feld*> Stein::zuege(){
 	std::sort(zue.begin(), zue.end(),sortPointer);
 	std::vector<Feld*>::iterator it;
 	it = std::unique(zue.begin(), zue.end());
-	std::cout<<"???"<<std::endl;
 	zue.resize(std::distance(zue.begin(),it));
 	return zue;
 }
