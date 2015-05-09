@@ -1,6 +1,24 @@
 ToDo
 ####
 
+
+
+09.05.15
+	KI
+		-Franz
+		-kann gerne noch jemand mit machen
+	Graphik
+		-Martin B
+	Tests
+	Doku
+	Quellcode Kommentare
+
+
+
+
+
+
+
 00 Aufgaben Verteilung
 	10 Quellcode Kommentare
 	20 Dokumentation
