@@ -7,8 +7,8 @@
 //  
  SpielBrett::SpielBrett (){
 	 initBrett();
-	 weis = new Team(this, true, &Brett[7][1], &Brett[7][4], &Brett[7][5], &Brett[7][2], nullptr );
-	 schwarz = new Team(this, false, &Brett[0][1], &Brett[0][4], &Brett[0][5], &Brett[0][2], weis );
+	 weis = new Team(this, true, &Brett[2][7], &Brett[3][7], &Brett[6][7], &Brett[5][7], nullptr );
+	 schwarz = new Team(this, false, &Brett[1][0], &Brett[4][0], &Brett[5][0], &Brett[2][0], weis );
 	 weis->setGegner(schwarz);
 }
  Feld* SpielBrett::getFeld(int x, int y){

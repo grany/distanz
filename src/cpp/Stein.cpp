@@ -15,6 +15,7 @@
 
 Stein::Stein (int id, Feld *startplatz, Team *mt) : id(id) {
 	this->ort=startplatz;
+	startplatz->setStein(this);
 	this->geffangen=false;
 	mteam=mt;
 }
@@ -87,12 +88,15 @@ void Stein::zihenach(Feld *ziehe){
 		ziehe->setStein(this);
 		ort->delStein();
 		ort=ziehe;
-	}ziehe->setStein(this);
+	}
 }
 Team* Stein::getMteam(){
 	return mteam;
 }
 Feld* Stein::getOrt(){
 	return ort;
+}
+void Stein::setOrt(Feld *o){
+	this->ort=o;
 }
 #endif

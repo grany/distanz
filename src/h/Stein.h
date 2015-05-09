@@ -40,6 +40,7 @@ public:
    * Rückt auf das Übergebene Feld
    */
   virtual void zihenach(Feld *ziehl);
+  void setOrt(Feld* o);
 
   /**
    * Get the value of geffangen

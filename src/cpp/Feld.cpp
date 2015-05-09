@@ -21,7 +21,15 @@ bool Feld::getBesetzt(){
 
 void Feld::setStein(Stein *newstein){
 	if(this->besetzt){
-		//Tauschen muss noch implementiertwerden
+		//gast auf Feld von newstein Setzen
+		this->gast->setOrt(newstein->getOrt());
+		newstein->getOrt()->delStein();
+		newstein->getOrt()->setStein(this->gast);
+		//newstein auf dises Feld setzen
+		this->gast=newstein;
+		newstein->setOrt(this);
+
+
 	}else{
 		this->gast=newstein;
 		this->besetzt=true;
