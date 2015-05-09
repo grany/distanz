@@ -15,12 +15,13 @@ protected:
 	bool geffangen;
 	Feld *ort;
 	Team *mteam;
-	const int id;
+	int id;
 public:
 
   /**
    * Constructor
    */
+	Stein();
   Stein (int id, Feld *startplatz, Team *mt);
 
   int getid();

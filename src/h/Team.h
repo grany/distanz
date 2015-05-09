@@ -31,7 +31,7 @@ public:
     * Erzeugt Team
     */
    Team (SpielBrett *br, bool f, Feld *s1, Feld *s2, Feld *s3, Feld *k, Team *g );
-
+   Team ();
    /**
     * Zerstört Team
     */

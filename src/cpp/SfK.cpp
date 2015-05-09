@@ -7,7 +7,12 @@
 
 #include "../h/SfK.h"
 
-SfK::SfK() {
+
+void SfK::bewerten(){
+
+}
+
+SfK::SfK(KI &ki, SpielBrett &b): Strategie(ki, b){
 	// TODO Auto-generated constructor stub
 
 }

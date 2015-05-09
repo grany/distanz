@@ -19,6 +19,11 @@ Stein::Stein (int id, Feld *startplatz, Team *mt) : id(id) {
 	this->geffangen=false;
 	mteam=mt;
 }
+Stein::Stein(): id(0) {
+	ort=nullptr;
+	geffangen=false;
+	mteam=nullptr;
+}
 int Stein::getid(){
 	return id;
 }

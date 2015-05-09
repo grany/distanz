@@ -12,6 +12,7 @@
 #include "SpielBrett.h"
 #include "KI.h"
 #include "Stein.h"
+#include "zug.h"
 
 class Strategie {
 protected:
@@ -20,16 +21,17 @@ protected:
 	const SpielBrett &brett;
 
 	int wert;
-	std::vector<Feld*> mZuege; 	//Mögliche Züge
-	std::vector<Feld*> aZuege; 	//Auswahl der Zuege nach priorietät sortiert
-	Feld *nZug;					// Nächster zug
+	std::vector<zug> mZuege; 	//Mögliche Züge
+	std::vector<zug> aZuege; 	//Auswahl der Zuege nach priorietät sortiert
+	zug nZug;					// Nächster zug
 
-	std::vector<Feld*> getmZuege();
+	std::vector<zug> getmZuege();
 	virtual void bewerten()=0;
 public:
 	Strategie(KI &ki, SpielBrett &b);
+	Strategie();
 	int getWert();
-	Feld& nexstZug();
+	zug nexstZug();
 	virtual ~Strategie();
 };
 

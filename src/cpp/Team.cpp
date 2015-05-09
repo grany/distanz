@@ -23,6 +23,16 @@ Team::Team (SpielBrett *br, bool f, Feld *s1, Feld *s2, Feld *s3, Feld *k, Team 
 	koenig = new Koenig(4, k, this);
 
 }
+Team::Team () {
+	brett=nullptr;
+	Farbe=false;
+	Sieg=false;
+	gegner=nullptr;
+	helfer1 = nullptr;
+	helfer2 = nullptr;
+	helfer3 = nullptr;
+	koenig = nullptr;
+}
 
 Team::~Team ( ) {
 	delete helfer1;
