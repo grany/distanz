@@ -30,10 +30,6 @@ bool Stein::getGeffangen ( )   {
     return geffangen;
   }
 
-bool sortPointer(Feld* a, Feld* b){
-	return a < b;
-}
-
 std::vector<Feld*> Stein::zuege(){
 	int arr[6]= {};
 	std::vector<Feld*> zue;
@@ -66,7 +62,9 @@ std::vector<Feld*> Stein::zuege(){
 		}
 	}
 
-	std::sort(zue.begin(), zue.end(),sortPointer);
+	std::sort(zue.begin(), zue.end(),[&](Feld* a, Feld* b){
+			return a < b;
+		});
 	std::vector<Feld*>::iterator it;
 	it = std::unique(zue.begin(), zue.end());
 	zue.resize(std::distance(zue.begin(),it));
