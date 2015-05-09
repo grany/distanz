@@ -10,6 +10,9 @@ ToDo
 	Graphik
 		-Martin B
 	Tests
+		-Stein ziehen
+		-Felder Tauschen
+		-Gefangen Setzen		
 	Doku
 	Quellcode Kommentare
 
