@@ -99,6 +99,9 @@ void Team::distanzen (const Stein &anfrage, int *arr ){
 	 }
 	 return *helfer1;
  }
+ bool Team::getFarbe() const{
+	 return Farbe;
+ }
  void Team::setGegner ( Team *new_var ){
 	 this->gegner=new_var;
  }
@@ -107,5 +110,8 @@ Team* Team::getGegner() const{
 }
 SpielBrett* Team::getBrett() const{
 	return this->brett;
+}
+bool Team::getSieg(){
+	return this->Sieg;
 }
 #endif

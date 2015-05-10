@@ -59,6 +59,8 @@ public:
    * Gibt Pointer auf Gegnerisches Team Aus
    */
   Team* getGegner () const;
+  bool getFarbe() const;
+  bool getSieg();
 
   SpielBrett* getBrett() const;
 };

@@ -8,6 +8,8 @@
 #ifndef SRC_SFK_H_
 #define SRC_SFK_H_
 
+#include "KI.h"
+#include "SpielBrett.h"
 #include "Strategie.h"
 
 class SfK: public Strategie {

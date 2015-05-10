@@ -14,6 +14,7 @@
 #include "Stein.h"
 #include "zug.h"
 
+class KI;
 class Strategie {
 protected:
 	KI &ki;
@@ -25,7 +26,7 @@ protected:
 	std::vector<zug> aZuege; 	//Auswahl der Zuege nach priorietät sortiert
 	zug nZug;					// Nächster zug
 
-	std::vector<zug> getmZuege();
+	void getmZuege(std::vector<zug> &zuege);
 	virtual void bewerten()=0;
 public:
 	Strategie(KI &ki, SpielBrett &b);

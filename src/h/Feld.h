@@ -23,6 +23,7 @@ public:
    */
   Feld();
   Feld(short int nx, short int ny);
+  Feld(Feld &f);
   /**
    * Setzt Stein auf das Feld
    * und Markiert das Feld als Besetzt.

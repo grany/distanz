@@ -9,13 +9,23 @@
 #define SRC_H_KI_H_
 
 #include "Team.h"
+#include "SpielBrett.h"
+#include "zug.h"
+
+class Strategie;
 
 class KI {
 private:
 	Team &t;
+	SpielBrett &abrett; //Echte Spielbrett
+	Strategie *tk, *dv, *gp;
+	zug nZug;
+	void seachBestZug(int a);
 public:
-	KI(Team &t);
 	Team& getTeam();
+	SpielBrett& getBrett();
+	void nexZug();
+	KI(Team &t);
 	virtual ~KI();
 };
 

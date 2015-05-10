@@ -9,26 +9,21 @@
 #include <cmath>
 #include <algorithm>
 #include "../h/zug.h"
+#include <iostream>
 
 void SfK::bewerten(){
+	getmZuege(aZuege);
 	Possition gk = ki.getTeam().getGegner()->getStein(4).getOrt()->getPos();//Possition des Gegnerischen Königs
-	aZuege=mZuege;
-	for(std::vector<zug>::iterator it; it!=aZuege.end(); ++it){
+	for(std::vector<zug>::iterator it=aZuege.begin(); it!=aZuege.end(); ++it){
 		(*it).wert=std::abs((*it).zpos.x-gk.x)+std::abs((*it).zpos.y-gk.y);
 	}
-
-	std::sort(aZuege.begin(),aZuege.end(),[&](zug a, zug b){
-		return a.wert < b.wert;
-	});
-	nZug=(aZuege.size()>0)?aZuege[0]:zug();
-}
-
-SfK::SfK(KI &ki, SpielBrett &b): Strategie(ki, b){
-	// TODO Auto-generated constructor stub
+	std::sort(aZuege.begin(),aZuege.end());
+	if(!aZuege.size()) std::cerr<<"Error SfK::bewerten :Keine Züge"<<std::endl;
+	nZug=aZuege[0];
 
 }
 
-SfK::~SfK() {
-	// TODO Auto-generated destructor stub
-}
+SfK::SfK(KI &ki, SpielBrett &b): Strategie(ki, b){}
+
+SfK::~SfK() {}
 
