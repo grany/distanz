@@ -27,20 +27,34 @@ void zeichneFeld(SpielBrett *brett){
 int main(int _argc, char *argv[]){
 
 	SpielBrett *br = new SpielBrett();
-	Team *we = br->getWeis();
+	//Team *we = br->getWeis();
 	Team *sc = br->getSchwarz();
 	vector<Feld*> zue = sc->getStein(1).zuege();
 	for(vector<Feld*>::iterator it = zue.begin(); it != zue.end(); it++){
 			cout<<(*it)->getPos().x<<" : "<<(*it)->getPos().y<<endl;
 		}
 //	cout<<"#################"<<endl;
-	sc->getStein(1).zihenach(zue[5]);
+	sc->getStein(1).zihenach(zue[2]);
 	zue = sc->getStein(1).zuege();
 //	for(vector<Feld*>::iterator it = zue.begin(); it != zue.end(); it++){
 //		cout<<(*it)->getPos().x<<" : "<<(*it)->getPos().y<<endl;
 //	}
 //	system("cls");
+
+	SpielBrett cbr = *br;
+	Team b = *cbr.getSchwarz();
+	zue = b.getStein(2).zuege() ;
+	b.getStein(2).zihenach(zue[3]);
 	zeichneFeld(br);
+
+	cout<<"##########"<<endl;
+
+	for(vector<Feld*>::iterator it = zue.begin(); it != zue.end(); ++it){
+		cout<<(*it)->getPos().x<<" : "<<(*it)->getPos().y<<endl;
+	}
+
+
+	zeichneFeld(&cbr);
 	delete br;
 	return 1;
 }

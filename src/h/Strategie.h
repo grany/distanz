@@ -16,9 +16,9 @@
 
 class Strategie {
 protected:
-	const KI &ki;
+	KI &ki;
 	Stein &h1, &h2, &h3, &k;
-	const SpielBrett &brett;
+	SpielBrett &brett;
 
 	int wert;
 	std::vector<zug> mZuege; 	//Mögliche Züge

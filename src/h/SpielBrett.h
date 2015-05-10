@@ -22,10 +22,11 @@ private:
 public:
 
   SpielBrett ();
+  SpielBrett (const SpielBrett &sb);
   ~SpielBrett ( );
-  Team* getWeis();
-  Team* getSchwarz();
-  Feld* getFeld(int x, int y);
+  Team* getWeis() const;
+  Team* getSchwarz() const;
+  Feld* getFeld(int x, int y) const;
 
 };
 

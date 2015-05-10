@@ -44,7 +44,7 @@ public:
     * @param  anfrage
     */
    void distanzen (const Stein &anfrage, int *arr );
-   Stein& getStein(int id);
+   Stein& getStein(int id) const;
 
   /**
    * Set the value of Sieg
@@ -58,9 +58,9 @@ public:
   /*
    * Gibt Pointer auf Gegnerisches Team Aus
    */
-  Team* getGegner ();
+  Team* getGegner () const;
 
-  SpielBrett* getBrett();
+  SpielBrett* getBrett() const;
 };
 
 #endif // TEAM_H

@@ -1,6 +1,8 @@
 #ifndef SPIELBRETT_C
 #define SPIELBRETT_C
 
+#include <stdlib.h>
+#include <iostream>
 #include "../h/SpielBrett.h"
 
 // Constructors/Destructors
@@ -11,9 +13,26 @@
 	 schwarz = new Team(this, false, &Brett[1][0], &Brett[4][0], &Brett[5][0], &Brett[2][0], weis );
 	 weis->setGegner(schwarz);
 }
- Feld* SpielBrett::getFeld(int x, int y){
+ SpielBrett::SpielBrett (const SpielBrett &sb){
+	 initBrett();
+	 weis= new Team(this, true, this->getFeld(sb.getWeis()->getStein(1).getOrt()->getPos().x, sb.getWeis()->getStein(1).getOrt()->getPos().y) , \
+			 this->getFeld(sb.getWeis()->getStein(2).getOrt()->getPos().x, sb.getWeis()->getStein(2).getOrt()->getPos().y) , \
+			 this->getFeld(sb.getWeis()->getStein(3).getOrt()->getPos().x, sb.getWeis()->getStein(3).getOrt()->getPos().y), \
+			 this->getFeld(sb.getWeis()->getStein(4).getOrt()->getPos().x, sb.getWeis()->getStein(4).getOrt()->getPos().y),\
+			 nullptr );
+	 schwarz = new Team(this, false, this->getFeld(sb.getSchwarz()->getStein(1).getOrt()->getPos().x, sb.getSchwarz()->getStein(1).getOrt()->getPos().y) , \
+				 this->getFeld(sb.getSchwarz()->getStein(2).getOrt()->getPos().x, sb.getSchwarz()->getStein(2).getOrt()->getPos().y) , \
+				 this->getFeld(sb.getSchwarz()->getStein(3).getOrt()->getPos().x, sb.getSchwarz()->getStein(3).getOrt()->getPos().y), \
+				 this->getFeld(sb.getSchwarz()->getStein(4).getOrt()->getPos().x, sb.getSchwarz()->getStein(4).getOrt()->getPos().y),\
+				 weis );
+	 weis->setGegner(schwarz);
+ }
+ Feld* SpielBrett::getFeld(int x, int y) const {
 
-	 return &this->Brett[x][y];
+	 if(x >=0 && x <=7 && y >=0 && y <=7) return &this->Brett[x][y];
+	 std::cerr<<"Error Stein::getFeld out of bounds: x "<<x<<" | y "<<y<<std::endl;
+	 exit (-1);
+	 return nullptr;
  }
 
  void SpielBrett::initBrett(){
@@ -26,10 +45,10 @@
 	 }
  }
 
-Team* SpielBrett::getWeis(){
+Team* SpielBrett::getWeis() const{
 	return this->weis;
 }
-Team* SpielBrett::getSchwarz(){
+Team* SpielBrett::getSchwarz() const{
 	return this->schwarz;
 }
 SpielBrett::~SpielBrett ( ) {

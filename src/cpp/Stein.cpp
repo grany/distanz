@@ -49,19 +49,19 @@ std::vector<Feld*> Stein::zuege(){
 		int my = this->ort->getPos().y - arr[i+1];
 
 
-		if(px <= 8 && px >=0 ){
-			if(py <= 8 && py >=0 ){
+		if(px <= 7 && px >=0 ){
+			if(py <= 7 && py >=0 ){
 					zue.push_back(this->mteam->getBrett()->getFeld(px, py));
 			}
-			if(my >= 0 && my <= 8){
+			if(my >= 0 && my <= 7){
 					zue.push_back(this->mteam->getBrett()->getFeld(px, my));
 			}
 		}
-		if(mx >= 0 && mx <= 8){
-					if(py <= 8 && py >=0 ){
+		if(mx >= 0 && mx <= 7){
+					if(py <= 7 && py >=0 ){
 							zue.push_back(this->mteam->getBrett()->getFeld(mx, py));
 					}
-					if(my >= 0 && my <= 8){
+					if(my >= 0 && my <= 7){
 							zue.push_back(this->mteam->getBrett()->getFeld(mx, my));
 					}
 		}

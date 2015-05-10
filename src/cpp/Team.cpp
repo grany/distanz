@@ -86,7 +86,7 @@ void Team::distanzen (const Stein &anfrage, int *arr ){
      this->Sieg = new_var;
      //Gewonnen
  }
- Stein& Team::getStein(int id){
+ Stein& Team::getStein(int id) const{
 	 switch(id){
 	 case 1: return *helfer1;
 	 	 	 break;
@@ -102,10 +102,10 @@ void Team::distanzen (const Stein &anfrage, int *arr ){
  void Team::setGegner ( Team *new_var ){
 	 this->gegner=new_var;
  }
-Team* Team::getGegner(){
+Team* Team::getGegner() const{
 	return gegner;
 }
-SpielBrett* Team::getBrett(){
+SpielBrett* Team::getBrett() const{
 	return this->brett;
 }
 #endif
