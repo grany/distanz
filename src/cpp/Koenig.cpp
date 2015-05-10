@@ -9,7 +9,10 @@
 
 Koenig::Koenig(int id, Feld* startplatz, Team* mt) :Stein(id, startplatz, mt){}
 
-void Koenig::ziehenach(Feld *ziehe){
+bool Koenig::ziehenach(Feld *ziehe){
+	if(geffangen){
+		return false;
+	}
 	if(ziehe->getBesetzt()){
 		if(ziehe->getGast()->getMteam()==this->mteam){
 			ziehe->getGast()->setFrei();
@@ -18,14 +21,18 @@ void Koenig::ziehenach(Feld *ziehe){
 			ziehe->getGast()->setGeffangen();
 			ziehe->setStein(this);
 		}
+		return true;
 	}else{
 		ziehe->setStein(this);
 		this->ort->delStein();
 		this->ort=ziehe;
-	}ziehe->setStein(this);
+		ziehe->setStein(this);
+		return true;
+	}
+	return false;
 }
 void Koenig::setGeffangen(){
 	this->mteam->getGegner()->setSieg(true);// Verloren !!!!!!!!
-	this->mteam->~Team();
+	//this->mteam->~Team();
 }
 #endif

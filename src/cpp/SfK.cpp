@@ -12,6 +12,7 @@
 #include <iostream>
 
 void SfK::bewerten(){
+	aZuege.clear();
 	getmZuege(aZuege);
 	Possition gk = ki.getTeam().getGegner()->getStein(4).getOrt()->getPos();//Possition des Gegnerischen Königs
 	for(std::vector<zug>::iterator it=aZuege.begin(); it!=aZuege.end(); ++it){

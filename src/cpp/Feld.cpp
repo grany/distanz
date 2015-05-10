@@ -13,7 +13,7 @@ Feld::Feld(){
 	this->gast=nullptr;
 	this->besetzt=false;
 }
-Feld::Feld(Feld &f):pos(f.getPos()), gast(f.getGast()), besetzt(f.getBesetzt()) {}
+Feld::Feld(Feld &f):besetzt(f.getBesetzt()), pos(f.getPos()), gast(f.getGast()){}
 
 bool Feld::getBesetzt(){
 

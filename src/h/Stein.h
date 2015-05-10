@@ -40,7 +40,7 @@ public:
   /**
    * Rückt auf das Übergebene Feld
    */
-  virtual void zihenach(Feld *ziehl);
+  virtual bool zihenach(Feld *ziehl);
   void setOrt(Feld* o);
 
   /**

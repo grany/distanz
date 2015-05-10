@@ -20,7 +20,7 @@ public:
    * Implementiert zusetzlich die Befreiung von Team-Mitglidern
    * @param  helfer
    */
-  void ziehenach (Feld *ziehe );
+  bool ziehenach (Feld *ziehe );
 
   /**
    * Verloren!!!

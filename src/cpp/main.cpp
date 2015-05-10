@@ -31,7 +31,7 @@ void zeichneFeld(SpielBrett *brett){
 		cout<<"|"<<y<<endl;
 
 	}
-
+cout<<endl;
 }
 
 int main(int _argc, char *argv[]){
@@ -44,12 +44,12 @@ int main(int _argc, char *argv[]){
 	int i=1;
 
 	while(e!=100){
-		system("cls");
+		//system("cls");
 		if(i%2){
 			gegner.nexZug();
-			if(we->getSieg()){
+			if(sc->getSieg()){
 				cout<<"KI Gewonnen!!!"<<endl;
-				break;
+				e=100;
 			}
 		}else{
 			zeichneFeld(br);
@@ -65,9 +65,10 @@ int main(int _argc, char *argv[]){
 			cout<<"Zug?:"<<endl;
 			cin>>e;
 			we->getStein(k).zihenach(zue[e]);
+
 			if(we->getSieg()){
 				cout<<"Gewonnen!!!"<<endl;
-				break;
+				e=100;
 			}
 		}
 		i++;

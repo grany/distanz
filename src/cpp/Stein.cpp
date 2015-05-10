@@ -79,7 +79,8 @@ void Stein::setFrei(){
 	geffangen=false;
 }
 
-void Stein::zihenach(Feld *ziehe){
+bool Stein::zihenach(Feld *ziehe){
+	if(geffangen) return false;
 	if(ziehe->getBesetzt()){
 		if(ziehe->getGast()->mteam==this->mteam){
 			ziehe->setStein(this);
@@ -87,11 +88,14 @@ void Stein::zihenach(Feld *ziehe){
 			ziehe->getGast()->setGeffangen();
 			ziehe->setStein(this);
 		}
+		return true;
 	}else{
 		ziehe->setStein(this);
 		ort->delStein();
 		ort=ziehe;
+		return true;
 	}
+	return false;
 }
 Team* Stein::getMteam(){
 	return mteam;
