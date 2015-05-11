@@ -10,7 +10,7 @@
 #include <iostream>
 using namespace std;
 
-KI::KI(Team &t):t(t), abrett(*t.getBrett()), tk(new SfK(*this, abrett)), dv(nullptr), gp(nullptr) {}
+KI::KI(Team &t):t(t), abrett(*t.getBrett()), tk(new SfK(t, abrett)), dv(nullptr), gp(nullptr) {}
 void KI::nexZug(){
 	seachBestZug(1);
 	cout<<"KI Stein:"<<nZug.stein->getid()<<" Nach :"<<nZug.zpos.x<<":"<<nZug.zpos.y<<endl;

@@ -40,6 +40,7 @@ int main(int _argc, char *argv[]){
 	Team *we = br->getWeis();
 	Team *sc = br->getSchwarz();
 	KI gegner= KI(*sc);
+	KI w(*we);
 	int e=0;
 	int i=1;
 
@@ -47,12 +48,17 @@ int main(int _argc, char *argv[]){
 		//system("cls");
 		if(i%2){
 			gegner.nexZug();
+			zeichneFeld(br);
 			if(sc->getSieg()){
 				cout<<"KI Gewonnen!!!"<<endl;
 				e=100;
 			}
 		}else{
+			cout<<"--------------------------------"<<endl;
+			w.nexZug();
 			zeichneFeld(br);
+
+			/*
 			cout<<"Stein?:"<<endl;
 			int k =0;
 			cin>>k;
@@ -65,7 +71,7 @@ int main(int _argc, char *argv[]){
 			cout<<"Zug?:"<<endl;
 			cin>>e;
 			we->getStein(k).zihenach(zue[e]);
-
+			*/
 			if(we->getSieg()){
 				cout<<"Gewonnen!!!"<<endl;
 				e=100;

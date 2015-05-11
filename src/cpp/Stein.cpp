@@ -13,6 +13,11 @@
 #include <vector>
 #include <algorithm>
 
+
+#include <iostream>
+using namespace std;
+
+
 Stein::Stein (int id, Feld *startplatz, Team *mt) : id(id) {
 	this->ort=startplatz;
 	startplatz->setStein(this);
@@ -73,6 +78,16 @@ std::vector<Feld*> Stein::zuege(){
 	std::vector<Feld*>::iterator it;
 	it = std::unique(zue.begin(), zue.end());
 	zue.resize(std::distance(zue.begin(),it));
+
+	/////////////////////////////////////////////////
+	/*
+	for(vector<Feld*>::iterator it = zue.begin(); it != zue.end(); it++){
+						cout<<this->getid()<<"  ->"<<(*it)->getPos().x<<" : "<<(*it)->getPos().y<<endl;
+
+	}
+	*/
+	////////////////////////////////////////////////
+
 	return zue;
 }
 void Stein::setFrei(){

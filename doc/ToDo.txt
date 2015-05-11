@@ -3,10 +3,17 @@ ToDo
 
 
 
-09.05.15
+
 	KI
 		-Franz
+			-Schlage Gegnerischen König ->ok
 		-kann gerne noch jemand mit machen
+		KI erweiterungen:
+			-Schütze König
+			-Schlage Gegnerische Helfer
+			-Schütze helfer
+			-gute Position
+		-Auswahl beeste Strategie/Zug
 	Graphik
 		-Martin B
 	Tests

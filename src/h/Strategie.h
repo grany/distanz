@@ -10,14 +10,14 @@
 #include <vector>
 #include "Feld.h"
 #include "SpielBrett.h"
-#include "KI.h"
+#include "Team.h"
 #include "Stein.h"
 #include "zug.h"
 
-class KI;
+
 class Strategie {
 protected:
-	KI &ki;
+	Team &team;
 	Stein &h1, &h2, &h3, &k;
 	SpielBrett &brett;
 
@@ -29,10 +29,11 @@ protected:
 	void getmZuege(std::vector<zug> &zuege);
 	virtual void bewerten()=0;
 public:
-	Strategie(KI &ki, SpielBrett &b);
+	Strategie(Team &team, SpielBrett &b);
 	Strategie();
 	int getWert();
 	zug nexstZug();
+	std::vector<zug> getZuege() const;
 	virtual ~Strategie();
 };
 
