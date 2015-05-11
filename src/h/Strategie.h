@@ -31,7 +31,7 @@ protected:
 public:
 	Strategie(Team &team, SpielBrett &b);
 	Strategie();
-	int getWert();
+	int getWert() const;
 	zug nexstZug();
 	std::vector<zug> getZuege() const;
 	virtual ~Strategie();

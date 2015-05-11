@@ -30,6 +30,9 @@ struct zug{
 	bool operator < (const zug& z) const{
 			return wert<z.wert;
 		}
+	bool operator == (const zug& z) const{
+				return zpos==z.zpos;
+			}
 };
 
 

@@ -48,6 +48,9 @@ zug Strategie::nexstZug(){
 	bewerten();
 	return nZug;
 }
+int Strategie::getWert() const{
+	return this->wert;
+}
 Strategie::~Strategie() {
 	// TODO Auto-generated destructor stub
 }
