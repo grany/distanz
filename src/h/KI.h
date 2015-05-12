@@ -11,6 +11,7 @@
 #include "Team.h"
 #include "SpielBrett.h"
 #include "zug.h"
+#include "SsK.h"
 
 class Strategie;
 
@@ -18,7 +19,9 @@ class KI {
 private:
 	Team &t;
 	SpielBrett &abrett; //Echte Spielbrett
-	Strategie *tk, *dv, *gp;
+	Strategie *tk;
+	SsK *dv;
+	Strategie *gp;
 	zug nZug;
 	void seachBestZug(int a);
 public:

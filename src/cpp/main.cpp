@@ -43,7 +43,7 @@ int main(int _argc, char *argv[]){
 	KI w(*we);
 	int e=0;
 	int i=1;
-
+	int j=0;
 	while(e!=100){
 		//system("cls");
 		if(i%2){
@@ -57,6 +57,7 @@ int main(int _argc, char *argv[]){
 			cout<<"--------------------------------"<<endl;
 			w.nexZug();
 			zeichneFeld(br);
+			cout<<++j<<endl;
 
 			/*
 			cout<<"Stein?:"<<endl;

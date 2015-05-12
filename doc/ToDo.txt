@@ -17,10 +17,13 @@ ToDo
 	Graphik
 		-Martin B
 	Tests
+		-mögliche züge
 		-Stein ziehen
 		-Felder Tauschen
 		-Gefangen Setzen		
 	Doku
+		-
+		-Laufzeitanalyse
 	Quellcode Kommentare
 
 

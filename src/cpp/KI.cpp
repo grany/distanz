@@ -18,12 +18,28 @@ void KI::nexZug(){
 	nZug.stein->zihenach(nZug.zu);
 }
 void KI::seachBestZug(int a=1){
+			dv->nexstZug();
+			tk->nexstZug();
+			std::vector<zug> dvZuege(dv->getZuege());
+			std::vector<zug> tkZuege(tk->getZuege());
+			dv->nexstZug();
 			if(dv->getWert()){
-				nZug=tk->nexstZug();
-				if(tk->getZuege()[1]==dv->getZuege()[1]) nZug=tk->getZuege()[1];
-				if(tk->nexstZug()==dv->nexstZug()) nZug=tk->nexstZug();
+					nZug=tk->nexstZug();
+					if(tkZuege[1]==dvZuege[1]) nZug=dvZuege[1];
+					if(tk->nexstZug()==dv->nexstZug()) nZug=dv->nexstZug();
+					bool i =true;
+					while(i){
+						i=false;
+						if(!dv->posSicher(nZug.zpos) && nZug.stein->getid() == 4) i=true;
+						tkZuege.erase(tkZuege.begin());
+						nZug=tkZuege[1];
+						cout<<"lieber nicht"<<endl;
+
+					}
+
 			}else{
 				nZug=dv->nexstZug();
+				cout<<"gefahr"<<endl;
 			}
 
 

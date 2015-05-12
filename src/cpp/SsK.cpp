@@ -35,12 +35,20 @@ void SsK::bewerten(){
 			for(std::vector<zug>::iterator it=aZuege.begin(); it!=aZuege.end(); ++it){
 				if((*it).zpos==gZuege[0].stein->getOrt()->getPos())  (*it).wert=0;
 				if((*it).stein->getid()==4 && posSicher((*it).zpos)) (*it).wert=1;
-				if(posSicher((*it).zpos)) --(*it).wert;
+				if(posSicher((*it).zpos)){
+					--(*it).wert;
+				}else{
+					++(*it).wert;
+				}
 			}
 		}else{
 			this->wert=gZuege[0].wert+1;
 			for(std::vector<zug>::iterator it=aZuege.begin(); it!=aZuege.end(); ++it){
-				if(posSicher((*it).zpos)) --(*it).wert;
+				if(posSicher((*it).zpos)){
+					--(*it).wert;
+				}else{
+					++(*it).wert;
+				}
 			}
 		}
 		std::sort(aZuege.begin(),aZuege.end());
