@@ -18,7 +18,7 @@ private:
 	SfK gegner;
 	std::vector<zug> gZuege;	//Gegnerische züge
 public:
-	void bewerten();
+	virtual void bewerten() override;
 	bool posSicher(Possition p);
 	SsK(Team &team, SpielBrett &b);
 	SsK();

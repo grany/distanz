@@ -12,7 +12,7 @@
 
 class SfH: public Strategie {
 public:
-	void bewerten();
+	virtual void bewerten();
 	SfH(Team &team, SpielBrett &b);
 	virtual ~SfH();
 };

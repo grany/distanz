@@ -7,6 +7,7 @@
  */
 
 #include <iostream>
+#include <memory>
 #include "../h/Spielbrett.h"
 #include <stdlib.h>
 #include "../h/KI.h"
@@ -36,7 +37,7 @@ cout<<endl;
 
 int main(int _argc, char *argv[]){
 
-	SpielBrett *br = new SpielBrett();
+	unique_ptr<SpielBrett>  br( new SpielBrett() );
 	Team *we = br->getWeis();
 	Team *sc = br->getSchwarz();
 	KI gegner= KI(*sc);
@@ -48,7 +49,7 @@ int main(int _argc, char *argv[]){
 		//system("cls");
 		if(i%2){
 			gegner.nexZug();
-			zeichneFeld(br);
+			zeichneFeld(br.get());
 			if(sc->getSieg()){
 				cout<<"KI Gewonnen!!!"<<endl;
 				e=100;
@@ -56,7 +57,7 @@ int main(int _argc, char *argv[]){
 		}else{
 			cout<<"--------------------------------"<<endl;
 			w.nexZug();
-			zeichneFeld(br);
+			zeichneFeld(br.get());
 			cout<<++j<<endl;
 
 			/*

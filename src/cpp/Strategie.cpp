@@ -44,7 +44,7 @@ void Strategie::getmZuege(std::vector<zug> &zuege){
 			zuege.push_back(zug((*it), &k));
 		}
 }
-zug Strategie::nexstZug(){
+zug Strategie::nexZug(){
 	bewerten();
 	return nZug;
 }

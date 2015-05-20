@@ -2,16 +2,16 @@
 #define STEIN_C
 #include "../h/Feld.h"
 Feld::Feld(short int nx, short int ny){
-	this->pos.x=nx;
-	this->pos.y=ny;
-	this->gast=nullptr;
-	this->besetzt=false;
+	pos.x=nx;
+	pos.y=ny;
+	gast=nullptr;
+	besetzt=false;
 }
 Feld::Feld(){
-	this->pos.x=-1;
-	this->pos.y=-1;
-	this->gast=nullptr;
-	this->besetzt=false;
+	pos.x=-1;
+	pos.y=-1;
+	gast=nullptr;
+	besetzt=false;
 }
 Feld::Feld(Feld &f):besetzt(f.getBesetzt()), pos(f.getPos()), gast(f.getGast()){}
 

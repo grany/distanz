@@ -32,7 +32,7 @@ public:
 	Strategie(Team &team, SpielBrett &b);
 	Strategie();
 	int getWert() const;
-	zug nexstZug();
+	zug nexZug();
 	std::vector<zug> getZuege() const;
 	virtual ~Strategie();
 };

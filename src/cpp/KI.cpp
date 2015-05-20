@@ -16,16 +16,16 @@ KI::KI(Team &t):t(t), abrett(*t.getBrett()), tk(new SfK(t, abrett)), dv(new SsK(
 void KI::nexZug(){
 	seachBestZug(1);
 	cout<<"KI Stein:"<<nZug.stein->getid()<<" Nach :"<<nZug.zpos.x<<":"<<nZug.zpos.y<<endl;
-	nZug.stein->zihenach(nZug.zu);
+	nZug.stein->ziehenach(nZug.zu);
 }
 void KI::seachBestZug(int a=1){
-			dv->nexstZug();
-			tk->nexstZug();
-			gp->nexstZug();
+			dv->nexZug();
+			tk->nexZug();
+			gp->nexZug();
 			std::vector<zug> dvZuege(dv->getZuege());
 			std::vector<zug> tkZuege(tk->getZuege());
 			std::vector<zug> gpZuege(gp->getZuege());
-			dv->nexstZug();
+			dv->nexZug();
 			if(dv->getWert()){
 				for(int k=0,j=4;k<4;k++,j--){
 					nZug=(dvZuege[k]==tkZuege[j])?tkZuege[j]:tkZuege[0];
@@ -41,13 +41,13 @@ void KI::seachBestZug(int a=1){
 						if(!dv->posSicher(nZug.zpos) && nZug.stein->getid() == 4) i=true;
 						tkZuege.erase(tkZuege.begin());
 						nZug=tkZuege[1];
-						cout<<"lieber nicht"<<endl;
+						cerr<<"lieber nicht"<<endl;
 
 					}
 
 			}else{
-				nZug=dv->nexstZug();
-				cout<<"gefahr"<<endl;
+				nZug=dv->nexZug();
+				cerr<<"gefahr"<<endl;
 			}
 
 

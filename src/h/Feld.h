@@ -15,24 +15,24 @@ private:
 
   bool besetzt;
   Possition pos;
-  Stein *gast;
+  Stein *gast=nullptr;
 
 public:
   /**
    * Initialisiert Feld
    */
   Feld();
-  Feld(short int nx, short int ny);
+  Feld(short nx, short  ny);
   Feld(Feld &f);
   /**
    * Setzt Stein auf das Feld
    * und Markiert das Feld als Besetzt.
-   * Fals das Feld besetzt ist werden die GÃ¤ste/Steine getauscht.
+   * Fals das Feld besetzt ist werden die Gäste/Steine getauscht.
    */
   void setStein (Stein *newstein );
 
   /**
-   *LÃ¶scht Zeiger auf Gast
+   *Löscht Zeiger auf Gast
    *Setzt besetzt auf false
    */
   void delStein();
@@ -45,7 +45,7 @@ public:
   bool getBesetzt ( );
 
   /*
-   * Gibt einen Pointer auf den Gast zurÃ¼ck
+   * Gibt einen Pointer auf den Gast zurück
    */
   Stein* getGast();
 

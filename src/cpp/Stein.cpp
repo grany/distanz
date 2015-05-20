@@ -94,7 +94,7 @@ void Stein::setFrei(){
 	geffangen=false;
 }
 
-bool Stein::zihenach(Feld *ziehe){
+bool Stein::ziehenach(Feld *ziehe){
 	if(geffangen) return false;
 	if(ziehe->getBesetzt()){
 		if(ziehe->getGast()->mteam==this->mteam){

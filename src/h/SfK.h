@@ -14,7 +14,7 @@
 
 class SfK: public Strategie {
 public:
-	void bewerten();
+	virtual void bewerten();
 	SfK(Team &team, SpielBrett &b);
 	SfK();
 	virtual ~SfK();

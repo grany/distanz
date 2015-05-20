@@ -20,12 +20,12 @@ public:
    * Implementiert zusetzlich die Befreiung von Team-Mitglidern
    * @param  helfer
    */
-  bool ziehenach (Feld *ziehe );
+  virtual bool ziehenach (Feld *ziehe ) override;
 
   /**
    * Verloren!!!
    */
-  void setGeffangen ( );
+  virtual void setGeffangen ( ) override;
 
 };
 
