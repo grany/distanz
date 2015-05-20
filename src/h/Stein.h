@@ -12,10 +12,10 @@ class Feld;
 class Stein
 {
 protected:
-	bool geffangen;
-	Feld *ort;
-	Team *mteam;
-	int id;
+	bool geffangen=false;
+	Feld *ort=nullptr;
+	Team *mteam=nullptr;
+	const int id;
 public:
 
   /**
@@ -24,7 +24,12 @@ public:
 	Stein();
   Stein (int id, Feld *startplatz, Team *mt);
 
-  int getid();
+  /*
+   * getid()
+   * @return id der instanz
+   */
+  int getid() const;
+
   /**
    * Setzt den Stein Geffangen
    * geffangen -> true
@@ -59,7 +64,7 @@ public:
    * @return Feld
    */
   std::vector<Feld*> zuege ( );
-  virtual ~Stein();
+  virtual ~Stein()=default;
 
 };
 

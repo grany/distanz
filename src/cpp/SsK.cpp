@@ -18,8 +18,8 @@ bool SsK::posSicher(Possition p){
 		gegner.bewerten();
 		gZuege=gegner.getZuege();
 	}
-	for(std::vector<zug>::iterator it=gZuege.begin(); it!=gZuege.end(); ++it){
-		if((*it).zpos==p) return false;
+	for(auto& it :gZuege){
+		if(it.zpos==p) return false;
 	}
 	return true;
 }
@@ -32,22 +32,22 @@ void SsK::bewerten(){
 		gZuege=gegner.getZuege();
 		if(gZuege[0].wert==0){
 			this->wert=0;
-			for(std::vector<zug>::iterator it=aZuege.begin(); it!=aZuege.end(); ++it){
-				if((*it).zpos==gZuege[0].stein->getOrt()->getPos())  (*it).wert=0;
-				if((*it).stein->getid()==4 && posSicher((*it).zpos)) (*it).wert=1;
-				if(posSicher((*it).zpos)){
-					--(*it).wert;
+			for(auto it : aZuege){
+				if((it).zpos==gZuege[0].stein->getOrt()->getPos())  (it).wert=0;
+				if((it).stein->getid()==4 && posSicher((it).zpos)) (it).wert=1;
+				if(posSicher((it).zpos)){
+					--(it).wert;
 				}else{
-					++(*it).wert;
+					++(it).wert;
 				}
 			}
 		}else{
 			this->wert=gZuege[0].wert+1;
-			for(std::vector<zug>::iterator it=aZuege.begin(); it!=aZuege.end(); ++it){
-				if(posSicher((*it).zpos)){
-					--(*it).wert;
+			for(auto it : aZuege){
+				if(posSicher((it).zpos)){
+					--(it).wert;
 				}else{
-					++(*it).wert;
+					++(it).wert;
 				}
 			}
 		}

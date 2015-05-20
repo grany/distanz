@@ -10,9 +10,20 @@
 
 #include "Strategie.h"
 
+/**
+ * class SfH (Strategie fange Helfer)
+ * ist eine Ableitung der abstrakten Klasse Strategie.
+ * Überschreibt/implementiert die methode bewerten();
+ * @param &team reverence auf instanz von Team
+ * @param &b 	reverence auf instanz von SpielBrett
+ */
 class SfH: public Strategie {
 public:
-	virtual void bewerten();
+	/*
+	 * bewerten()
+	 * bewerted mögliche züge nach der möglichkeit gegnerische Helfer zu fangen.
+	 */
+	virtual void bewerten() override;
 	SfH(Team &team, SpielBrett &b);
 	virtual ~SfH();
 };

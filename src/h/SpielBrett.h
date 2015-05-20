@@ -15,8 +15,8 @@ class SpielBrett
 {
 private:
 	static const short int dimmension = 8;
-	Feld** Brett;
-	Team *schwarz, *weis;
+	Feld** Brett=nullptr;
+	Team *schwarz=nullptr, *weis=nullptr;
 
 	void initBrett();
 public:

@@ -20,20 +20,20 @@ class SpielBrett;
 class Team
 {
 private:
-  Stein *helfer1, *helfer2, *helfer3;
-  Koenig *koenig;
-  bool Sieg;
-  Team *gegner;
-  SpielBrett *brett;
-  bool Farbe;	//Weis->true; false->Schwarz
+  Stein *helfer1=nullptr, *helfer2=nullptr, *helfer3=nullptr;
+  Koenig *koenig=nullptr;
+  bool Sieg=false;
+  Team *gegner=nullptr;
+  SpielBrett *brett=nullptr;
+  bool Farbe=false;	//Weis->true; false->Schwarz
 public:
   /**
     * Erzeugt Team
     */
    Team (SpielBrett *br, bool f, Feld *s1, Feld *s2, Feld *s3, Feld *k, Team *g );
-   Team ();
+   Team ()=default;
    /**
-    * ZerstÃ¶rt Team
+    * Zerstört Team
     */
    ~Team ( );
 

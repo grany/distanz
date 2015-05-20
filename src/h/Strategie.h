@@ -14,7 +14,11 @@
 #include "Stein.h"
 #include "zug.h"
 
-
+/*
+ * class Strategie
+ *
+ * Abstrakte klasse zur Erzeugung von Spetziellen zug Strategien
+ */
 class Strategie {
 protected:
 	Team &team;

@@ -18,21 +18,12 @@ void SfK::bewerten(){
 	Possition gk = team.getGegner()->getStein(4).getOrt()->getPos();//Possition des Gegnerischen Königs
 	for(auto& i : aZuege){
 		i.wert=std::abs((i).zpos.x-gk.x)+std::abs((i).zpos.y-gk.y);
-		//std::cout<<"Sfk::bewerten Wertigkeiten s_id:"<<(*it).stein->getid()<<" zpos: "<<(*it).zpos.x<<":"<<(*it).zpos.y<<" wert:"<<(*it).wert<<std::endl;
 	}
 
 	std::sort(aZuege.begin(),aZuege.end());
 	if(!aZuege.size()) std::cerr<<"Error SfK::bewerten :Keine Züge"<<std::endl;
 	nZug=aZuege[0];
 	wert=nZug.wert;
-	/*
-	int arr[6];
-	nZug.stein->getMteam()->distanzen(*nZug.stein, arr);
-	for(int i =0 ;i<6;i=i+2){
-		std::cout<<arr[i]<<":"<<arr[i+1]<<std::endl;
-	}
-
-	*/
 }
 
 SfK::SfK(Team &team, SpielBrett &b): Strategie(team, b){}

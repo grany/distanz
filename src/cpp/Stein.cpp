@@ -18,21 +18,14 @@
 using namespace std;
 
 
-Stein::Stein (int id, Feld *startplatz, Team *mt) : id(id) {
-	this->ort=startplatz;
+Stein::Stein (int id, Feld *startplatz, Team *mt) : id(id), mteam(mt), ort(startplatz) {
 	startplatz->setStein(this);
-	this->geffangen=false;
-	mteam=mt;
 }
-Stein::Stein(): id(0) {
-	ort=nullptr;
-	geffangen=false;
-	mteam=nullptr;
-}
-int Stein::getid(){
+Stein::Stein(): id(-1) {}
+
+int Stein::getid() const{
 	return id;
 }
-Stein::~Stein(){}
 void Stein::setGeffangen(){
 	geffangen=true;
 }
@@ -78,15 +71,6 @@ std::vector<Feld*> Stein::zuege(){
 	std::vector<Feld*>::iterator it;
 	it = std::unique(zue.begin(), zue.end());
 	zue.resize(std::distance(zue.begin(),it));
-
-	/////////////////////////////////////////////////
-	/*
-	for(vector<Feld*>::iterator it = zue.begin(); it != zue.end(); it++){
-						cout<<this->getid()<<"  ->"<<(*it)->getPos().x<<" : "<<(*it)->getPos().y<<endl;
-
-	}
-	*/
-	////////////////////////////////////////////////
 
 	return zue;
 }
