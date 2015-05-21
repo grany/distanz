@@ -17,12 +17,16 @@ class Strategie;
 
 class KI {
 private:
+	static const int anzstrat=3;
 	Team &t;
-	SpielBrett &abrett; //Echte Spielbrett
-	Strategie *tk;
+	SpielBrett &abrett; //Echtes Spielbrett
+	Strategie* strat[anzstrat];
 	SsK *dv;
-	Strategie *gp;
+
 	zug nZug;
+	std::vector<zug> mergeStrategie(std::vector<zug> st2Zuege, Strategie *st1);
+	std::vector<zug> mergeStrategie(Strategie *st1, Strategie *st2);
+	std::vector<zug> mergeStrategie(Strategie *st1, std::vector<zug> st2Zuege);
 	void seachBestZug(int a);
 public:
 	Team& getTeam();

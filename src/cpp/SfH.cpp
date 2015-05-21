@@ -13,15 +13,16 @@ void SfH::bewerten(){
 	getmZuege(aZuege);
 	mZuege=aZuege;
 	for(auto it : aZuege){
-		(it).wert=((it).zpos==team.getGegner()->getStein(1).getOrt()->getPos() \
-				||(it).zpos==team.getGegner()->getStein(2).getOrt()->getPos() \
-				|| (it).zpos==team.getGegner()->getStein(3).getOrt()->getPos())\
+		it.wert=(it.zpos==team.getGegner()->getStein(1).getOrt()->getPos() && !team.getGegner()->getStein(1).getGeffangen()) \
+				|| (it.zpos==team.getGegner()->getStein(2).getOrt()->getPos() && !team.getGegner()->getStein(2).getGeffangen())\
+				|| (it.zpos==team.getGegner()->getStein(3).getOrt()->getPos() && !team.getGegner()->getStein(3).getGeffangen())\
+				|| (it.zpos==team.getGegner()->getStein(4).getOrt()->getPos() && !team.getGegner()->getStein(4).getGeffangen())\
 						?20:(it).wert+1;
 	}
 
 	std::sort(aZuege.begin(),aZuege.end());
 	nZug=aZuege[0];
-	wert=nZug.wert;
+	wert=(!nZug.wert)?1:2;
 }
 SfH::SfH(Team &team, SpielBrett &b): Strategie(team, b){}
 SfH::~SfH() {
