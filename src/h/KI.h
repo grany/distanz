@@ -17,7 +17,7 @@ class Strategie;
 
 class KI {
 private:
-	static const int anzstrat=3;
+	static const int anzstrat=4;
 	Team &t;
 	SpielBrett &abrett; //Echtes Spielbrett
 	Strategie* strat[anzstrat];

@@ -11,6 +11,7 @@
 #include "../h/Spielbrett.h"
 #include <stdlib.h>
 #include "../h/KI.h"
+#include "../h/KI1.h"
 using namespace std;
 
 void zeichneFeld(SpielBrett *brett){
@@ -40,7 +41,7 @@ int main(int _argc, char *argv[]){
 	unique_ptr<SpielBrett>  br( new SpielBrett() );
 	Team *we = br->getWeis();
 	Team *sc = br->getSchwarz();
-	KI gegner= KI(*sc);
+	KI gegner(*sc);
 	KI w(*we);
 	int e=0;
 	int i=1;

@@ -19,6 +19,8 @@ KI::KI(Team &t):t(t), abrett(*t.getBrett()), dv(new SsK(t, abrett)) {
 	strat[0]=new SfK(t, abrett);
 	strat[1]=new SfH(t, abrett);
 	strat[2]=new SrH(t, abrett);
+	strat[3]=dv;
+
 }
 void KI::nexZug(){
 	seachBestZug(1);
