@@ -37,9 +37,9 @@ int main(int _argc, char *argv[]){
 	Team *we = br->getWeis();
 	Team *sc = br->getSchwarz();
 	KI gegner(*sc);
-	KI gegner= KI(*sc);
-	GUI g(br);
 	KI w(*we);
+	GUI g(br.get());
+
 	int e=0;
 	int i=1;
 	int j=0;
