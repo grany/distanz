@@ -1,15 +1,10 @@
-/*
- * main.cpp
 
- *
- *  Created on: 26.04.2015
- *      Author: franz
- */
 
 #include <iostream>
 #include "../h/Spielbrett.h"
 #include <stdlib.h>
 #include "../h/KI.h"
+#include "../h/GUI.h"
 using namespace std;
 
 void zeichneFeld(SpielBrett *brett){
@@ -40,6 +35,7 @@ int main(int _argc, char *argv[]){
 	Team *we = br->getWeis();
 	Team *sc = br->getSchwarz();
 	KI gegner= KI(*sc);
+	GUI g(br);
 	KI w(*we);
 	int e=0;
 	int i=1;
@@ -48,7 +44,7 @@ int main(int _argc, char *argv[]){
 		//system("cls");
 		if(i%2){
 			gegner.nexZug();
-			zeichneFeld(br);
+			g.zeichneSpielfeld();
 			if(sc->getSieg()){
 				cout<<"KI Gewonnen!!!"<<endl;
 				e=100;
@@ -77,6 +73,7 @@ int main(int _argc, char *argv[]){
 				cout<<"Gewonnen!!!"<<endl;
 				e=100;
 			}
+			cin.get();
 		}
 		i++;
 	}
