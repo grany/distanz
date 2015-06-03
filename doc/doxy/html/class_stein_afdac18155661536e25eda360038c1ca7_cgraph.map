@@ -1,0 +1,7 @@
+<map id="Stein::ziehenach" name="Stein::ziehenach">
+<area shape="rect" id="node2" href="$class_feld.html#a70456d20a55214db1af93ccab6d192cd" title="Feld::getBesetzt" alt="" coords="181,5,299,32"/>
+<area shape="rect" id="node3" href="$class_feld.html#a41f1e0c497b688ac87d6ab95c9b4914d" title="Feld::getGast" alt="" coords="189,56,291,83"/>
+<area shape="rect" id="node4" href="$class_feld.html#a00d3eec0ced82a8aee97de9b5f030df2" title="Feld::setStein" alt="" coords="189,131,291,157"/>
+<area shape="rect" id="node5" href="$class_feld.html#a6bb4ad9a5e5ba0b7c50e43b149535a5c" title="Feld::delStein" alt="" coords="356,156,459,183"/>
+<area shape="rect" id="node6" href="$class_stein.html#a8a98cf8c96426bf5164c6eb41b03154b" title="Stein::setGeffangen" alt="" coords="172,232,308,259"/>
+</map>

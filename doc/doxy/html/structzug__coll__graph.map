@@ -1,0 +1,6 @@
+<map id="zug" name="zug">
+<area shape="rect" id="node2" href="$struct_possition.html" title="Possition" alt="" coords="5,95,81,121"/>
+<area shape="rect" id="node3" href="$class_stein.html" title="Stein" alt="" coords="173,95,225,121"/>
+<area shape="rect" id="node4" href="$class_feld.html" title="Feld" alt="" coords="116,5,163,32"/>
+<area shape="rect" id="node5" href="$class_team.html" title="Team" alt="" coords="197,5,252,32"/>
+</map>

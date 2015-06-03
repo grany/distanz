@@ -16,7 +16,10 @@ class Team;
 class SpielBrett;
 
 
-
+/**
+ * class Team
+ *
+ */
 class Team
 {
 private:
@@ -32,18 +35,24 @@ public:
     */
    Team (SpielBrett *br, bool f, Feld *s1, Feld *s2, Feld *s3, Feld *k, Team *g );
    Team ()=default;
-   /**
-    * Zerstört Team
-    */
-   ~Team ( );
+   virtual ~Team ( );
 
     /**
-    * Gibt einen Vector mit den distanzen der anderen,
-    *  nicht gefangenen, Team-Mitglieder zurÃ¼ck
-    * @return vector
-    * @param  anfrage
+    * distanzen
+    * Trägt x und y distanzen der "Anderen" Steine in Array ein.
+    * Array muss 6 Felder besitzen und vom typ int sein
+    *
+    * @param [in] &anfrage : Stein, [out] *arr : int array[6]
     */
    void distanzen (const Stein &anfrage, int *arr );
+   /**
+    * getStein
+    * gibt reference auf Stein mit übergebener id zurük, bei Falschen id´s wird reference auf König zurückgegeben.
+    * 1-3 -> Helfer
+    * 4 -> König
+    * @param [in] id : int
+    * @return &Stein
+    */
    Stein& getStein(int id) const;
 
   /**

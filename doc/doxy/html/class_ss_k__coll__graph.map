@@ -1,0 +1,9 @@
+<map id="SsK" name="SsK">
+<area shape="rect" id="node2" href="$class_strategie.html" title="Strategie" alt="" coords="181,305,255,332"/>
+<area shape="rect" id="node3" href="$class_stein.html" title="Stein" alt="" coords="148,95,200,121"/>
+<area shape="rect" id="node6" href="$structzug.html" title="zug" alt="" coords="70,200,113,227"/>
+<area shape="rect" id="node4" href="$class_feld.html" title="Feld" alt="" coords="57,5,104,32"/>
+<area shape="rect" id="node5" href="$class_team.html" title="Team" alt="" coords="180,5,235,32"/>
+<area shape="rect" id="node7" href="$struct_possition.html" title="Possition" alt="" coords="40,95,116,121"/>
+<area shape="rect" id="node8" href="$class_spiel_brett.html" title="SpielBrett" alt="" coords="283,200,361,227"/>
+</map>

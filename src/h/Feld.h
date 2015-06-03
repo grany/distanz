@@ -1,14 +1,12 @@
 
 #ifndef FELD_H
 #define FELD_H
-
-/**
-  * class Feld
-  * Stellt ein Feld auf einem Spielbrett dar
-  */
 #include "../h/Possition.h"
 #include "Stein.h"
-
+/**
+ * class Feld
+ * Symbolysiert ein Feld auf einem SpielBrett.
+ */
 class Feld
 {
 private:
@@ -18,20 +16,24 @@ private:
   Stein *gast=nullptr;
 
 public:
-  /**
-   * Initialisiert Feld
-   */
   Feld();
+  /**
+   * Feld Konstruktor
+   * @param [in] nx x Koordinaten des Feldes
+   * @param [in] ny y Koordinaten des Feldes
+   */
   Feld(short nx, short  ny);
   Feld(Feld &f);
   /**
    * Setzt Stein auf das Feld
    * und Markiert das Feld als Besetzt.
    * Fals das Feld besetzt ist werden die Gäste/Steine getauscht.
+   * @param [in/out] *newstein pointer auf den zu Setzenden Stein.
    */
   void setStein (Stein *newstein );
 
   /**
+   * delStein
    *Löscht Zeiger auf Gast
    *Setzt besetzt auf false
    */
@@ -44,13 +46,14 @@ public:
    */
   bool getBesetzt ( );
 
-  /*
-   * Gibt einen Pointer auf den Gast zurück
+  /**
+   * getGast
+   *@return Gibt einen Pointer auf den Gast zurück
    */
   Stein* getGast();
 
   /**
-   * Get the value of pos
+   * getPos
    * @return the value of pos
    */
   Possition getPos ( );
