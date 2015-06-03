@@ -1,14 +1,30 @@
-
 #include "../h/GUI.h"
 #include <iostream>
 #include <stdlib.h>
 using namespace std;
+
+GUI::GUI(SpielBrett *br)				//Konstruktor
+{
+	brett=br;
+};
+
+/*void GUI::zeichneSieg()
+{
+	cout << "###################################\n"
+		 <<	"#          DISTANZ-Spiel          #\n"
+		 <<	"###################################\n"
+		 <<	"_______________________________________________________________________________________________________\n\n"
+		 << ""
+		 << "Eingabe:";
+
+}*/
+
 void GUI::zeichneAnleitung()
 {
 	cout << "###################################\n"
 		 <<	"#          DISTANZ-Spiel          #\n"
 		 <<	"###################################\n"
-		 <<	"_______________________________________________________________________________________________________\n"
+		 <<	"_______________________________________________________________________________________________________\n\n"
 		 <<	"Ziel des Spiels: Ziel des Spiel ist es, den gegnerischen König gefangen zu nehmen \n"
 		 <<	"oder den Gegner in eine Situation zu bringen, in der er keinen legalen Zug mehr \n"
 		 <<	"ausführen kann. Der Spieler, der dieses Ziel erreicht, hat gewonnen.\n\n"
@@ -21,12 +37,11 @@ void GUI::zeichneAnleitung()
 		 <<	"\t\t gefangene Helfer wieder befreien können.\n\n"
 		 << "Spielablauf:\t Es wird immer abwechselnd gezogen, wobei Spieler Weiß beginnt. Es besteht\n"
 		 <<	"\t\t Zugzwang.\n\n"
-		 << "_______________________________________________________________________________________________________\n";
+		 << "_______________________________________________________________________________________________________\n"
+		 << "Durch drücken der Enter-Taste gelangen Sie wieder zurück.";
+	cin.get();
 }
 
-GUI::GUI(SpielBrett *br){
-	brett=br;
-};
 void GUI::zeichneSpielfeld()
 {
 	int zeile, spalte;
@@ -43,15 +58,21 @@ void GUI::zeichneSpielfeld()
 		for (spalte = 0; spalte < 8; spalte++)
 		{
 			cout << "  ";
-			if (brett->getFeld(zeile,spalte)->getBesetzt())
+			if (brett->getFeld(spalte,zeile)->getBesetzt())
 			{
-				if (brett->getFeld(zeile,spalte)->getGast()->getMteam()->getFarbe())
-					cout 	<< "|s"
-							<<brett->getFeld(zeile,spalte)->getGast()->getid();
+				if (brett->getFeld(spalte,zeile)->getGast()->getMteam()->getFarbe())
+					if (brett->getFeld(spalte,zeile)->getGast()->getid()==4)
+						cout 	<< "k";
+					else
+						cout	<< "h";
 				else
-					cout	<<"|S"
-							<<brett->getFeld(zeile,spalte)->getGast()->getid();
+					if (brett->getFeld(spalte,zeile)->getGast()->getid()==4)
+						cout 	<< "K";
+					else
+						cout	<< "H";
 			}
+			else
+				cout << " ";
 			cout << "  |";
 		}
 		cout << "\n"

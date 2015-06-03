@@ -9,7 +9,7 @@
 #include "../h/GUI.h"
 using namespace std;
 
-void zeichneFeld(SpielBrett *brett){
+/*void zeichneFeld(SpielBrett *brett){				altes Spielfeld
 	for(int y =0;y<8;y++){
 		for(int x =0;x<8;x++){
 			//((x==7) && (y==0))?cout<<"#":"";
@@ -29,7 +29,7 @@ void zeichneFeld(SpielBrett *brett){
 
 	}
 cout<<endl;
-}
+}*/
 
 int main(int _argc, char *argv[]){
 
@@ -43,6 +43,7 @@ int main(int _argc, char *argv[]){
 	int e=0;
 	int i=1;
 	int j=0;
+	g.zeichneAnleitung();
 	while(e!=100){
 		//system("cls");
 		if(i%2){
@@ -55,7 +56,7 @@ int main(int _argc, char *argv[]){
 		}else{
 			cout<<"--------------------------------"<<endl;
 			w.nexZug();
-			zeichneFeld(br.get());
+			g.zeichneSpielfeld();
 			cout<<++j<<endl;
 
 			/*
