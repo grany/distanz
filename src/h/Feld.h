@@ -52,6 +52,13 @@ public:
    * delStein
    *Löscht Zeiger auf Gast
    *Setzt besetzt auf false
+   * \image html Feld_delStein_flow.png
+   * @startuml{Feld_delStein_flow.png}
+   * start
+   * :setze Gast auf nullptr;
+   * :setze besetzt auf false;
+   * stop
+   * @enduml
    */
   void delStein();
 
