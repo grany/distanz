@@ -1,4 +1,7 @@
 <map id="Stein::zuege" name="Stein::zuege">
-<area shape="rect" id="node2" href="$class_team.html#aca8bdbcf6d3fd6e4efbe84fc158089b1" title="Team::distanzen" alt="" coords="148,5,267,32"/>
-<area shape="rect" id="node3" href="$class_feld.html#adaeedb54cddaa27a5081237b60389bd3" title="Feld::getPos" alt="" coords="315,31,411,57"/>
+<area shape="rect" id="node2" href="$class_team.html#aca8bdbcf6d3fd6e4efbe84fc158089b1" title="Team::distanzen" alt="" coords="154,5,273,32"/>
+<area shape="rect" id="node4" href="$class_feld.html#adaeedb54cddaa27a5081237b60389bd3" title="Feld::getPos" alt="" coords="327,56,423,83"/>
+<area shape="rect" id="node5" href="$class_team.html#abd4d61dc0590e55c906f22bfd49b4eb7" title="Team::getBrett" alt="" coords="159,107,267,133"/>
+<area shape="rect" id="node6" href="$class_spiel_brett.html#a6fc31b54e16797baf80285872ce2dab1" title="SpielBrett::getFeld" alt="" coords="148,157,279,184"/>
+<area shape="rect" id="node3" href="$class_stein.html#af1c9430ba1a60572e73d9ed16199e185" title="Stein::getOrt" alt="" coords="327,5,423,32"/>
 </map>

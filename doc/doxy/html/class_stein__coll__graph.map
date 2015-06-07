@@ -1,4 +1,7 @@
 <map id="Stein" name="Stein">
-<area shape="rect" id="node2" href="$class_feld.html" title="Feld" alt="" coords="5,5,52,32"/>
-<area shape="rect" id="node3" href="$class_team.html" title="Team" alt="" coords="76,5,131,32"/>
+<area shape="rect" id="node2" href="$class_feld.html" title="{Feld\n|&#45; besetzt\l|+ Feld()\l+ Feld()\l+ Feld()\l+ setStein()\l+ delStein()\l+ getBesetzt()\l+ getGast()\l+ getPos()\l}" alt="" coords="273,321,378,501"/>
+<area shape="rect" id="node4" href="$class_team.html" title="{Team\n|&#45; Sieg\l&#45; Farbe\l|+ Team()\l+ Team()\l+ ~Team()\l+ distanzen()\l+ getStein()\l+ setSieg()\l+ setGegner()\l+ getGegner()\l+ getFarbe()\l+ getSieg()\l+ getBrett()\l}" alt="" coords="173,913,275,1152"/>
+<area shape="rect" id="node5" href="$class_koenig.html" title="{Koenig\n||+ Koenig()\l+ Koenig()\l+ ziehenach()\l+ setGeffangen()\l}" alt="" coords="74,525,193,647"/>
+<area shape="rect" id="node6" href="$class_spiel_brett.html" title="{SpielBrett\n|&#45; dimmension\l|+ SpielBrett()\l+ SpielBrett()\l+ ~SpielBrett()\l+ getWeis()\l+ getSchwarz()\l+ getFeld()\l&#45; initBrett()\l}" alt="" coords="270,671,381,836"/>
+<area shape="rect" id="node3" href="$struct_possition.html" title="{Possition\n|+ x\l+ y\l|+ Possition()\l+ Possition()\l+ operator==()\l}" alt="" coords="337,71,442,193"/>
 </map>

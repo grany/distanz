@@ -1,3 +1,5 @@
 <map id="Feld::setStein" name="Feld::setStein">
-<area shape="rect" id="node2" href="$class_feld.html#a6bb4ad9a5e5ba0b7c50e43b149535a5c" title="Feld::delStein" alt="" coords="156,29,259,56"/>
+<area shape="rect" id="node2" href="$class_stein.html#a84a9276f99fd15f2f16d31c5c33cc66c" title="Stein::setOrt" alt="" coords="159,5,255,32"/>
+<area shape="rect" id="node3" href="$class_stein.html#af1c9430ba1a60572e73d9ed16199e185" title="Stein::getOrt" alt="" coords="159,56,255,83"/>
+<area shape="rect" id="node4" href="$class_feld.html#a6bb4ad9a5e5ba0b7c50e43b149535a5c" title="Feld::delStein" alt="" coords="156,107,259,133"/>
 </map>

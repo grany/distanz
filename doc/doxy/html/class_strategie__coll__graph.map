@@ -1,8 +1,9 @@
 <map id="Strategie" name="Strategie">
-<area shape="rect" id="node2" href="$class_stein.html" title="Stein" alt="" coords="148,95,200,121"/>
-<area shape="rect" id="node5" href="$structzug.html" title="zug" alt="" coords="70,200,113,227"/>
-<area shape="rect" id="node3" href="$class_feld.html" title="Feld" alt="" coords="57,5,104,32"/>
-<area shape="rect" id="node4" href="$class_team.html" title="Team" alt="" coords="180,5,235,32"/>
-<area shape="rect" id="node6" href="$struct_possition.html" title="Possition" alt="" coords="40,95,116,121"/>
-<area shape="rect" id="node7" href="$class_spiel_brett.html" title="SpielBrett" alt="" coords="283,200,361,227"/>
+<area shape="rect" id="node2" href="$class_stein.html" title="{Stein\n|# geffangen\l# id\l|+ Stein()\l+ Stein()\l+ getid()\l+ setGeffangen()\l+ setFrei()\l+ ziehenach()\l+ setOrt()\l+ getGeffangen()\l+ getMteam()\l+ getOrt()\l+ zuege()\l+ ~Stein()\l}" alt="" coords="190,5,309,259"/>
+<area shape="rect" id="node3" href="$class_feld.html" title="{Feld\n|&#45; besetzt\l|+ Feld()\l+ Feld()\l+ Feld()\l+ setStein()\l+ delStein()\l+ getBesetzt()\l+ getGast()\l+ getPos()\l}" alt="" coords="305,321,410,501"/>
+<area shape="rect" id="node5" href="$class_team.html" title="{Team\n|&#45; Sieg\l&#45; Farbe\l|+ Team()\l+ Team()\l+ ~Team()\l+ distanzen()\l+ getStein()\l+ setSieg()\l+ setGegner()\l+ getGegner()\l+ getFarbe()\l+ getSieg()\l+ getBrett()\l}" alt="" coords="157,913,259,1152"/>
+<area shape="rect" id="node6" href="$class_koenig.html" title="{Koenig\n||+ Koenig()\l+ Koenig()\l+ ziehenach()\l+ setGeffangen()\l}" alt="" coords="201,525,319,647"/>
+<area shape="rect" id="node8" href="$structzug.html" title="{zug\n|+ wert\l|+ zug()\l+ zug()\l+ zug()\l+ operator=()\l+ operator\&lt;()\l+ operator==()\l}" alt="" coords="417,678,522,829"/>
+<area shape="rect" id="node7" href="$class_spiel_brett.html" title="{SpielBrett\n|&#45; dimmension\l|+ SpielBrett()\l+ SpielBrett()\l+ ~SpielBrett()\l+ getWeis()\l+ getSchwarz()\l+ getFeld()\l&#45; initBrett()\l}" alt="" coords="278,671,389,836"/>
+<area shape="rect" id="node4" href="$struct_possition.html" title="{Possition\n|+ x\l+ y\l|+ Possition()\l+ Possition()\l+ operator==()\l}" alt="" coords="481,71,586,193"/>
 </map>

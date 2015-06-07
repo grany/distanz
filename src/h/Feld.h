@@ -28,6 +28,22 @@ public:
    * Setzt Stein auf das Feld
    * und Markiert das Feld als Besetzt.
    * Fals das Feld besetzt ist werden die Gäste/Steine getauscht.
+   * \image html Feld_setStein_flow.png
+   * @startuml{Feld_setStein_flow.png}
+   * start
+   * if (Feld besetzt?) then (ja)
+   * 	:im alten Gast Ort auf Feld vom neuen Stein setzen;
+   * 	:im alten Feld Gäste löschen;
+   * 	:im alten Feld Gast auf alten Gast setzen;
+   * 	:im Feld Gast auf neuen Stein setzen;
+   * 	:im neuen Stein Ort auf Feld setzen;
+   * else (nein)
+   * 	:im Feld Gast auf neuen Stein setzen;
+   * 	:im alten Feld Gast auf nullptr setzen;
+   * endif
+   * stop
+   *
+   * @enduml
    * @param [in/out] *newstein pointer auf den zu Setzenden Stein.
    */
   void setStein (Stein *newstein );
