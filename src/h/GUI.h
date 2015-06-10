@@ -17,6 +17,9 @@ private:
 SpielBrett *brett;
 public:
 	GUI(SpielBrett *brett);
-	void zeichneSpielfeld();
+	void zeichneSpielfeld(int,int);
 	void zeichneAnleitung();
+	void zeichneZug();
+	void Spieler();
+	void Computer();
 };

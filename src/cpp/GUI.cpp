@@ -1,26 +1,37 @@
 #include "../h/GUI.h"
 #include <iostream>
 #include <stdlib.h>
+#include "../h/KI.h"
+#include "../h/KI1.h"
+#include "../h/Spielbrett.h"
+#include "../h/Stein.h"
+
+
 using namespace std;
 
 GUI::GUI(SpielBrett *br)				//Konstruktor
 {
 	brett=br;
-};
+}
 
-/*void GUI::zeichneSieg()
+void GUI::zeichneZug()
 {
-	cout << "###################################\n"
-		 <<	"#          DISTANZ-Spiel          #\n"
-		 <<	"###################################\n"
-		 <<	"_______________________________________________________________________________________________________\n\n"
-		 << ""
-		 << "Eingabe:";
+//abgewandelte Version von zeichneSpielfeld, Pointer benötigt
+}
 
-}*/
+void GUI::Spieler()
+{
+//Ablaug Spieler
+}
+
+void GUI::Computer()
+{
+//
+}
 
 void GUI::zeichneAnleitung()
 {
+	system ("cls");
 	cout << "###################################\n"
 		 <<	"#          DISTANZ-Spiel          #\n"
 		 <<	"###################################\n"
@@ -37,17 +48,22 @@ void GUI::zeichneAnleitung()
 		 <<	"\t\t gefangene Helfer wieder befreien können.\n\n"
 		 << "Spielablauf:\t Es wird immer abwechselnd gezogen, wobei Spieler Weiß beginnt. Es besteht\n"
 		 <<	"\t\t Zugzwang.\n\n"
-		 << "_______________________________________________________________________________________________________\n"
-		 << "Durch drücken der Enter-Taste gelangen Sie wieder zurück.";
-	cin.get();
+		 << "_______________________________________________________________________________________________________\n";
 }
 
-void GUI::zeichneSpielfeld()
+void GUI::zeichneSpielfeld(int zug,int spieler)
 {
 	int zeile, spalte;
 
 	system("cls");
-	cout << "\n\n\t   A     B     C     D     E     F     G     H\n"
+
+	cout <<	"\n\n Es ist der: "
+		 << zug
+		 << " Zug"
+		 << "\t\tEs spielt gerade: Spieler "
+		 << spieler
+		 << "\n__________________________________________________________________\n\n"
+		 <<	"\n\n\t   A     B     C     D     E     F     G     H\n"
 		 << "\t _____ _____ _____ _____ _____ _____ _____ _____\n";
 	for (zeile = 0; zeile < 8; zeile++)
 	{
@@ -61,21 +77,24 @@ void GUI::zeichneSpielfeld()
 			if (brett->getFeld(spalte,zeile)->getBesetzt())
 			{
 				if (brett->getFeld(spalte,zeile)->getGast()->getMteam()->getFarbe())
-					if (brett->getFeld(spalte,zeile)->getGast()->getid()==4)
-						cout 	<< "k";
+					{
+						if (brett->getFeld(spalte,zeile)->getGast()->getGeffangen()) 	{cout << "g";}
+						else if (brett->getFeld(spalte,zeile)->getGast()->getid()==4) 	{cout << "k";}
+							 else 	{cout << "h";}
+					}
 					else
-						cout	<< "h";
-				else
-					if (brett->getFeld(spalte,zeile)->getGast()->getid()==4)
-						cout 	<< "K";
-					else
-						cout	<< "H";
+					{
+						if (brett->getFeld(spalte,zeile)->getGast()->getGeffangen()) 	{cout << "G";}
+						else if (brett->getFeld(spalte,zeile)->getGast()->getid()==4) 	{cout << "K";}
+							 else {cout << "H";}
+					}
 			}
-			else
-				cout << " ";
+			else cout << " ";
 			cout << "  |";
 		}
-		cout << "\n"
-			 << "\t|_____|_____|_____|_____|_____|_____|_____|_____|\n";
+	cout << "\n"
+		 << "\t|_____|_____|_____|_____|_____|_____|_____|_____|\n";
 	}
+	cout << "\n\n__________________________________________________________________\n"
+		 << "\n Bitte geben Sie ihren nächsten Zug ein (Zeile,Spalte): ";
 }
