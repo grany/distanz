@@ -11,31 +11,31 @@
 #include "Strategie.h"
 #include "SfK.h"
 /**
- * class SsK (Strategie schütze König)
- * ist eine Ableitung der abstrakten Klasse Strategie.
- * Überschreibt/implementiert die methode bewerten();
- * @param &team reverence auf instanz von Team
- * @param &b 	reverence auf instanz von SpielBrett
+ * class SsK (Strategie schÃ¼tze KÃ¶nig)
+ * Ist eine Ableitung der abstrakten Klasse Strategie.
+ * Ãœberschreibt/implementiert die Methode bewerten();
+ * @param &team Referenz auf Instanz von Team
+ * @param &b 	Referenz auf Instanz von SpielBrett
  */
 class SsK: public Strategie {
 private:
 	SfK gegner;
-	std::vector<zug> gZuege;	//Gegnerische züge
+	std::vector<zug> gZuege;	//Gegnerische ZÃ¼ge
 public:
 	/*
 	 * bewerten()
-	 * bewerted mögliche züge nach der möglichkeit eigenen König zu sichern.
+	 * Bewertet mÃ¶gliche ZÃ¼ge nach der MÃ¶glichkeit eigenen KÃ¶nig zu sichern.
 	 */
 	virtual void bewerten() override;
 
 	/*
-	 * posSicher(Possition p)
+	 * posSicher(Position p)
 	 *
-	 * prüft ob übergebene Possition vom gegner im nächsten zug besetzt werden kann.
-	 * @param p : Possition
-	 * @return bool false-> gefärdet; true->sicher;
+	 * PrÃ¼ft ob Ã¼bergebene Position vom Gegner im nÃ¤chsten Zug besetzt werden kann.
+	 * @param p : Position
+	 * @return bool false-> gefÃ¤hrdet; true->sicher;
 	 */
-	bool posSicher(Possition p);
+	bool posSicher(Possition p);		//Position
 	SsK(Team &team, SpielBrett &b);
 	SsK();
 	virtual ~SsK();
