@@ -5,14 +5,14 @@
 #include "Stein.h"
 /**
  * class Feld
- * Symbolysiert ein Feld auf einem SpielBrett.
+ * Symbolisiert ein Feld auf einem Spielbrett.
  */
 class Feld
 {
 private:
 
   bool besetzt;
-  Possition pos;
+  Possition pos;  //Position
   Stein *gast=nullptr;
 
 public:
@@ -27,36 +27,36 @@ public:
   /**
    * Setzt Stein auf das Feld
    * und Markiert das Feld als Besetzt.
-   * Fals das Feld besetzt ist werden die Gäste/Steine getauscht.
-   * @param [in/out] *newstein pointer auf den zu Setzenden Stein.
+   * Falls das Feld besetzt ist, werden die GÃ¤ste/Steine getauscht.
+   * @param [in/out] *newstein pointer auf den zu setzenden Stein.
    */
   void setStein (Stein *newstein );
 
   /**
    * delStein
-   *Löscht Zeiger auf Gast
-   *Setzt besetzt auf false
+   *LÃ¶scht Zeiger auf Gast.
+   *Setzt besetzt auf false.
    */
   void delStein();
 
 
   /**
-   * Get the value of besetzt
-   * @return the value of besetzt
+   * Get the value of besetzt.
+   * @return the value of besetzt.
    */
   bool getBesetzt ( );
 
   /**
    * getGast
-   *@return Gibt einen Pointer auf den Gast zurück
+   *@return Gibt einen Pointer auf den Gast zurÃ¼ck.
    */
   Stein* getGast();
 
   /**
    * getPos
-   * @return the value of pos
+   * @return the value of pos.
    */
-  Possition getPos ( );
+  Possition getPos ( );   //Position
 
 };
 
