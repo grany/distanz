@@ -28,28 +28,28 @@ private:
   bool Sieg=false;
   Team *gegner=nullptr;
   SpielBrett *brett=nullptr;
-  bool Farbe=false;	//Weis->true; false->Schwarz
+  bool Farbe=false;	//WeiÃŸ->true; false->Schwarz
 public:
   /**
-    * Erzeugt Team
+    * Erzeugt Team.
     */
    Team (SpielBrett *br, bool f, Feld *s1, Feld *s2, Feld *s3, Feld *k, Team *g );
    Team ()=default;
    virtual ~Team ( );
 
     /**
-    * distanzen
-    * Trägt x und y distanzen der "Anderen" Steine in Array ein.
-    * Array muss 6 Felder besitzen und vom typ int sein
+    * Distanzen
+    * TrÃ¤gt x und y Distanzen der "Anderen" Steine in Array ein.
+    * Array muss 6 Felder besitzen und vom typ Integer sein.
     *
     * @param [in] &anfrage : Stein, [out] *arr : int array[6]
     */
    void distanzen (const Stein &anfrage, int *arr );
    /**
     * getStein
-    * gibt reference auf Stein mit übergebener id zurük, bei Falschen id´s wird reference auf König zurückgegeben.
+    * Gibt Referenz auf Stein mit Ã¼bergebener ID zurÃ¼ck, bei falschen IDÂ´s wird Referenz auf KÃ¶nig zurÃ¼ckgegeben.
     * 1-3 -> Helfer
-    * 4 -> König
+    * 4 -> KÃ¶nig
     * @param [in] id : int
     * @return &Stein
     */
@@ -65,7 +65,7 @@ public:
    */
   void setGegner ( Team *new_var );
   /*
-   * Gibt Pointer auf Gegnerisches Team Aus
+   * Gibt Pointer auf Gegnerisches Team aus.
    */
   Team* getGegner () const;
   bool getFarbe() const;
