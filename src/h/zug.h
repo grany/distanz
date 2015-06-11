@@ -10,16 +10,16 @@
 
 #include "Feld.h"
 #include "Stein.h"
-#include "Possition.h"
+#include "Possition.h"				//Position
 /**
- * struct zug
+ * struct Zug
  * Daten Struktur die einen Spiel-Zug Symbolysiert.
  */
 struct zug{
-	Feld  *zu=nullptr; 	  /**Feld auf das gezogen werden soll*/
-	Stein *stein=nullptr; /*< pointer auf Stein*/
+	Feld  *zu=nullptr; 	  /*Das Feld, auf welches gezogen werden soll.*/
+	Stein *stein=nullptr; /*< Pointer auf Stein*/
 	int wert=100;
-	Possition zpos;		/*< possition auf die gezogen werden soll*/
+	Possition zpos;		/*< Position auf die gezogen werden soll.*/	//Position
 	zug()=default;
 	zug(Feld  *z, Stein *s): zu(z), stein(s), wert(100), zpos(zu->getPos()){}
 	zug(const zug &z):zu(z.zu), stein(z.stein), wert(z.wert), zpos(z.zpos){}
@@ -31,8 +31,8 @@ struct zug{
 		return *this;
 	}
 	/**
-	 * kleiner als Operator
-	 * vergleicht züge nach wertigkeit;
+	 * Kleiner als Operator
+	 * Vergleicht ZÃ¼ge nach Wertigkeit;
 	 * @param z
 	 * @return
 	 */
@@ -40,8 +40,8 @@ struct zug{
 			return wert<z.wert;
 		}
 	/**
-	 * Vergleichs Operator
-	 * Vergleicht züge auf gleiche Ziel Position
+	 * Vergleichs-Operator
+	 * Vergleicht ZÃ¼ge auf gleiche Ziel-Position
 	 * @param z
 	 * @return
 	 */
