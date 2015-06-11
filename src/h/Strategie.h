@@ -17,7 +17,7 @@
 /*
  * class Strategie
  *
- * Abstrakte klasse zur Erzeugung von Spetziellen zug Strategien
+ * Abstrakte Klasse zur Erzeugung von speziellen Zug-Strategien
  */
 class Strategie {
 protected:
@@ -26,9 +26,9 @@ protected:
 	SpielBrett &brett;
 
 	int wert;
-	std::vector<zug> mZuege; 	//Mögliche Züge
-	std::vector<zug> aZuege; 	//Auswahl der Zuege nach priorietät sortiert
-	zug nZug;					// Nächster zug
+	std::vector<zug> mZuege; 	//MÃ¶gliche ZÃ¼ge
+	std::vector<zug> aZuege; 	//Auswahl der Zuege nach PrioritÃ¤t sortiert
+	zug nZug;					// NÃ¤chster zug
 
 	void getmZuege(std::vector<zug> &zuege);
 	virtual void bewerten()=0;
