@@ -1,3 +1,3 @@
 <map id="SfK" name="SfK">
-<area shape="rect" id="node2" href="$class_strategie.html" title="Strategie" alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node2" href="$class_strategie.html" title="{Strategie\n|# team\l# h1\l# h2\l# h3\l# k\l# brett\l# wert\l# mZuege\l# aZuege\l# nZug\l|+ Strategie()\l+ Strategie()\l+ getWert()\l+ nexZug()\l+ getZuege()\l+ ~Strategie()\l# getmZuege()\l# bewerten()\l}" alt="" coords="5,5,111,317"/>
 </map>
