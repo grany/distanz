@@ -15,13 +15,13 @@ void SfK::bewerten(){
 	aZuege.clear();
 	getmZuege(aZuege);
 	mZuege=aZuege;
-	Possition gk = team.getGegner()->getStein(4).getOrt()->getPos();//Possition des Gegnerischen Königs
+	Possition gk = team.getGegner()->getStein(4).getOrt()->getPos();//Position des gegnerischen Koenigs
 	for(auto& i : aZuege){
 		i.wert=std::abs((i).zpos.x-gk.x)+std::abs((i).zpos.y-gk.y);
 	}
 
 	std::sort(aZuege.begin(),aZuege.end());
-	if(!aZuege.size()) std::cerr<<"Error SfK::bewerten :Keine Züge"<<std::endl;
+	if(!aZuege.size()) std::cerr<<"Error SfK::bewerten :Keine ZÃ¼ge"<<std::endl;
 	nZug=aZuege[0];
 	wert=(!nZug.wert)?0:1;
 }
