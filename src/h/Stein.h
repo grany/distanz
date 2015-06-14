@@ -43,7 +43,7 @@ public:
   void setFrei();
 
   /**
-   * Rückt auf das übergebene Feld.
+   * Rueckt auf das uebergebene Feld.
    */
   virtual bool ziehenach(Feld *ziehl);		//ziehl? :s
   void setOrt(Feld* o);
@@ -60,7 +60,7 @@ public:
 
 
   /**
-   * Gibt ein Array von erreichbaren Feldern zurück
+   * Gibt ein Array von erreichbaren Feldern zurueck
    * @return Feld
    */
   std::vector<Feld*> zuege ( );
