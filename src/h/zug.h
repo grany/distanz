@@ -32,7 +32,7 @@ struct zug{
 	}
 	/**
 	 * Kleiner als Operator
-	 * Vergleicht Züge nach Wertigkeit;
+	 * Vergleicht Zuege nach Wertigkeit;
 	 * @param z
 	 * @return
 	 */
@@ -41,7 +41,7 @@ struct zug{
 		}
 	/**
 	 * Vergleichs-Operator
-	 * Vergleicht Züge auf gleiche Ziel-Position
+	 * Vergleicht Zuege auf gleiche Ziel-Position
 	 * @param z
 	 * @return
 	 */
