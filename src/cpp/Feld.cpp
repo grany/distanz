@@ -11,7 +11,7 @@
  *  Created on: 26.04.2015
  *  Author: Franz Lübke
  */
-@startuml:
+
 #ifndef STEIN_C
 #define STEIN_C
 #include "../h/Feld.h"
@@ -69,4 +69,3 @@ Stein* Feld::getGast(){
 	return gast;
 }
 #endif
-@enduml;
