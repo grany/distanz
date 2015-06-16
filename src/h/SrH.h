@@ -12,16 +12,16 @@
 
 /**
  * class SrH (Strategie rette Helfer)
- * ist eine Ableitung der abstrakten Klasse Strategie.
- * Überschreibt/implementiert die methode bewerten();
- * @param &team reverence auf instanz von Team
- * @param &b 	reverence auf instanz von SpielBrett
+ * Ist eine Ableitung der abstrakten Klasse Strategie.
+ * Ueberschreibt/implementiert die Methode bewerten();
+ * @param &team Referenz auf Instanz von Team
+ * @param &b 	Referenz auf Instanz von SpielBrett
  */
 class SrH: public Strategie {
 public:
 	/*
 	 * bewerten()
-	 * bewerted mögliche züge nach der möglichkeit Helfer zu retten.
+	 * Bewertet moegliche Zuege nach der Moeglichkeit Helfer zu retten.
 	 */
 	virtual void bewerten() override;
 	SrH(Team &team, SpielBrett &b);

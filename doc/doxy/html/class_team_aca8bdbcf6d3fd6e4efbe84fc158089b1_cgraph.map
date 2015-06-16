@@ -1,0 +1,4 @@
+<map id="Team::distanzen" name="Team::distanzen">
+<area shape="rect" id="node2" href="$class_stein.html#af1c9430ba1a60572e73d9ed16199e185" title="Stein::getOrt" alt="" coords="172,5,268,32"/>
+<area shape="rect" id="node3" href="$class_feld.html#adaeedb54cddaa27a5081237b60389bd3" title="Feld::getPos" alt="" coords="172,56,268,83"/>
+</map>

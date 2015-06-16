@@ -1,59 +1,85 @@
 
 #ifndef FELD_H
 #define FELD_H
-
-/**
-  * class Feld
-  * Stellt ein Feld auf einem Spielbrett dar
-  */
 #include "../h/Possition.h"
 #include "Stein.h"
-
+/**
+ * class Feld
+ * Symbolisiert ein Feld auf einem Spielbrett.
+ */
 class Feld
 {
 private:
 
   bool besetzt;
-  Possition pos;
+  Possition pos;  //Position
   Stein *gast=nullptr;
 
 public:
-  /**
-   * Initialisiert Feld
-   */
   Feld();
+  /**
+   * Feld Konstruktor
+   * @param [in] nx x Koordinaten des Feldes
+   * @param [in] ny y Koordinaten des Feldes
+   */
   Feld(short nx, short  ny);
   Feld(Feld &f);
   /**
    * Setzt Stein auf das Feld
    * und Markiert das Feld als Besetzt.
-   * Fals das Feld besetzt ist werden die Gäste/Steine getauscht.
+   * Falls das Feld besetzt ist, werden die Gaeste/Steine getauscht.
+   * @param [in/out] *newstein pointer auf den zu setzenden Stein.
+   * \image html Feld_setStein_flow.png
+   * @startuml{Feld_setStein_flow.png}
+   * start
+   * if (Feld besetzt?) then (ja)
+   * 	:im alten Gast Ort auf Feld vom neuen Stein setzen;
+   * 	:im alten Feld GÃ¤ste loeschen;
+   * 	:im alten Feld Gast auf alten Gast setzen;
+   * 	:im Feld Gast auf neuen Stein setzen;
+   * 	:im neuen Stein Ort auf Feld setzen;
+   * else (nein)
+   * 	:im Feld Gast auf neuen Stein setzen;
+   * 	:im alten Feld Gast auf nullptr setzen;
+   * endif
+   * stop
+   *
+   * @enduml
    */
   void setStein (Stein *newstein );
 
   /**
-   *Löscht Zeiger auf Gast
-   *Setzt besetzt auf false
+   * delStein
+   * Loescht Zeiger auf Gast
+   * Setzt besetzt auf false
+   * \image html Feld_delStein_flow.png
+   * @startuml{Feld_delStein_flow.png}
+   * start
+   * :setze Gast auf nullptr;
+   * :setze besetzt auf false;
+   * stop
+   * @enduml
    */
   void delStein();
 
 
   /**
-   * Get the value of besetzt
-   * @return the value of besetzt
+   * Get the value of besetzt.
+   * @return the value of besetzt.
    */
   bool getBesetzt ( );
 
-  /*
-   * Gibt einen Pointer auf den Gast zurück
+  /**
+   * getGast
+   *@return Gibt einen Pointer auf den Gast zurueck.
    */
   Stein* getGast();
 
   /**
-   * Get the value of pos
-   * @return the value of pos
+   * getPos
+   * @return the value of pos.
    */
-  Possition getPos ( );
+  Possition getPos ( );   //Position
 
 };
 

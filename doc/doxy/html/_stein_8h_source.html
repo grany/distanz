@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>DistanzSpiel: Stein.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DistanzSpiel
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="annotated.html"><span>Klassen</span></a></li>
+      <li class="current"><a href="files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Stein.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_stein_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef STEIN_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define STEIN_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">class </span><a class="code" href="class_team.html">Team</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_feld.html">Feld</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_stein.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_stein.html">Stein</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_stein.html#a4151b35edce6df36a415536c9fd0d247">   15</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_stein.html#a4151b35edce6df36a415536c9fd0d247">geffangen</a>=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_stein.html#aee940baa567743384754215cbdb5657d">   16</a></span>&#160;    <a class="code" href="class_feld.html">Feld</a> *<a class="code" href="class_stein.html#aee940baa567743384754215cbdb5657d">ort</a>=<span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_stein.html#ae2b58e289026a8afaf8e22f8b9ad3d9c">   17</a></span>&#160;    <a class="code" href="class_team.html">Team</a> *<a class="code" href="class_stein.html#ae2b58e289026a8afaf8e22f8b9ad3d9c">mteam</a>=<span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_stein.html#ab8a179db9a227d710ce7d236ecae37ee">   18</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_stein.html#ab8a179db9a227d710ce7d236ecae37ee">id</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_stein.html#a04fd5b2d635673ebf25d1c1cdac886c2">Stein</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_stein.html#a04fd5b2d635673ebf25d1c1cdac886c2">Stein</a> (<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <a class="code" href="class_feld.html">Feld</a> *startplatz, <a class="code" href="class_team.html">Team</a> *mt);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="comment">/*</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">   * getid()</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">   * @return id der instanz</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="class_stein.html#a2076f66967b65fcb8e551e9522222a95">getid</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_stein.html#a8a98cf8c96426bf5164c6eb41b03154b">setGeffangen</a> ( );</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">/*</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">   * Setzt den Stein frei</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">   * Setzt geffangen -&gt; false</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_stein.html#a7136341c45149bfb929134b87f180a5b">setFrei</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_stein.html#afdac18155661536e25eda360038c1ca7">ziehenach</a>(<a class="code" href="class_feld.html">Feld</a> *ziehl);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_stein.html#a84a9276f99fd15f2f16d31c5c33cc66c">setOrt</a>(<a class="code" href="class_feld.html">Feld</a>* o);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_stein.html#a00dce1ad2cade0f5570d3e5c3b835a5b">getGeffangen</a> ( );</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="class_team.html">Team</a>* <a class="code" href="class_stein.html#aa8e6142169b14b20350ffb2e0fa526ce">getMteam</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="class_feld.html">Feld</a>* <a class="code" href="class_stein.html#af1c9430ba1a60572e73d9ed16199e185">getOrt</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  std::vector&lt;Feld*&gt; <a class="code" href="class_stein.html#a788ece6ca232c408243620cfbc943382">zuege</a> ( );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_stein.html#aeebc529dd953c23c35a3ad8f8f78981d">~Stein</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // STEIN_H</span></div>
+<div class="ttc" id="class_stein_html_a04fd5b2d635673ebf25d1c1cdac886c2"><div class="ttname"><a href="class_stein.html#a04fd5b2d635673ebf25d1c1cdac886c2">Stein::Stein</a></div><div class="ttdeci">Stein()</div><div class="ttdef"><b>Definition:</b> Stein.cpp:24</div></div>
+<div class="ttc" id="class_stein_html_a00dce1ad2cade0f5570d3e5c3b835a5b"><div class="ttname"><a href="class_stein.html#a00dce1ad2cade0f5570d3e5c3b835a5b">Stein::getGeffangen</a></div><div class="ttdeci">bool getGeffangen()</div><div class="ttdef"><b>Definition:</b> Stein.cpp:32</div></div>
+<div class="ttc" id="class_team_html"><div class="ttname"><a href="class_team.html">Team</a></div><div class="ttdef"><b>Definition:</b> Team.h:23</div></div>
+<div class="ttc" id="class_stein_html_ae2b58e289026a8afaf8e22f8b9ad3d9c"><div class="ttname"><a href="class_stein.html#ae2b58e289026a8afaf8e22f8b9ad3d9c">Stein::mteam</a></div><div class="ttdeci">Team * mteam</div><div class="ttdef"><b>Definition:</b> Stein.h:17</div></div>
+<div class="ttc" id="class_stein_html_afdac18155661536e25eda360038c1ca7"><div class="ttname"><a href="class_stein.html#afdac18155661536e25eda360038c1ca7">Stein::ziehenach</a></div><div class="ttdeci">virtual bool ziehenach(Feld *ziehl)</div><div class="ttdef"><b>Definition:</b> Stein.cpp:81</div></div>
+<div class="ttc" id="class_stein_html_a788ece6ca232c408243620cfbc943382"><div class="ttname"><a href="class_stein.html#a788ece6ca232c408243620cfbc943382">Stein::zuege</a></div><div class="ttdeci">std::vector&lt; Feld * &gt; zuege()</div><div class="ttdef"><b>Definition:</b> Stein.cpp:36</div></div>
+<div class="ttc" id="class_stein_html_a2076f66967b65fcb8e551e9522222a95"><div class="ttname"><a href="class_stein.html#a2076f66967b65fcb8e551e9522222a95">Stein::getid</a></div><div class="ttdeci">int getid() const </div><div class="ttdef"><b>Definition:</b> Stein.cpp:26</div></div>
+<div class="ttc" id="class_stein_html_a4151b35edce6df36a415536c9fd0d247"><div class="ttname"><a href="class_stein.html#a4151b35edce6df36a415536c9fd0d247">Stein::geffangen</a></div><div class="ttdeci">bool geffangen</div><div class="ttdef"><b>Definition:</b> Stein.h:15</div></div>
+<div class="ttc" id="class_stein_html_af1c9430ba1a60572e73d9ed16199e185"><div class="ttname"><a href="class_stein.html#af1c9430ba1a60572e73d9ed16199e185">Stein::getOrt</a></div><div class="ttdeci">Feld * getOrt()</div><div class="ttdef"><b>Definition:</b> Stein.cpp:102</div></div>
+<div class="ttc" id="class_stein_html_aee940baa567743384754215cbdb5657d"><div class="ttname"><a href="class_stein.html#aee940baa567743384754215cbdb5657d">Stein::ort</a></div><div class="ttdeci">Feld * ort</div><div class="ttdef"><b>Definition:</b> Stein.h:16</div></div>
+<div class="ttc" id="class_stein_html_aeebc529dd953c23c35a3ad8f8f78981d"><div class="ttname"><a href="class_stein.html#aeebc529dd953c23c35a3ad8f8f78981d">Stein::~Stein</a></div><div class="ttdeci">virtual ~Stein()=default</div></div>
+<div class="ttc" id="class_stein_html_a84a9276f99fd15f2f16d31c5c33cc66c"><div class="ttname"><a href="class_stein.html#a84a9276f99fd15f2f16d31c5c33cc66c">Stein::setOrt</a></div><div class="ttdeci">void setOrt(Feld *o)</div><div class="ttdef"><b>Definition:</b> Stein.cpp:105</div></div>
+<div class="ttc" id="class_stein_html_ab8a179db9a227d710ce7d236ecae37ee"><div class="ttname"><a href="class_stein.html#ab8a179db9a227d710ce7d236ecae37ee">Stein::id</a></div><div class="ttdeci">const int id</div><div class="ttdef"><b>Definition:</b> Stein.h:18</div></div>
+<div class="ttc" id="class_feld_html"><div class="ttname"><a href="class_feld.html">Feld</a></div><div class="ttdef"><b>Definition:</b> Feld.h:10</div></div>
+<div class="ttc" id="class_stein_html_aa8e6142169b14b20350ffb2e0fa526ce"><div class="ttname"><a href="class_stein.html#aa8e6142169b14b20350ffb2e0fa526ce">Stein::getMteam</a></div><div class="ttdeci">Team * getMteam()</div><div class="ttdef"><b>Definition:</b> Stein.cpp:99</div></div>
+<div class="ttc" id="class_stein_html_a8a98cf8c96426bf5164c6eb41b03154b"><div class="ttname"><a href="class_stein.html#a8a98cf8c96426bf5164c6eb41b03154b">Stein::setGeffangen</a></div><div class="ttdeci">virtual void setGeffangen()</div><div class="ttdef"><b>Definition:</b> Stein.cpp:29</div></div>
+<div class="ttc" id="class_stein_html_a7136341c45149bfb929134b87f180a5b"><div class="ttname"><a href="class_stein.html#a7136341c45149bfb929134b87f180a5b">Stein::setFrei</a></div><div class="ttdeci">void setFrei()</div><div class="ttdef"><b>Definition:</b> Stein.cpp:77</div></div>
+<div class="ttc" id="class_stein_html"><div class="ttname"><a href="class_stein.html">Stein</a></div><div class="ttdef"><b>Definition:</b> Stein.h:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Mon Jun 8 2015 01:01:22 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

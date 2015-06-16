@@ -1,0 +1,8 @@
+<map id="zug" name="zug">
+<area shape="rect" id="node2" href="$struct_possition.html" title="{Possition\n|+ x\l+ y\l|+ Possition()\l+ Possition()\l+ operator==()\l}" alt="" coords="5,5,111,127"/>
+<area shape="rect" id="node4" href="$class_feld.html" title="{Feld\n|&#45; besetzt\l|+ Feld()\l+ Feld()\l+ Feld()\l+ setStein()\l+ delStein()\l+ getBesetzt()\l+ getGast()\l+ getPos()\l}" alt="" coords="76,189,181,369"/>
+<area shape="rect" id="node3" href="$class_stein.html" title="{Stein\n|# geffangen\l# id\l|+ Stein()\l+ Stein()\l+ getid()\l+ setGeffangen()\l+ setFrei()\l+ ziehenach()\l+ setOrt()\l+ getGeffangen()\l+ getMteam()\l+ getOrt()\l+ zuege()\l+ ~Stein()\l}" alt="" coords="133,432,252,685"/>
+<area shape="rect" id="node5" href="$class_team.html" title="{Team\n|&#45; Sieg\l&#45; Farbe\l|+ Team()\l+ Team()\l+ ~Team()\l+ distanzen()\l+ getStein()\l+ setSieg()\l+ setGegner()\l+ getGegner()\l+ getFarbe()\l+ getSieg()\l+ getBrett()\l}" alt="" coords="275,961,377,1200"/>
+<area shape="rect" id="node6" href="$class_koenig.html" title="{Koenig\n||+ Koenig()\l+ Koenig()\l+ ziehenach()\l+ setGeffangen()\l}" alt="" coords="359,763,477,884"/>
+<area shape="rect" id="node7" href="$class_spiel_brett.html" title="{SpielBrett\n|&#45; dimmension\l|+ SpielBrett()\l+ SpielBrett()\l+ ~SpielBrett()\l+ getWeis()\l+ getSchwarz()\l+ getFeld()\l&#45; initBrett()\l}" alt="" coords="336,1277,447,1443"/>
+</map>

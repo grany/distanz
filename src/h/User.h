@@ -20,7 +20,7 @@ public:
    * Empty Destructor
    */
   virtual ~User ( );
-  void Graphik ( );
+  void Graphik ( );    //Grafik oder graphic
 
 
 };

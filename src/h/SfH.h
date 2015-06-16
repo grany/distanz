@@ -12,16 +12,16 @@
 
 /**
  * class SfH (Strategie fange Helfer)
- * ist eine Ableitung der abstrakten Klasse Strategie.
- * Überschreibt/implementiert die methode bewerten();
- * @param &team reverence auf instanz von Team
- * @param &b 	reverence auf instanz von SpielBrett
+ * Ist eine Ableitung der abstrakten Klasse Strategie.
+ * Ueberschreibt/implementiert die Methode bewerten();
+ * @param &team Referenz auf Instanz von Team
+ * @param &b 	Referenz auf Instanz von SpielBrett
  */
 class SfH: public Strategie {
 public:
 	/*
 	 * bewerten()
-	 * bewerted mögliche züge nach der möglichkeit gegnerische Helfer zu fangen.
+	 * Bewertet moegliche Zuege nach der Moeglichkeit gegnerische Helfer zu fangen.
 	 */
 	virtual void bewerten() override;
 	SfH(Team &team, SpielBrett &b);

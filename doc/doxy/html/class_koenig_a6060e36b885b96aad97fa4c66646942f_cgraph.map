@@ -1,0 +1,11 @@
+<map id="Koenig::ziehenach" name="Koenig::ziehenach">
+<area shape="rect" id="node2" href="$class_feld.html#a70456d20a55214db1af93ccab6d192cd" title="Feld::getBesetzt" alt="" coords="191,5,310,32"/>
+<area shape="rect" id="node3" href="$class_feld.html#a41f1e0c497b688ac87d6ab95c9b4914d" title="Feld::getGast" alt="" coords="200,56,301,83"/>
+<area shape="rect" id="node4" href="$class_stein.html#aa8e6142169b14b20350ffb2e0fa526ce" title="Stein::getMteam" alt="" coords="191,107,310,133"/>
+<area shape="rect" id="node5" href="$class_stein.html#a7136341c45149bfb929134b87f180a5b" title="Stein::setFrei" alt="" coords="201,157,301,184"/>
+<area shape="rect" id="node6" href="$class_feld.html#a00d3eec0ced82a8aee97de9b5f030df2" title="Feld::setStein" alt="" coords="199,232,302,259"/>
+<area shape="rect" id="node9" href="$class_feld.html#a6bb4ad9a5e5ba0b7c50e43b149535a5c" title="Feld::delStein" alt="" coords="367,283,469,309"/>
+<area shape="rect" id="node10" href="$class_stein.html#a8a98cf8c96426bf5164c6eb41b03154b" title="Stein::setGeffangen" alt="" coords="183,333,319,360"/>
+<area shape="rect" id="node7" href="$class_stein.html#a84a9276f99fd15f2f16d31c5c33cc66c" title="Stein::setOrt" alt="" coords="370,181,466,208"/>
+<area shape="rect" id="node8" href="$class_stein.html#af1c9430ba1a60572e73d9ed16199e185" title="Stein::getOrt" alt="" coords="370,232,466,259"/>
+</map>

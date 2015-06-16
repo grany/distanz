@@ -39,10 +39,11 @@ std::vector<zug> KI::mergeStrategie(Strategie *st1, Strategie *st2){
 		ret.push_back(s1);
 		ret.back().wert=st1->getWert()+i;
 		i++;
-		int j=0;
+		int j=5;
 		for(auto& s2 : st2Zuege){
-			if((ret.back().zpos==s2.zpos)) ret.back().wert +=j;
-			j++;
+			if((ret.back().zpos==s2.zpos)) ret.back().wert -=j;
+			j--;
+			if(!j) break;
 		}
 	}
 	std::sort(ret.begin(), ret.end());
@@ -53,14 +54,15 @@ std::vector<zug> KI::mergeStrategie(Strategie *st1, std::vector<zug> st2Zuege){
 	std::vector<zug> st1Zuege(st1->getZuege());
 	std::vector<zug> ret;
 	int i = 0;
-	for(auto& s1 : st1Zuege){
-		ret.push_back(s1);
+	for(auto& s2 : st2Zuege){
+		ret.push_back(s2);
 		ret.back().wert=st1->getWert()+i;
 		i++;
-		int j=0;
-		for(auto& s2 : st2Zuege){
-			if((ret.back().zpos==s2.zpos)) ret.back().wert +=s2.wert;
-			j++;
+		int j=5;
+		for(auto& s1 : st1Zuege){
+			if((ret.back().zpos==s1.zpos)) ret.back().wert -=j;
+			j--;
+			if(!j) break;
 		}
 	}
 	std::sort(ret.begin(), ret.end());
@@ -75,10 +77,11 @@ std::vector<zug> KI::mergeStrategie(std::vector<zug> st1Zuege, Strategie *st2){
 		ret.push_back(s1);
 		ret.back().wert+=i;
 		i++;
-		int j=0;
+		int j=5;
 		for(auto& s2 : st2Zuege){
-			if((ret.back().zpos==s2.zpos)) ret.back().wert +=j;
-			j++;
+			if((ret.back().zpos==s2.zpos)) ret.back().wert -=j;
+			j--;
+			if(!j) break;
 		}
 	}
 	std::sort(ret.begin(), ret.end());
@@ -92,11 +95,12 @@ void KI::seachBestZug(int a=1){
 		for(int k=2;k<anzstrat;k++){
 			ret = mergeStrategie(strat[k],ret);
 		}
+		std::sort(ret.begin(), ret.end());
 		nZug=(*ret.begin());
 		bool i =true;
-		while(i){
+		while(nZug.stein->getid() == 4 && i){
 			i=false;
-			if(!dv->posSicher(nZug.zpos) && nZug.stein->getid() == 4){
+			if(!dv->posSicher(nZug.zpos)){
 				i=true;
 				ret.erase(ret.begin());
 				cerr<<"lieber nicht"<<endl;

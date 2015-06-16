@@ -27,7 +27,7 @@ void SrH::bewerten(){
 	std::sort(aZuege.begin(),aZuege.end());
 	nZug=aZuege[0];
 	wert=3;
-	if(team.getStein(1).getGeffangen()&& team.getStein(2).getGeffangen()&& team.getStein(2).getGeffangen()) wert=1;
+	if(team.getStein(1).getGeffangen()&& team.getStein(2).getGeffangen()&& team.getStein(2).getGeffangen()) wert=0;
 }
 SrH::SrH(Team &team, SpielBrett &b): Strategie(team, b){}
 SrH::~SrH() {

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>DistanzSpiel: SfH.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DistanzSpiel
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="annotated.html"><span>Klassen</span></a></li>
+      <li class="current"><a href="files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SfH.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sf_h_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * SfH.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 12.05.2015</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: franz</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef SRC_H_SFH_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define SRC_H_SFH_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_strategie_8h.html">Strategie.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_sf_h.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sf_h.html">SfH</a>: <span class="keyword">public</span> <a class="code" href="class_strategie.html">Strategie</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">     * bewerten()</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">     * bewerted mögliche züge nach der möglichkeit gegnerische Helfer zu fangen.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sf_h.html#a9790a3fab6619e16961568d735678d4f">bewerten</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_sf_h.html#a97daf9dffa4529ca2ed4ce98ac9d0e67">SfH</a>(<a class="code" href="class_team.html">Team</a> &amp;<a class="code" href="class_strategie.html#a4f55e74f189ec8c6df88a57119fb3def">team</a>, <a class="code" href="class_spiel_brett.html">SpielBrett</a> &amp;b);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_sf_h.html#a320c8f54cfd3a4ab7759a4c76cf08877">~SfH</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_H_SFH_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_sf_h_html_a9790a3fab6619e16961568d735678d4f"><div class="ttname"><a href="class_sf_h.html#a9790a3fab6619e16961568d735678d4f">SfH::bewerten</a></div><div class="ttdeci">virtual void bewerten() override</div><div class="ttdef"><b>Definition:</b> SfH.cpp:11</div></div>
+<div class="ttc" id="class_sf_h_html_a320c8f54cfd3a4ab7759a4c76cf08877"><div class="ttname"><a href="class_sf_h.html#a320c8f54cfd3a4ab7759a4c76cf08877">SfH::~SfH</a></div><div class="ttdeci">virtual ~SfH()</div><div class="ttdef"><b>Definition:</b> SfH.cpp:28</div></div>
+<div class="ttc" id="class_team_html"><div class="ttname"><a href="class_team.html">Team</a></div><div class="ttdef"><b>Definition:</b> Team.h:23</div></div>
+<div class="ttc" id="class_spiel_brett_html"><div class="ttname"><a href="class_spiel_brett.html">SpielBrett</a></div><div class="ttdef"><b>Definition:</b> SpielBrett.h:14</div></div>
+<div class="ttc" id="class_sf_h_html"><div class="ttname"><a href="class_sf_h.html">SfH</a></div><div class="ttdef"><b>Definition:</b> SfH.h:20</div></div>
+<div class="ttc" id="class_strategie_html_a4f55e74f189ec8c6df88a57119fb3def"><div class="ttname"><a href="class_strategie.html#a4f55e74f189ec8c6df88a57119fb3def">Strategie::team</a></div><div class="ttdeci">Team &amp; team</div><div class="ttdef"><b>Definition:</b> Strategie.h:24</div></div>
+<div class="ttc" id="class_strategie_html"><div class="ttname"><a href="class_strategie.html">Strategie</a></div><div class="ttdef"><b>Definition:</b> Strategie.h:22</div></div>
+<div class="ttc" id="_strategie_8h_html"><div class="ttname"><a href="_strategie_8h.html">Strategie.h</a></div></div>
+<div class="ttc" id="class_sf_h_html_a97daf9dffa4529ca2ed4ce98ac9d0e67"><div class="ttname"><a href="class_sf_h.html#a97daf9dffa4529ca2ed4ce98ac9d0e67">SfH::SfH</a></div><div class="ttdeci">SfH(Team &amp;team, SpielBrett &amp;b)</div><div class="ttdef"><b>Definition:</b> SfH.cpp:27</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Mon Jun 8 2015 01:01:22 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

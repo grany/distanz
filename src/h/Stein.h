@@ -12,7 +12,7 @@ class Feld;
 class Stein
 {
 protected:
-	bool geffangen=false;
+	bool geffangen=false;			//gefangen
 	Feld *ort=nullptr;
 	Team *mteam=nullptr;
 	const int id;
@@ -26,33 +26,33 @@ public:
 
   /*
    * getid()
-   * @return id der instanz
+   * @return id der Instanz
    */
   int getid() const;
 
   /**
-   * Setzt den Stein Geffangen
-   * geffangen -> true
+   * Setzt den Stein Gefangen.
+   * gefangen -> true
    */
- virtual void setGeffangen ( );
+ virtual void setGeffangen ( );		//gefangen
 
   /*
    * Setzt den Stein frei
-   * Setzt geffangen -> false
+   * Setzt gefangen -> false
    */
   void setFrei();
 
   /**
-   * Rückt auf das übergebene Feld
+   * Rueckt auf das uebergebene Feld.
    */
-  virtual bool ziehenach(Feld *ziehl);
+  virtual bool ziehenach(Feld *ziehl);		//ziehl? :s
   void setOrt(Feld* o);
 
   /**
-   * Get the value of geffangen
-   * @return the value of geffangen
+   * Get the value of gefangen
+   * @return the value of gefangen
    */
-  bool getGeffangen ( );
+  bool getGeffangen ( );		//gefangen
 
 
   Team* getMteam();
@@ -60,7 +60,7 @@ public:
 
 
   /**
-   * Gibt ein Array von ereichbaren Feldern zurück
+   * Gibt ein Array von erreichbaren Feldern zurueck
    * @return Feld
    */
   std::vector<Feld*> zuege ( );

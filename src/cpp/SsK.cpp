@@ -33,9 +33,9 @@ void SsK::bewerten(){
 		wert=4;
 		if(gZuege[0].wert==0){
 			wert=0;
-			for(auto it : aZuege){
+			for(auto& it : aZuege){
 				if(it.zpos==gZuege[0].stein->getOrt()->getPos())  it.wert=0;
-				if(it.stein->getid()==4 && posSicher(it.zpos)) it.wert=1;
+				if(it.stein->getid()==4 && posSicher(it.zpos)) it.wert=2;
 				if(posSicher(it.zpos)){
 					--(it).wert;
 				}else{
@@ -44,7 +44,7 @@ void SsK::bewerten(){
 			}
 		}else{
 			this->wert=gZuege[0].wert+1;
-			for(auto it : aZuege){
+			for(auto& it : aZuege){
 				if(posSicher((it).zpos)){
 					--(it).wert;
 				}else{

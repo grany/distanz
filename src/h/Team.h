@@ -16,7 +16,10 @@ class Team;
 class SpielBrett;
 
 
-
+/**
+ * class Team
+ *
+ */
 class Team
 {
 private:
@@ -25,25 +28,31 @@ private:
   bool Sieg=false;
   Team *gegner=nullptr;
   SpielBrett *brett=nullptr;
-  bool Farbe=false;	//Weis->true; false->Schwarz
+  bool Farbe=false;	//Weiß->true; false->Schwarz
 public:
   /**
-    * Erzeugt Team
+    * Erzeugt Team.
     */
    Team (SpielBrett *br, bool f, Feld *s1, Feld *s2, Feld *s3, Feld *k, Team *g );
    Team ()=default;
-   /**
-    * Zerst�rt Team
-    */
-   ~Team ( );
+   virtual ~Team ( );
 
     /**
-    * Gibt einen Vector mit den distanzen der anderen,
-    *  nicht gefangenen, Team-Mitglieder zurück
-    * @return vector
-    * @param  anfrage
+    * Distanzen
+    * Traegt x und y Distanzen der "Anderen" Steine in Array ein.
+    * Array muss 6 Felder besitzen und vom typ Integer sein.
+    *
+    * @param [in] &anfrage : Stein, [out] *arr : int array[6]
     */
    void distanzen (const Stein &anfrage, int *arr );
+   /**
+    * getStein
+    * Gibt Referenz auf Stein mit uebergebener ID zurueck, bei falschen ID´s wird Referenz auf Koenig zurückgegeben.
+    * 1-3 -> Helfer
+    * 4 -> Koenig
+    * @param [in] id : int
+    * @return &Stein
+    */
    Stein& getStein(int id) const;
 
   /**
@@ -56,7 +65,7 @@ public:
    */
   void setGegner ( Team *new_var );
   /*
-   * Gibt Pointer auf Gegnerisches Team Aus
+   * Gibt Pointer auf Gegnerisches Team aus.
    */
   Team* getGegner () const;
   bool getFarbe() const;

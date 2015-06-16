@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>DistanzSpiel: Feld.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DistanzSpiel
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="annotated.html"><span>Klassen</span></a></li>
+      <li class="current"><a href="files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Feld.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_feld_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef FELD_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define FELD_H</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../h/Possition.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_stein_8h.html">Stein.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_feld.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_feld.html">Feld</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_feld.html#aae4074e0032cce9eb0162394c639a4a0">   14</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_feld.html#aae4074e0032cce9eb0162394c639a4a0">besetzt</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_feld.html#a1ac2c5d077b149682a32a238aec77991">   15</a></span>&#160;  <a class="code" href="struct_possition.html">Possition</a> <a class="code" href="class_feld.html#a1ac2c5d077b149682a32a238aec77991">pos</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_feld.html#a95773640265709ae8632d6a91655575d">   16</a></span>&#160;  <a class="code" href="class_stein.html">Stein</a> *<a class="code" href="class_feld.html#a95773640265709ae8632d6a91655575d">gast</a>=<span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="class_feld.html#a8a3098df53c8ae2ef988d0d2e34be1db">Feld</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_feld.html#a8a3098df53c8ae2ef988d0d2e34be1db">Feld</a>(<span class="keywordtype">short</span> nx, <span class="keywordtype">short</span>  ny);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="class_feld.html#a8a3098df53c8ae2ef988d0d2e34be1db">Feld</a>(<a class="code" href="class_feld.html">Feld</a> &amp;f);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_feld.html#a00d3eec0ced82a8aee97de9b5f030df2">setStein</a> (<a class="code" href="class_stein.html">Stein</a> *newstein );</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_feld.html#a6bb4ad9a5e5ba0b7c50e43b149535a5c">delStein</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_feld.html#a70456d20a55214db1af93ccab6d192cd">getBesetzt</a> ( );</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="class_stein.html">Stein</a>* <a class="code" href="class_feld.html#a41f1e0c497b688ac87d6ab95c9b4914d">getGast</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="struct_possition.html">Possition</a> <a class="code" href="class_feld.html#adaeedb54cddaa27a5081237b60389bd3">getPos</a> ( );</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif // FELD_H</span></div>
+<div class="ttc" id="class_feld_html_a8a3098df53c8ae2ef988d0d2e34be1db"><div class="ttname"><a href="class_feld.html#a8a3098df53c8ae2ef988d0d2e34be1db">Feld::Feld</a></div><div class="ttdeci">Feld()</div><div class="ttdef"><b>Definition:</b> Feld.cpp:25</div></div>
+<div class="ttc" id="class_feld_html_a1ac2c5d077b149682a32a238aec77991"><div class="ttname"><a href="class_feld.html#a1ac2c5d077b149682a32a238aec77991">Feld::pos</a></div><div class="ttdeci">Possition pos</div><div class="ttdef"><b>Definition:</b> Feld.h:15</div></div>
+<div class="ttc" id="struct_possition_html"><div class="ttname"><a href="struct_possition.html">Possition</a></div><div class="ttdef"><b>Definition:</b> Possition.h:10</div></div>
+<div class="ttc" id="class_feld_html_aae4074e0032cce9eb0162394c639a4a0"><div class="ttname"><a href="class_feld.html#aae4074e0032cce9eb0162394c639a4a0">Feld::besetzt</a></div><div class="ttdeci">bool besetzt</div><div class="ttdef"><b>Definition:</b> Feld.h:14</div></div>
+<div class="ttc" id="class_feld_html_a70456d20a55214db1af93ccab6d192cd"><div class="ttname"><a href="class_feld.html#a70456d20a55214db1af93ccab6d192cd">Feld::getBesetzt</a></div><div class="ttdeci">bool getBesetzt()</div><div class="ttdef"><b>Definition:</b> Feld.cpp:35</div></div>
+<div class="ttc" id="class_feld_html"><div class="ttname"><a href="class_feld.html">Feld</a></div><div class="ttdef"><b>Definition:</b> Feld.h:10</div></div>
+<div class="ttc" id="class_feld_html_a95773640265709ae8632d6a91655575d"><div class="ttname"><a href="class_feld.html#a95773640265709ae8632d6a91655575d">Feld::gast</a></div><div class="ttdeci">Stein * gast</div><div class="ttdef"><b>Definition:</b> Feld.h:16</div></div>
+<div class="ttc" id="class_feld_html_a6bb4ad9a5e5ba0b7c50e43b149535a5c"><div class="ttname"><a href="class_feld.html#a6bb4ad9a5e5ba0b7c50e43b149535a5c">Feld::delStein</a></div><div class="ttdeci">void delStein()</div><div class="ttdef"><b>Definition:</b> Feld.cpp:59</div></div>
+<div class="ttc" id="class_feld_html_adaeedb54cddaa27a5081237b60389bd3"><div class="ttname"><a href="class_feld.html#adaeedb54cddaa27a5081237b60389bd3">Feld::getPos</a></div><div class="ttdeci">Possition getPos()</div><div class="ttdef"><b>Definition:</b> Feld.cpp:65</div></div>
+<div class="ttc" id="class_feld_html_a00d3eec0ced82a8aee97de9b5f030df2"><div class="ttname"><a href="class_feld.html#a00d3eec0ced82a8aee97de9b5f030df2">Feld::setStein</a></div><div class="ttdeci">void setStein(Stein *newstein)</div><div class="ttdef"><b>Definition:</b> Feld.cpp:40</div></div>
+<div class="ttc" id="class_stein_html"><div class="ttname"><a href="class_stein.html">Stein</a></div><div class="ttdef"><b>Definition:</b> Stein.h:12</div></div>
+<div class="ttc" id="_stein_8h_html"><div class="ttname"><a href="_stein_8h.html">Stein.h</a></div></div>
+<div class="ttc" id="class_feld_html_a41f1e0c497b688ac87d6ab95c9b4914d"><div class="ttname"><a href="class_feld.html#a41f1e0c497b688ac87d6ab95c9b4914d">Feld::getGast</a></div><div class="ttdeci">Stein * getGast()</div><div class="ttdef"><b>Definition:</b> Feld.cpp:68</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Mon Jun 8 2015 01:01:22 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>
