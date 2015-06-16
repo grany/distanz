@@ -17,9 +17,19 @@ private:
 SpielBrett *brett;
 public:
 	GUI(SpielBrett *brett);
+	/*
+	* Diese Funktion ist ein Constructor für eine Instanz von der Klasse Spielbrett.
+	*
+	*/
+
 	void zeichneSpielfeld(int,int);
+	/*
+	* Mit dieser Funktion wird das Spielfeld grafisch für den Spieler aufbereitet.
+	*
+	*/
+
 	void zeichneAnleitung();
-	void zeichneZug();
+	void zeichneZug(int,int,int,int);
 	void Spieler();
 	void Computer();
 };

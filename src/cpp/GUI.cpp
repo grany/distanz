@@ -9,14 +9,76 @@
 
 using namespace std;
 
-GUI::GUI(SpielBrett *br)				//Konstruktor
+GUI::GUI(SpielBrett *br)
 {
 	brett=br;
 }
 
-void GUI::zeichneZug()
+void GUI::zeichneZug(int zug,int spieler,int spalte,int zeile)
 {
-//abgewandelte Version von zeichneSpielfeld, Pointer benötigt
+	int zaehler, zaehler1, zaehlerAuswahl = 0;
+	std::vector<Feld*> moeglichkeit;
+
+
+		system("cls");
+		//if (brett->getFeld(zaehler1,zaehler)->getBesetzt())
+		moeglichkeit = brett->getFeld(spalte,zeile)->getGast()->zuege();
+		cout <<	"\n\n Es ist der: "
+			 << zug
+			 << " Zug"
+			 << "\t\tEs spielt gerade: Spieler "
+			 << spieler
+			 << "\n__________________________________________________________________\n\n"
+			 <<	"\n\n\t   A     B     C     D     E     F     G     H\n"
+			 << "\t _____ _____ _____ _____ _____ _____ _____ _____\n";
+		for (zaehler = 0; zaehler < 8; zaehler++)
+		{
+			cout << "\t|     |     |     |     |     |     |     |     |\n"
+				 << "    "
+				 << zaehler
+				 << "\t|";
+			for (zaehler1 = 0; zaehler1 < 8; zaehler1++)
+			{
+				cout << "  ";
+				if (brett->getFeld(zaehler1,zaehler)->getBesetzt())
+				{
+					if (moeglichkeit[zaehlerAuswahl] == brett->getFeld(zaehler1,zaehler))
+					{
+						cout << "X";
+						zaehlerAuswahl++;
+					}
+					else
+					{
+						if (brett->getFeld(zaehler1,zaehler)->getGast()->getMteam()->getFarbe())
+							{
+								if (brett->getFeld(zaehler1,zaehler)->getGast()->getGeffangen()) 	{cout << "g";}
+								else if (brett->getFeld(zaehler1,zaehler)->getGast()->getid()==4) 	{cout << "k";}
+								 	 else 	{cout << "h";}
+							}
+							else
+							{
+								if (brett->getFeld(zaehler1,zaehler)->getGast()->getGeffangen()) 	{cout << "G";}
+								else if (brett->getFeld(zaehler1,zaehler)->getGast()->getid()==4) 	{cout << "K";}
+								 	 else {cout << "H";}
+							}
+					}
+				}
+				else
+					{
+					if (moeglichkeit[zaehlerAuswahl] == brett->getFeld(zaehler1,zaehler))
+					{
+						cout << "x";
+						zaehlerAuswahl++;
+					}
+					else cout << " ";
+					}
+				cout << "  |";
+			}
+		cout << "\n"
+			 << "\t|_____|_____|_____|_____|_____|_____|_____|_____|\n";
+		}
+		cout << "\n\n__________________________________________________________________\n"
+			 << "\n An welche Stelle soll der Stein ziehen? (Zeile,Spalte): ";
 }
 
 void GUI::Spieler()
@@ -26,15 +88,14 @@ void GUI::Spieler()
 
 void GUI::Computer()
 {
-//
+
 }
 
 void GUI::zeichneAnleitung()
 {
 	system ("cls");
-	cout << "###################################\n"
-		 <<	"#          DISTANZ-Spiel          #\n"
-		 <<	"###################################\n"
+	cout << "\n"
+		 <<	"          DISTANZ-Spiel          \n"
 		 <<	"_______________________________________________________________________________________________________\n\n"
 		 <<	"Ziel des Spiels: Ziel des Spiel ist es, den gegnerischen König gefangen zu nehmen \n"
 		 <<	"oder den Gegner in eine Situation zu bringen, in der er keinen legalen Zug mehr \n"

@@ -19,8 +19,8 @@ int main(int _argc, char *argv[]){
 	GUI grafik(br.get());
 	Team *ws = br->getWeis();
 	Team *sw = br->getSchwarz();
-	//unique_ptr<KI> KIsw(new KI(br->getSchwarz()));
-	//unique_ptr<KI> KIws(new KI(br->getWeis()));
+	unique_ptr<KI> KIsw(new KI(br->getSchwarz()));
+	unique_ptr<KI> KIws(new KI(br->getWeis()));
 
 	grafik.zeichneAnleitung();
 	while (abbruch != true)
@@ -30,6 +30,7 @@ int main(int _argc, char *argv[]){
 		if ((auswahl == 1) || (auswahl == 2) || (auswahl == 3)){abbruch = true;};
 	};
 	abbruch = false;
+	cin.sync();
 	switch (auswahl)
 	{
 		case 1:
@@ -54,7 +55,7 @@ int main(int _argc, char *argv[]){
 				//grafik.Spieler;
 			//else
 				//grafik.Computer;
-			grafik.zeichneSpielfeld(zug,2);
+			grafik.zeichneSpielfeld(zug,1);
 			zug++;
 		}
 		else
@@ -63,7 +64,7 @@ int main(int _argc, char *argv[]){
 				//grafik.Spieler;
 			//else
 				//grafik.Computer;
-			grafik.zeichneSpielfeld(zug,1);
+			grafik.zeichneSpielfeld(zug,2);
 			zug++;
 		}
 		cin.get();
