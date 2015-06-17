@@ -60,22 +60,22 @@
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_ss_k.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_ss_k.html">SsK</a>: <span class="keyword">public</span> <a class="code" href="class_strategie.html">Strategie</a> {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_ss_k.html#a4c117e68ae76434738995801a4a1fbcc">   22</a></span>&#160;    <a class="code" href="class_sf_k.html">SfK</a> <a class="code" href="class_ss_k.html#a4c117e68ae76434738995801a4a1fbcc">gegner</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_ss_k.html#af5cfdbc60256434dbb73e61e737e056a">   23</a></span>&#160;    std::vector&lt;zug&gt; <a class="code" href="class_ss_k.html#af5cfdbc60256434dbb73e61e737e056a">gZuege</a>;    <span class="comment">//Gegnerische züge</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_ss_k.html#af5cfdbc60256434dbb73e61e737e056a">   23</a></span>&#160;    std::vector&lt;zug&gt; <a class="code" href="class_ss_k.html#af5cfdbc60256434dbb73e61e737e056a">gZuege</a>;    <span class="comment">//Gegnerische ZÃŒge</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     * bewerten()</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     * bewerted mögliche züge nach der möglichkeit eigenen König zu sichern.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     * Bewertet mÃ¶gliche ZÃŒge nach der MÃ¶glichkeit eigenen KÃ¶nig zu sichern.</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_ss_k.html#aac922686e66332aae431ec05d06937a0">bewerten</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * posSicher(Possition p)</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * posSicher(Position p)</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     * prüft ob übergebene Possition vom gegner im nächsten zug besetzt werden kann.</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     * @param p : Possition</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     * @return bool false-&gt; gefärdet; true-&gt;sicher;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     * PrÃŒft ob ÃŒbergebene Position vom Gegner im nÃ€chsten Zug besetzt werden kann.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     * @param p : Position</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     * @return bool false-&gt; gefÃ€hrdet; true-&gt;sicher;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_ss_k.html#a7034ff44a447cef0d24117e9a1fa9fef">posSicher</a>(<a class="code" href="struct_possition.html">Possition</a> p);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_ss_k.html#a7034ff44a447cef0d24117e9a1fa9fef">posSicher</a>(<a class="code" href="struct_possition.html">Possition</a> p);        <span class="comment">//Position</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_ss_k.html#a24d667d15c076686914ad331b2306f14">SsK</a>(<a class="code" href="class_team.html">Team</a> &amp;<a class="code" href="class_strategie.html#a4f55e74f189ec8c6df88a57119fb3def">team</a>, <a class="code" href="class_spiel_brett.html">SpielBrett</a> &amp;b);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_ss_k.html#a24d667d15c076686914ad331b2306f14">SsK</a>();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_ss_k.html#a3912f76c805a0d1810e0ab0c12bf49b4">~SsK</a>();</div>
@@ -100,7 +100,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Mon Jun 8 2015 01:01:22 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Fre Jun 12 2015 13:44:41 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

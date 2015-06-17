@@ -56,9 +56,9 @@
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_spiel_brett.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_spiel_brett.html">SpielBrett</a></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_spiel_brett.html#a428ac783e187cd6a25f15b833555312a">   17</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="class_spiel_brett.html#a428ac783e187cd6a25f15b833555312a">dimmension</a> = 8;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_spiel_brett.html#a428ac783e187cd6a25f15b833555312a">   17</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="class_spiel_brett.html#a428ac783e187cd6a25f15b833555312a">dimmension</a> = 8;  <span class="comment">//Dimension</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_spiel_brett.html#a507b430b3d9f96db6eaa02b9dd9d5f99">   18</a></span>&#160;    <a class="code" href="class_feld.html">Feld</a>** <a class="code" href="class_spiel_brett.html#a507b430b3d9f96db6eaa02b9dd9d5f99">Brett</a>=<span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_spiel_brett.html#aa5c83f7c16af3ea1c51d2ea9745875ac">   19</a></span>&#160;    <a class="code" href="class_team.html">Team</a> *<a class="code" href="class_spiel_brett.html#afc28f676d2b3556b29adbf0ef32ba679">schwarz</a>=<span class="keyword">nullptr</span>, *<a class="code" href="class_spiel_brett.html#aa5c83f7c16af3ea1c51d2ea9745875ac">weis</a>=<span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_spiel_brett.html#aa5c83f7c16af3ea1c51d2ea9745875ac">   19</a></span>&#160;    <a class="code" href="class_team.html">Team</a> *<a class="code" href="class_spiel_brett.html#afc28f676d2b3556b29adbf0ef32ba679">schwarz</a>=<span class="keyword">nullptr</span>, *<a class="code" href="class_spiel_brett.html#aa5c83f7c16af3ea1c51d2ea9745875ac">weis</a>=<span class="keyword">nullptr</span>;   <span class="comment">//weiÃ</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_spiel_brett.html#a1a4090a83c4c6fc7205ee80764bebcf0">initBrett</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
@@ -66,7 +66,7 @@
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="class_spiel_brett.html#abd1c86dc9518ff9c368b43d8c49db6c0">SpielBrett</a> ();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_spiel_brett.html#abd1c86dc9518ff9c368b43d8c49db6c0">SpielBrett</a> (<span class="keyword">const</span> <a class="code" href="class_spiel_brett.html">SpielBrett</a> &amp;sb);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="class_spiel_brett.html#ab61306e45606cab9ab9d073c43cf30f8">~SpielBrett</a> ( );</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="class_team.html">Team</a>* <a class="code" href="class_spiel_brett.html#acb3a18d766bd52142672b8d0300d6686">getWeis</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="class_team.html">Team</a>* <a class="code" href="class_spiel_brett.html#acb3a18d766bd52142672b8d0300d6686">getWeis</a>() <span class="keyword">const</span>;            <span class="comment">//WeiÃ (Wenn erforderlich auf GroÃ/-Kleinschreibung achten von Initialisierungen)</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="class_team.html">Team</a>* <a class="code" href="class_spiel_brett.html#a30fb11863bee09200875119d15d282b1">getSchwarz</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="class_feld.html">Feld</a>* <a class="code" href="class_spiel_brett.html#a6fc31b54e16797baf80285872ce2dab1">getFeld</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
@@ -91,7 +91,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Mon Jun 8 2015 01:01:22 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Fre Jun 12 2015 13:44:41 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

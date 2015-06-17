@@ -24,9 +24,8 @@ private:
 	SsK *dv;
 
 	zug nZug;
-	std::vector<zug> mergeStrategie(std::vector<zug> st2Zuege, Strategie *st1);
+	std::vector<zug> mergeStrategie(Strategie *st1 ,std::vector<zug> st2Zuege);
 	std::vector<zug> mergeStrategie(Strategie *st1, Strategie *st2);
-	std::vector<zug> mergeStrategie(Strategie *st1, std::vector<zug> st2Zuege);
 	void seachBestZug(int a);
 public:
 	Team& getTeam();
