@@ -39,7 +39,7 @@ public:
 
     /**
     * Distanzen
-    * Trägt x und y Distanzen der "Anderen" Steine in Array ein.
+    * Traegt x und y Distanzen der "Anderen" Steine in Array ein.
     * Array muss 6 Felder besitzen und vom typ Integer sein.
     *
     * @param [in] &anfrage : Stein, [out] *arr : int array[6]
@@ -47,9 +47,9 @@ public:
    void distanzen (const Stein &anfrage, int *arr );
    /**
     * getStein
-    * Gibt Referenz auf Stein mit übergebener ID zurück, bei falschen ID´s wird Referenz auf König zurückgegeben.
+    * Gibt Referenz auf Stein mit uebergebener ID zurueck, bei falschen ID´s wird Referenz auf Koenig zurückgegeben.
     * 1-3 -> Helfer
-    * 4 -> König
+    * 4 -> Koenig
     * @param [in] id : int
     * @return &Stein
     */

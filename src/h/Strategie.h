@@ -26,9 +26,9 @@ protected:
 	SpielBrett &brett;
 
 	int wert;
-	std::vector<zug> mZuege; 	//Mögliche Züge
-	std::vector<zug> aZuege; 	//Auswahl der Zuege nach Priorität sortiert
-	zug nZug;					// Nächster zug
+	std::vector<zug> mZuege; 	//Moegliche Zuege
+	std::vector<zug> aZuege; 	//Auswahl der Zuege nach Prioritaet sortiert
+	zug nZug;					// Naechster zug
 
 	void getmZuege(std::vector<zug> &zuege);
 	virtual void bewerten()=0;

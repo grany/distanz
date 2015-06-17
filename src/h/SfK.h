@@ -13,9 +13,9 @@
 #include "Strategie.h"
 
 /**
- * class SfK (Strategie fange König)
+ * class SfK (Strategie fange Koenig)
  * Ist eine Ableitung der abstrakten Klasse Strategie.
- * Überschreibt/implementiert die methode bewerten();
+ * Ueberschreibt/implementiert die methode bewerten();
  * @param &team Referenz auf Instanz von Team
  * @param &b 	Referenz auf Instanz von SpielBrett
  */
@@ -23,7 +23,7 @@ class SfK: public Strategie {
 public:
 	/*
 	 * bewerten()
-	 * Bewertet mögliche Züge nach der Möglichkeit gegnerischen König zu fangen.
+	 * Bewertet moegliche Zuege nach der Moeglichkeit gegnerischen Koenig zu fangen.
 	 */
 	virtual void bewerten() override;
 	SfK(Team &team, SpielBrett &b);

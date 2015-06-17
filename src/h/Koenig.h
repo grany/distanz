@@ -17,7 +17,7 @@ public:
 	Koenig();
 	Koenig(int id, Feld *startplatz, Team *mt);
   /**
-   * Implementiert zusätzlich die Befreiung von Team-Mitgliedern
+   * Implementiert zusaetzlich die Befreiung von Team-Mitgliedern.
    * @param  helfer
    */
   virtual bool ziehenach (Feld *ziehe ) override;

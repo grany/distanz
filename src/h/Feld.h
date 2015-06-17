@@ -27,14 +27,14 @@ public:
   /**
    * Setzt Stein auf das Feld
    * und Markiert das Feld als Besetzt.
-   * Falls das Feld besetzt ist, werden die GÃ¤ste/Steine getauscht.
+   * Falls das Feld besetzt ist, werden die Gaeste/Steine getauscht.
    * @param [in/out] *newstein pointer auf den zu setzenden Stein.
    * \image html Feld_setStein_flow.png
    * @startuml{Feld_setStein_flow.png}
    * start
    * if (Feld besetzt?) then (ja)
    * 	:im alten Gast Ort auf Feld vom neuen Stein setzen;
-   * 	:im alten Feld Gäste löschen;
+   * 	:im alten Feld GÃ¤ste loeschen;
    * 	:im alten Feld Gast auf alten Gast setzen;
    * 	:im Feld Gast auf neuen Stein setzen;
    * 	:im neuen Stein Ort auf Feld setzen;
@@ -50,7 +50,7 @@ public:
 
   /**
    * delStein
-   * Löscht Zeiger auf Gast
+   * Loescht Zeiger auf Gast
    * Setzt besetzt auf false
    * \image html Feld_delStein_flow.png
    * @startuml{Feld_delStein_flow.png}
@@ -71,7 +71,7 @@ public:
 
   /**
    * getGast
-   *@return Gibt einen Pointer auf den Gast zurÃ¼ck.
+   *@return Gibt einen Pointer auf den Gast zurueck.
    */
   Stein* getGast();
 
