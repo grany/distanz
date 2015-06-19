@@ -2,7 +2,6 @@
 #include <iostream>
 #include <stdlib.h>
 #include "../h/KI.h"
-#include "../h/KI1.h"
 #include "../h/Spielbrett.h"
 #include "../h/Stein.h"
 

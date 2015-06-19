@@ -12,6 +12,8 @@
 #include "../h/SrH.h"
 #include "../h/Strategie.h"
 #include <iostream>
+#include <cstdlib>
+#include <time.h>
 #include <algorithm>
 using namespace std;
 
@@ -75,7 +77,8 @@ void KI::seachBestZug(){
 		for(int k=2;k<anzstrat;k++){
 			ret = mergeStrategie(strat[k],ret);
 		}
-		nZug=(*ret.begin());
+		srand(time(NULL));
+		nZug=ret[rand() % 2];
 		bool i =true;
 		while(nZug.stein->getid() == 4 && i){
 			i=false;
