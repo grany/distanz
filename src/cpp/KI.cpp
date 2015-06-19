@@ -23,7 +23,7 @@ KI::KI(Team &t):t(t), abrett(*t.getBrett()), dv(new SsK(t, abrett)) {
 
 }
 void KI::nexZug(){
-	seachBestZug(1);
+	seachBestZug();
 	cout<<"KI Stein:"<<nZug.stein->getid()<<" Nach :"<<nZug.zpos.x<<":"<<nZug.zpos.y<<endl;
 	nZug.stein->ziehenach(nZug.zu);
 }
@@ -68,7 +68,7 @@ std::vector<zug> KI::mergeStrategie(Strategie *st1, std::vector<zug> st2Zuege){
 	return ret;
 }
 
-void KI::seachBestZug(int a=1){
+void KI::seachBestZug(){
 	dv->nexZug();
 	if(dv->getWert()){
 		std::vector<zug> ret =mergeStrategie(strat[0], strat[1]);
