@@ -86,16 +86,12 @@ void KI::seachBestZug(){
 			}
 			nZug=(*ret.begin());
 		}
-		for(auto& r: ret){
-			cerr<<"Stein: "<<r.stein->getid()<<" Zpos: "<<r.zpos.x<<":"<<r.zpos.y<<" Wert:"<<r.wert<<endl;
-		}
+//		for(auto& r: ret){
+//			cerr<<"Stein: "<<r.stein->getid()<<" Zpos: "<<r.zpos.x<<":"<<r.zpos.y<<" Wert:"<<r.wert<<endl;
+//		}
 
 	}else{
 		nZug=dv->nexZug();
-		cerr<<"gefahr"<<endl;
-		for(auto& r: dv->getZuege()){
-			cerr<<"Stein: "<<r.stein->getid()<<" Zpos: "<<r.zpos.x<<":"<<r.zpos.y<<" Wert:"<<r.wert<<endl;
-		}
 	}
 
 
