@@ -66,7 +66,7 @@ std::vector<Feld*> Stein::zuege(){
 	}
 
 	std::sort(zue.begin(), zue.end(),[&](Feld* a, Feld* b){
-			return a < b;
+			return (a->getPos().y*10+a->getPos().x) < (b->getPos().x+b->getPos().y*10);
 		});
 	std::vector<Feld*>::iterator it;
 	it = std::unique(zue.begin(), zue.end());
