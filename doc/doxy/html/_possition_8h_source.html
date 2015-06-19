@@ -46,22 +46,22 @@
 </div><!--header-->
 <div class="contents">
 <a href="_possition_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef POSSITION_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define POSSITION_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef POSSITION_H //Position</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="_possition_8h.html#ac9fb942d51fb8f89dd86b3eca68d6135">    3</a></span>&#160;<span class="preprocessor">#define POSSITION_H //Position</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="struct_possition.html">   10</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_possition.html">Possition</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="struct_possition.html">   10</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_possition.html">Possition</a>    <span class="comment">//Position</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_possition.html#a07b558914470911fd3c10a745b0c7bc2">   12</a></span>&#160;  <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="struct_possition.html#a07b558914470911fd3c10a745b0c7bc2">x</a>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_possition.html#ad3af285b52a6199147abcd48ebf83624">   13</a></span>&#160;  <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="struct_possition.html#ad3af285b52a6199147abcd48ebf83624">y</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_possition.html#aeca027993a6ef360904208411c5e7708">   14</a></span>&#160;  <a class="code" href="struct_possition.html#aeca027993a6ef360904208411c5e7708">Possition</a>(<span class="keywordtype">short</span> <span class="keywordtype">int</span> x, <span class="keywordtype">short</span> <span class="keywordtype">int</span> y): x(x), y(y){}</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_possition.html#a23d4588228d627c48b7b2c5209271b0d">   15</a></span>&#160;  <a class="code" href="struct_possition.html#a23d4588228d627c48b7b2c5209271b0d">Possition</a>(): x(-1),y(-1){}</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_possition.html#a53040dcec3906f26210fc328230cc4c4">   16</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="struct_possition.html#a53040dcec3906f26210fc328230cc4c4">operator ==</a>(<span class="keyword">const</span> <a class="code" href="struct_possition.html">Possition</a> &amp;p)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_possition.html#aeca027993a6ef360904208411c5e7708">   14</a></span>&#160;  <a class="code" href="struct_possition.html#aeca027993a6ef360904208411c5e7708">Possition</a>(<span class="keywordtype">short</span> <span class="keywordtype">int</span> x, <span class="keywordtype">short</span> <span class="keywordtype">int</span> y): x(x), y(y){} <span class="comment">//Position</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_possition.html#a23d4588228d627c48b7b2c5209271b0d">   15</a></span>&#160;  <a class="code" href="struct_possition.html#a23d4588228d627c48b7b2c5209271b0d">Possition</a>(): x(-1),y(-1){}                <span class="comment">//Position</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_possition.html#a53040dcec3906f26210fc328230cc4c4">   16</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="struct_possition.html#a53040dcec3906f26210fc328230cc4c4">operator ==</a>(<span class="keyword">const</span> <a class="code" href="struct_possition.html">Possition</a> &amp;p)<span class="keyword"> const</span>{       <span class="comment">//Position</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keywordflow">if</span>(p.<a class="code" href="struct_possition.html#a07b558914470911fd3c10a745b0c7bc2">x</a>==x &amp;&amp; p.<a class="code" href="struct_possition.html#ad3af285b52a6199147abcd48ebf83624">y</a> == y) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  }</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif // POSSITION_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif // POSSITION_H                   //Position ;) :b</span></div>
 <div class="ttc" id="struct_possition_html_a53040dcec3906f26210fc328230cc4c4"><div class="ttname"><a href="struct_possition.html#a53040dcec3906f26210fc328230cc4c4">Possition::operator==</a></div><div class="ttdeci">bool operator==(const Possition &amp;p) const </div><div class="ttdef"><b>Definition:</b> Possition.h:16</div></div>
 <div class="ttc" id="struct_possition_html"><div class="ttname"><a href="struct_possition.html">Possition</a></div><div class="ttdef"><b>Definition:</b> Possition.h:10</div></div>
 <div class="ttc" id="struct_possition_html_a07b558914470911fd3c10a745b0c7bc2"><div class="ttname"><a href="struct_possition.html#a07b558914470911fd3c10a745b0c7bc2">Possition::x</a></div><div class="ttdeci">short int x</div><div class="ttdef"><b>Definition:</b> Possition.h:12</div></div>
@@ -71,7 +71,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Mon Jun 8 2015 01:01:22 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Don Jun 18 2015 00:40:26 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

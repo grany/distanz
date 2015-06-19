@@ -1,7 +1,7 @@
 /*
  * Feld.cpp
  * In dieser Klasse
- * Diese Klasse enthält die Methoden:
+ * Diese Klasse enthÃ¤lt die Methoden:
  * 		getBesetzt
  * 		setStein
  * 		delStein
@@ -9,7 +9,7 @@
  * 		getGast
  *
  *  Created on: 26.04.2015
- *  Author: Franz Lübke
+ *  Author: Franz LÃ¼bke
  */
 
 #ifndef STEIN_C
