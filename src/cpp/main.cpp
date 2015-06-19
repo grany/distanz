@@ -1,88 +1,94 @@
-
-
+#include <windows.h>
 #include <iostream>
 #include <memory>
 #include "../h/Spielbrett.h"
 #include <stdlib.h>
 #include "../h/KI.h"
-#include "../h/KI1.h"
 #include "../h/GUI.h"
+#include "../h/Stein.h"
 using namespace std;
 
-/*void zeichneFeld(SpielBrett *brett){				altes Spielfeld
-	for(int y =0;y<8;y++){
-		for(int x =0;x<8;x++){
-			//((x==7) && (y==0))?cout<<"#":"";
-			(!y &&!x)?cout<<"  0  1  2  3  4  5  6  7"<<endl:"";
-			if(brett->getFeld(x,y)->getBesetzt()){
-				if(brett->getFeld(x,y)->getGast()->getMteam()->getFarbe()){
-					cout<<"|s"<<brett->getFeld(x,y)->getGast()->getid();
-				}else{
-					cout<<"|S"<<brett->getFeld(x,y)->getGast()->getid();
-				}
-			}else{
-				cout<<"|  ";
-			}
-
-		}
-		cout<<"|"<<y<<endl;
-
-	}
-cout<<endl;
-}*/
 
 int main(int _argc, char *argv[]){
 
+	bool abbruch = false, spieler1, spieler2;
+	int auswahl=0, zug = 1, spalte, zeile;
+
+
 	unique_ptr<SpielBrett>  br( new SpielBrett() );
-	Team *we = br->getWeis();
-	Team *sc = br->getSchwarz();
-	KI gegner(*sc);
-	KI w(*we);
-	GUI g(br.get());
 
-	int e=0;
-	int i=1;
-	int j=0;
-	g.zeichneAnleitung();
-	while(e!=100){
-		//system("cls");
-		if(i%2){
-			gegner.nexZug();
-			g.zeichneSpielfeld();
-			if(sc->getSieg()){
-				cout<<"KI Gewonnen!!!"<<endl;
-				e=100;
-			}
-		}else{
-			cout<<"--------------------------------"<<endl;
-			w.nexZug();
-			g.zeichneSpielfeld();
-			cout<<++j<<endl;
+	Team *ws = br->getWeis();
+	Team *sw = br->getSchwarz();
+	unique_ptr<KI> KIsw(new KI(*br->getSchwarz()));
+	unique_ptr<KI> KIws(new KI(*br->getWeis()));
+	GUI grafik(br.get(), KIsw.get());
 
-			/*
-			cout<<"Stein?:"<<endl;
-			int k =0;
-			cin>>k;
-			vector<Feld*> zue = we->getStein(k).zuege();
-			int j=0;
-			for(vector<Feld*>::iterator it = zue.begin(); it != zue.end(); it++){
-					cout<<j<<"#"<<(*it)->getPos().x<<" : "<<(*it)->getPos().y<<endl;
-					j++;
+	grafik.zeichneAnleitung();
+	while (abbruch != true)
+	{
+		cout << "\nBitte w\204hlen Sie den Modus (1 - 1 Spieler; 2 - 2 Spieler; 3 - Computer Spiel)";
+		cin >> auswahl;
+		if ((auswahl == 1) || (auswahl == 2) || (auswahl == 3)){abbruch = true;};
+	};
+	abbruch = false;
+	cin.sync();
+	switch (auswahl)
+	{
+		case 1:
+			spieler1 = true;
+			spieler2 = false;
+			break;
+		case 2:
+			spieler1 = true;
+			spieler2 = true;
+			break;
+		case 3:
+			spieler1 = false;
+			spieler2 = false;
+			break;
+	};
+	while (abbruch != true)
+	{
+		system("cls");
+		if (zug % 2)
+		{
+			if (spieler1 == true)
+			{
+				grafik.Spieler(false,zug,1);
 			}
-			cout<<"Zug?:"<<endl;
-			cin>>e;
-			we->getStein(k).zihenach(zue[e]);
-			*/
-			if(we->getSieg()){
-				cout<<"Gewonnen!!!"<<endl;
-				e=100;
+			else
+			{
+				KIws->nexZug();
+				grafik.zeichneSpielfeld(zug,1);
+				Sleep(5000);						//Zeitverzögerung
 			}
-			cin.get();
+			zug++;
 		}
-		i++;
+		else
+		{
+			if (spieler2 == true)
+			{
+				grafik.Spieler(true,zug,2);
+			}
+			else
+			{
+				KIsw->nexZug();
+				grafik.zeichneSpielfeld(zug,2);
+				Sleep(5000);						//Zeitverzögerung
+			}
+			zug++;
+		}
+		if (sw->getSieg())
+		{
+			cout << "Spieler 2 hat gewonnen!!!";
+			abbruch = true;
+		}
+		if (ws->getSieg())
+		{
+			cout << "Spieler 1 hat gewonnen!!!";
+			abbruch = true;
+		}
 	}
-	cin>>e;
-	//delete br;
 	return 1;
 }
 

@@ -115,4 +115,3 @@ KI::~KI() {
 	delete dv;
 	// TODO Auto-generated destructor stub
 }
-
