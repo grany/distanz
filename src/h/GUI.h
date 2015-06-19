@@ -12,11 +12,13 @@
  *  @Author: Martin Bauer
  */
 #include "SpielBrett.h"
+#include "../h/KI.h"
 class GUI{
 private:
 SpielBrett *brett;
+KI *KIsw;
 public:
-	GUI(SpielBrett *brett);
+	GUI(SpielBrett *br, KI *ki);
 	/*
 	* Diese Funktion ist ein Constructor für eine Instanz von der Klasse Spielbrett.
 	*
@@ -30,6 +32,5 @@ public:
 
 	void zeichneAnleitung();
 	void zeichneZug(int,int,int,int);
-	void Spieler();
-	void Computer();
+	void Spieler(bool,int,int);
 };
