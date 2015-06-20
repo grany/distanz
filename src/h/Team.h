@@ -53,7 +53,7 @@ public:
    void distanzen (const Stein &anfrage, int *arr );
    /**
     * getStein
-    * Gibt Referenz auf Stein mit uebergebener ID zurueck, bei falschen ID´s wird Referenz auf Koenig zurückgegeben.
+    * Gibt Referenz auf Stein mit uebergebener ID zurueck, bei falschen ID´s wird Referenz auf Koenig zurueckgegeben.
     * 1-3 -> Helfer
     * 4 -> Koenig
     * @param [in] id : int
