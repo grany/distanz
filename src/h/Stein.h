@@ -7,9 +7,9 @@ class Feld;
 /**
   * class Stein
   * 
-  * Jedes Team besitzt drei Helfer. Sie können sich auf dem Spielfeld bewegen, festgesetzt (gefangen) 	
+  * Jedes Team besitzt drei Helfer. Sie koennen sich auf dem Spielfeld bewegen, festgesetzt (gefangen) 	
   * werden, gegnerische Spielfiguren festsetzen, indem man sie ganz einfach auf das vom Gegner besetzte 	
-  * Feld schickt und in Verbindung mit dem teameigenen König können sie auch selber befreit werden, 	
+  * Feld schickt und in Verbindung mit dem teameigenen König koennen sie auch selber befreit werden, 	
   * sollte der Gegner sie gefangen genommen haben. Jede Spielfigur und damit auch jeder Helfer, bekommt 	
   * bei Spielbeginn einen Platz mittels Pointern zugewiesen. Die Spielfigur-ID und die Spielfeld-ID bestimmen 	
   * also, welche Spielfigur von welchem Team sich wo im Feld befindet.
