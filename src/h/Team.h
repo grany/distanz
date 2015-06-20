@@ -4,7 +4,13 @@
 
 /**
   * class Team
-  * 
+  * ######################################################################################
+  * In diesem programmierten Spiel sind zwei Teams erlaubt. Die jeweiligen Zuege eines Teams uebernimmt 	
+  * der Spieler/Anwender, das andere Team ist computergesteuert (KI). Die Teams (schwarz & weiß) 	
+  * werden zu Spielbeginn generiert. Der Team ID werden Spielfigur-ID zugewiesen, um zu gewaehrleisten, 	
+  * dass sie steuerbar sind und sie die Funktionen im Spielablauf anwenden können. Die Teams wechseln 	
+  * sich nach jedem Zug ab. Es besteht Zugzwang.
+  * ######################################################################################
   */
 #include <vector>
 #include "Feld.h"

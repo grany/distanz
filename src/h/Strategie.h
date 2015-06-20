@@ -2,7 +2,7 @@
  * strategie.h
  *
  *  Created on: 09.05.2015
- *      Author: franz
+ *      Author: franz*
  */
 
 #ifndef SRC_H_STRATEGIE_H_
@@ -17,7 +17,14 @@
 /*
  * class Strategie
  *
- * Abstrakte Klasse zur Erzeugung von speziellen Zug-Strategien
+ * Abstrakte Klasse zur Erzeugung von speziellen Zug-Strategien.
+ *
+ *Als Strategien sind jene Funktionen gemeint, welche neben der Bewegung im Feld, zusätzlich auch 	
+ dafür sorgen, dass es zu einer Sieg/Niederlage Situation kommt. Sie stellen die Möglichkeiten dar, 	
+ welche die Spielfiguren in den jeweiligen Momenten besitzen. Die Bewertung erfolgt in Echtzeit.
+ *
+ *Wir programmierten 4 Strategien ein. Jede der 4 Strategien ist eine Vererbung dieser Klasse.
+ *
  */
 class Strategie {
 protected:

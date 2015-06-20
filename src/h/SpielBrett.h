@@ -4,7 +4,11 @@
 
 /**
   * class SpielBrett
-  * Bildet ein 8x8 Spielbrett (Schachbrett) ab.
+  * 	Das Spielfeld besteht aus einem 8x8 großen Feld. Jedes der 64 Felder besitzt eine eigene ID, welche
+	bei Bewegungen und oder Besetzung abgefragt wird. Mithilfe von Pointern werden die Spielfiguren, je 
+	nach Spielzug, auf die Felder verwiesen. Die 2 Teams (Schwarz & Weiß) stehen sich auf dem Spielfeld 	
+	gegenüber. Damit sind, egal zu welchem Zeitpunkt des Spielverlaufs, immer insgesamt 8 Figuren und 	
+	damit 4 pro Team auf dem Feld.
   */
 
 #include "Feld.h"

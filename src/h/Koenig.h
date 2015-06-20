@@ -4,7 +4,13 @@
 
 /**
   * class Koenig
-  *
+  * 
+  * 	Der König ist eine von zwei Varianten der Spielsteine. Er besitzt eine Vererbung des Helfers bezüglich
+	seiner Grundfunktionen. Er kann eigene festgesetzte Helfer befreien, kann sich auf dem Spielfeld 	
+	bewegen, jedoch ist er, anders als der Helfer, die Siegbedingung. Wird der König eines Teams 	
+	festgesetzt, beziehungsweise gefangen, dann hat dieses Team verloren. Der König ist somit die 	
+	Spielentscheidende Komponente.
+ *
   */
 #include "Stein.h"
 class Team;
