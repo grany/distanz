@@ -16,8 +16,8 @@
  * class SfK (Strategie fange Koenig)
  * Ist eine Ableitung der abstrakten Klasse Strategie.
  * ################################################################################################################
- * Diese Strategie sorgt dafür, dass sich die Spielfiguren dem gegnerischen König nähern, um in festsetzen/gefangen nehmen
- * zu können. Ein festgesetzter/gefangener König bedeutet das Spielende. Ein Sieg wird erzielt, sobald der gegnerische König
+ * Diese Strategie sorgt dafuer, dass sich die Spielfiguren dem gegnerischen Koenig naehern, um in festsetzen/gefangen nehmen
+ * zu koennen. Ein festgesetzter/gefangener Koenig bedeutet das Spielende. Ein Sieg wird erzielt, sobald der gegnerische Koenig
  * festgesetzt/gefangen ist.
  * ################################################################################################################
  * Ueberschreibt/implementiert die methode bewerten();
