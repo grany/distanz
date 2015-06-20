@@ -12,8 +12,13 @@
 
 /**
  * class SfH (Strategie fange Helfer)
- * Ist eine Ableitung der abstrakten Klasse Strategie.
  * implementiert die Methode bewerten();
+ * ################################################################################################################
+ * Diese Strategie sorgt dafuer, dass die gegnerischen Helfer festgesetzt/gefangen werden. Ein festgesetzter/gefangener
+ * Helfer stellt insofern keine Bedrohung mehr dar, bis er wieder vom Koenig befreit wird. Dies gilt es durch andere
+ * Strategien zu verhindern.
+ * ################################################################################################################
+ *
  * @param &team Referenz auf Instanz von Team
  * @param &b 	Referenz auf Instanz von SpielBrett
  */
