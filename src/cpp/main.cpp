@@ -26,7 +26,7 @@ int main(int _argc, char *argv[]){
 	grafik.zeichneAnleitung();
 	while (abbruch != true)
 	{
-		cout << "\nBitte w\204hlen Sie den Modus (1 - 1 Spieler; 2 - 2 Spieler; 3 - Computer Spiel)";
+		cout << "\n Bitte w\204hlen Sie den Modus (1 - 1 Spieler; 2 - 2 Spieler; 3 - Computer Spiel)";
 		cin >> auswahl;
 		if ((auswahl == 1) || (auswahl == 2) || (auswahl == 3)){abbruch = true;};
 	};
