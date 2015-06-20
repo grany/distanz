@@ -13,6 +13,11 @@
 /**
  * class SrH (Strategie rette Helfer)
  * Ist eine Ableitung der abstrakten Klasse Strategie.
+ * ################################################################################################################
+ * Diese Strategie sorgt dafür, dass der König teameigene festgesetzte/gefangene Helfer befreit. Dies tut er allerdings
+ * nach Möglichkeit erst dann, wenn sie sich auch in unmittelbarer Umgebung befinden, da der König selber eine
+ * sehr defensive Rolle im Spielverlauf einnimmt.
+ * ################################################################################################################
  * Ueberschreibt/implementiert die Methode bewerten();
  * @param &team Referenz auf Instanz von Team
  * @param &b 	Referenz auf Instanz von SpielBrett
