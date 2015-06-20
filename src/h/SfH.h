@@ -31,16 +31,16 @@ public:
 	 * \image latex SfH_bewerten.png
 	 * @startuml{SfH_bewerten.png}
 	 * start
-	 * :Berechne Mögliche Züge;
+	 * :Berechne Moegliche Zuege;
 	 * note right: Wert initalisiert mit 100
-	 * while (nächster Zug?)
+	 * while (naechster Zug?)
 	 *  if (Zug Position = Position von Gegner) then (ja)
 	 *   :Zug wert = 20;
 	 *  else (nein)
 	 *   :Zug Wert + 1;
 	 *  endif
 	 * endwhile
-	 * :Sortiere Züge nach Wert;
+	 * :Sortiere Zuege nach Wert;
 	 *  :Wert der Strategie = 2;
 	 * end
 	 * @enduml
