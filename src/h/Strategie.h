@@ -19,8 +19,8 @@
  *
  * Abstrakte Klasse zur Erzeugung von speziellen Zug-Strategien.
  *
- *Als Strategien sind jene Funktionen gemeint, welche neben der Bewegung im Feld, zusätzlich auch 	
- dafür sorgen, dass es zu einer Sieg/Niederlage Situation kommt. Sie stellen die Möglichkeiten dar, 	
+ *Als Strategien sind jene Funktionen gemeint, welche neben der Bewegung im Feld, zusaetzlich auch 	
+ dafuer sorgen, dass es zu einer Sieg/Niederlage Situation kommt. Sie stellen die Moeglichkeiten dar, 	
  welche die Spielfiguren in den jeweiligen Momenten besitzen. Die Bewertung erfolgt in Echtzeit.
  *
  *Wir programmierten 4 Strategien ein. Jede der 4 Strategien ist eine Vererbung dieser Klasse.
