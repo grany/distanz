@@ -22,7 +22,7 @@ void SfH::bewerten(){
 
 	std::sort(aZuege.begin(),aZuege.end());
 	nZug=aZuege[0];
-	wert=(!nZug.wert)?1:2;
+	wert=2;
 }
 SfH::SfH(Team &team, SpielBrett &b): Strategie(team, b){}
 SfH::~SfH() {

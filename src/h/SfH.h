@@ -13,15 +13,32 @@
 /**
  * class SfH (Strategie fange Helfer)
  * Ist eine Ableitung der abstrakten Klasse Strategie.
- * Ueberschreibt/implementiert die Methode bewerten();
+ * implementiert die Methode bewerten();
  * @param &team Referenz auf Instanz von Team
  * @param &b 	Referenz auf Instanz von SpielBrett
  */
 class SfH: public Strategie {
 public:
-	/*
+	/**
 	 * bewerten()
 	 * Bewertet moegliche Zuege nach der Moeglichkeit gegnerische Helfer zu fangen.
+	 * \image html SfH_bewerten.png
+	 * \image latex SfH_bewerten.png
+	 * @startuml{SfH_bewerten.png}
+	 * start
+	 * :Berechne Mögliche Züge;
+	 * note right: Wert initalisiert mit 100
+	 * while (nächster Zug?)
+	 *  if (Zug Position = Position von Gegner) then (ja)
+	 *   :Zug wert = 20;
+	 *  else (nein)
+	 *   :Zug Wert + 1;
+	 *  endif
+	 * endwhile
+	 * :Sortiere Züge nach Wert;
+	 *  :Wert der Strategie = 2;
+	 * end
+	 * @enduml
 	 */
 	virtual void bewerten() override;
 	SfH(Team &team, SpielBrett &b);
