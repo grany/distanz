@@ -5,10 +5,10 @@
 /**
   * class Koenig
   * 
-  * 	Der König ist eine von zwei Varianten der Spielsteine. Er besitzt eine Vererbung des Helfers bezüglich
+  * 	Der Koenig ist eine von zwei Varianten der Spielsteine. Er besitzt eine Vererbung des Helfers bezueglich
 	seiner Grundfunktionen. Er kann eigene festgesetzte Helfer befreien, kann sich auf dem Spielfeld 	
-	bewegen, jedoch ist er, anders als der Helfer, die Siegbedingung. Wird der König eines Teams 	
-	festgesetzt, beziehungsweise gefangen, dann hat dieses Team verloren. Der König ist somit die 	
+	bewegen, jedoch ist er, anders als der Helfer, die Siegbedingung. Wird der Koenig eines Teams 	
+	festgesetzt, beziehungsweise gefangen, dann hat dieses Team verloren. Der Koenig ist somit die 	
 	Spielentscheidende Komponente.
  *
   */
