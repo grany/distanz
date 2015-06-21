@@ -49,35 +49,34 @@
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef KOENIG_H //</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="_koenig_8h.html#aad08d2740e17e6c23dfee187c1ffef70">    3</a></span>&#160;<span class="preprocessor">#define KOENIG_H //</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_stein_8h.html">Stein.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="class_team.html">Team</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_feld.html">Feld</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_koenig.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_koenig.html">Koenig</a> : <span class="keyword">public</span> <a class="code" href="class_stein.html">Stein</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_koenig.html#a213d4b6961d0709bd1b48e469c7e5edf">Koenig</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_koenig.html#a213d4b6961d0709bd1b48e469c7e5edf">Koenig</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <a class="code" href="class_feld.html">Feld</a> *startplatz, <a class="code" href="class_team.html">Team</a> *mt);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_koenig.html#a6060e36b885b96aad97fa4c66646942f">ziehenach</a> (<a class="code" href="class_feld.html">Feld</a> *ziehe ) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_koenig.html#a66d3242a51e934cc35bb8adabdba8a4a">setGeffangen</a> ( ) <span class="keyword">override</span>;   <span class="comment">//Gefangen</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif // KOENIG_H</span></div>
-<div class="ttc" id="class_team_html"><div class="ttname"><a href="class_team.html">Team</a></div><div class="ttdef"><b>Definition:</b> Team.h:23</div></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_stein_8h.html">Stein.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_team.html">Team</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="class_feld.html">Feld</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_koenig.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_koenig.html">Koenig</a> : <span class="keyword">public</span> <a class="code" href="class_stein.html">Stein</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_koenig.html#a213d4b6961d0709bd1b48e469c7e5edf">Koenig</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_koenig.html#a213d4b6961d0709bd1b48e469c7e5edf">Koenig</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <a class="code" href="class_feld.html">Feld</a> *startplatz, <a class="code" href="class_team.html">Team</a> *mt);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_koenig.html#a6060e36b885b96aad97fa4c66646942f">ziehenach</a> (<a class="code" href="class_feld.html">Feld</a> *ziehe ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_koenig.html#a66d3242a51e934cc35bb8adabdba8a4a">setGeffangen</a> ( ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif // KOENIG_H</span></div>
+<div class="ttc" id="class_team_html"><div class="ttname"><a href="class_team.html">Team</a></div><div class="ttdef"><b>Definition:</b> Team.h:29</div></div>
 <div class="ttc" id="class_koenig_html_a66d3242a51e934cc35bb8adabdba8a4a"><div class="ttname"><a href="class_koenig.html#a66d3242a51e934cc35bb8adabdba8a4a">Koenig::setGeffangen</a></div><div class="ttdeci">virtual void setGeffangen() override</div><div class="ttdef"><b>Definition:</b> Koenig.cpp:34</div></div>
 <div class="ttc" id="class_feld_html"><div class="ttname"><a href="class_feld.html">Feld</a></div><div class="ttdef"><b>Definition:</b> Feld.h:10</div></div>
 <div class="ttc" id="class_koenig_html_a213d4b6961d0709bd1b48e469c7e5edf"><div class="ttname"><a href="class_koenig.html#a213d4b6961d0709bd1b48e469c7e5edf">Koenig::Koenig</a></div><div class="ttdeci">Koenig()</div></div>
-<div class="ttc" id="class_stein_html"><div class="ttname"><a href="class_stein.html">Stein</a></div><div class="ttdef"><b>Definition:</b> Stein.h:12</div></div>
+<div class="ttc" id="class_stein_html"><div class="ttname"><a href="class_stein.html">Stein</a></div><div class="ttdef"><b>Definition:</b> Stein.h:19</div></div>
 <div class="ttc" id="_stein_8h_html"><div class="ttname"><a href="_stein_8h.html">Stein.h</a></div></div>
-<div class="ttc" id="class_koenig_html"><div class="ttname"><a href="class_koenig.html">Koenig</a></div><div class="ttdef"><b>Definition:</b> Koenig.h:13</div></div>
+<div class="ttc" id="class_koenig_html"><div class="ttname"><a href="class_koenig.html">Koenig</a></div><div class="ttdef"><b>Definition:</b> Koenig.h:19</div></div>
 <div class="ttc" id="class_koenig_html_a6060e36b885b96aad97fa4c66646942f"><div class="ttname"><a href="class_koenig.html#a6060e36b885b96aad97fa4c66646942f">Koenig::ziehenach</a></div><div class="ttdeci">virtual bool ziehenach(Feld *ziehe) override</div><div class="ttdef"><b>Definition:</b> Koenig.cpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Fre Jun 19 2015 23:38:34 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Jun 21 2015 21:42:08 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

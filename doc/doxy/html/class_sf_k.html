@@ -51,7 +51,7 @@
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_sf_k_8h_source.html">SfK.h</a>&gt;</code></p>
+<p><code>#include &lt;SfK.h&gt;</code></p>
 <div class="dynheader">
 Klassendiagramm für SfK:</div>
 <div class="dyncontent">
@@ -119,7 +119,9 @@ Weitere Geerbte Elemente</h2></td></tr>
 <tr class="separator:a3f2847acbd3cd961853f0eadb6c05daf inherit pro_attribs_class_strategie"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
-<div class="textblock"><p>class <a class="el" href="class_sf_k.html">SfK</a> (<a class="el" href="class_strategie.html">Strategie</a> fange <a class="el" href="class_koenig.html">Koenig</a>) Ist eine Ableitung der abstrakten Klasse <a class="el" href="class_strategie.html">Strategie</a>. Ueberschreibt/implementiert die methode <a class="el" href="class_sf_k.html#a54410f0aa0c2f76704a0eb181a5737f0">bewerten()</a>; </p><dl class="params"><dt>Parameter</dt><dd>
+<div class="textblock"><p>class <a class="el" href="class_sf_k.html">SfK</a> (<a class="el" href="class_strategie.html">Strategie</a> fange König) Ist eine Ableitung der abstrakten Klasse <a class="el" href="class_strategie.html">Strategie</a>. </p><h6></h6>
+<p>Diese <a class="el" href="class_strategie.html">Strategie</a> sorgt dafür, dass sich die Spielfiguren dem gegnerischen König nähern, um in festsetzen/gefangen nehmen zu können. Ein festgesetzter/gefangener König bedeutet das Spielende. Ein Sieg wird erzielt, sobald der gegnerische König festgesetzt/gefangen ist. </p><h6></h6>
+<p>Überschreibt/implementiert die Methode <a class="el" href="class_sf_k.html#a54410f0aa0c2f76704a0eb181a5737f0">bewerten()</a>; </p><dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
     <tr><td class="paramname">&amp;team</td><td>Referenz auf Instanz von <a class="el" href="class_team.html">Team</a> </td></tr>
     <tr><td class="paramname">&amp;b</td><td>Referenz auf Instanz von <a class="el" href="class_spiel_brett.html">SpielBrett</a> </td></tr>
@@ -212,7 +214,10 @@ Weitere Geerbte Elemente</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<p><a class="el" href="class_sf_k.html#a54410f0aa0c2f76704a0eb181a5737f0">bewerten()</a> Bewertet mögliche Züge nach der Möglichkeit gegnerischen König zu fangen. </p><div class="image">
+<img src="SfK_bewerten.png" alt="SfK_bewerten.png"/>
+</div>
+   
 <p>Implementiert <a class="el" href="class_strategie.html#a6e11413c1c8e4ca8bd0bcac21be3c1bf">Strategie</a>.</p>
 
 <p><div class="dynheader">
@@ -227,13 +232,13 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 </div>
 </div>
 <hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
-<li><a class="el" href="_sf_k_8h_source.html">SfK.h</a></li>
-<li>C:/Users/franz/workspace/distanz/src/cpp/<a class="el" href="_sf_k_8cpp.html">SfK.cpp</a></li>
+<li><a class="el" href="_sf_k_8h.html">SfK.h</a></li>
+<li><a class="el" href="_sf_k_8cpp.html">SfK.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Fre Jun 19 2015 23:38:35 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Jun 21 2015 22:49:06 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

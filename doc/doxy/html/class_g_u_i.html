@@ -52,7 +52,7 @@
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_g_u_i_8h_source.html">GUI.h</a>&gt;</code></p>
+<p><code>#include &lt;GUI.h&gt;</code></p>
 <div class="dynheader">
 Zusammengehörigkeiten von GUI:</div>
 <div class="dyncontent">
@@ -65,14 +65,14 @@ Zusammengehörigkeiten von GUI:</div>
 Öffentliche Methoden</h2></td></tr>
 <tr class="memitem:abdb64f04f2492fbe458a9585265457ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i.html#abdb64f04f2492fbe458a9585265457ed">GUI</a> (<a class="el" href="class_spiel_brett.html">SpielBrett</a> *br, <a class="el" href="class_k_i.html">KI</a> *ki)</td></tr>
 <tr class="separator:abdb64f04f2492fbe458a9585265457ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace539a4c3fced16d41e8edfde612f08c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i.html#ace539a4c3fced16d41e8edfde612f08c">zeichneSpielfeld</a> (int, int)</td></tr>
-<tr class="separator:ace539a4c3fced16d41e8edfde612f08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c4186a30634b02fadf9088478fcd6d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i.html#a3c4186a30634b02fadf9088478fcd6d8">zeichneSpielfeld</a> (int <a class="el" href="structzug.html">zug</a>, int spieler)</td></tr>
+<tr class="separator:a3c4186a30634b02fadf9088478fcd6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab679c856cec515619230cfc070b620a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i.html#ab679c856cec515619230cfc070b620a4">zeichneAnleitung</a> ()</td></tr>
 <tr class="separator:ab679c856cec515619230cfc070b620a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f0ca6972fc65474e5002b0e588ac207"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i.html#a4f0ca6972fc65474e5002b0e588ac207">zeichneZug</a> (int, int, int, int)</td></tr>
-<tr class="separator:a4f0ca6972fc65474e5002b0e588ac207"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d8b792feaff29ccbcdfdc75613df811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i.html#a7d8b792feaff29ccbcdfdc75613df811">Spieler</a> (bool, int, int)</td></tr>
-<tr class="separator:a7d8b792feaff29ccbcdfdc75613df811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab892cc67dca7bd80350101493dd26542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i.html#ab892cc67dca7bd80350101493dd26542">zeichneZug</a> (int <a class="el" href="structzug.html">zug</a>, int spieler, int zeile, int spalte)</td></tr>
+<tr class="separator:ab892cc67dca7bd80350101493dd26542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e74958db22ad7359287eb2e06d0cb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i.html#a96e74958db22ad7359287eb2e06d0cb2">Spieler</a> (bool farbe, int <a class="el" href="structzug.html">zug</a>, int spieler)</td></tr>
+<tr class="separator:a96e74958db22ad7359287eb2e06d0cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attribute</h2></td></tr>
@@ -81,7 +81,9 @@ Private Attribute</h2></td></tr>
 <tr class="memitem:a859788c2a71895514783423c305cf886"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_k_i.html">KI</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i.html#a859788c2a71895514783423c305cf886">KIsw</a></td></tr>
 <tr class="separator:a859788c2a71895514783423c305cf886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><p>class <a class="el" href="class_g_u_i.html">GUI</a> Die Abkürzung <a class="el" href="class_g_u_i.html">GUI</a> steht für graphical user interface bzw. grafische Benutzeroberfläche. Durch diese Klasse wird dem Benutzer eine grafische Oberfläche zur Verfügung gestellt, über die er mit dem Programm interagierien kann. Alle Benutzereingaben erfolgen ausschließlich über die Tastatur. Unterstützend wird die Strucktur der erwarteten Eingabe in Klammern mit angegeben. Sollte dennoch der Benutzer eine Falsch Eingabe tätigen, so wird er darauf hingewiesen und kann seine Eingabe nach 3 Sekunken wiederholen. Die Darstellung des Spielfeldes und wichtiger Spielparameter erfolgt in der Windows Konsole über ANSI-Zeichen. </p>
+</div><h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
 <a class="anchor" id="abdb64f04f2492fbe458a9585265457ed"></a>
 <div class="memitem">
 <div class="memproto">
@@ -109,7 +111,7 @@ Private Attribute</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
-<a class="anchor" id="a7d8b792feaff29ccbcdfdc75613df811"></a>
+<a class="anchor" id="a96e74958db22ad7359287eb2e06d0cb2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -138,7 +140,20 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<p>zeichneZug(zug,spieler,zeile,spalte) Mit dieser Funktion wird dem Spieler alle zulässigen Züge des ausgewählten Steins angezeigt.</p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[int]</td><td>zug gibt den aktuellen Zug an </td></tr>
+    <tr><td class="paramname">[int]</td><td>spieler gibt an, welcher Spieler gerade am Zug ist </td></tr>
+    <tr><td class="paramname">[int]</td><td>zeile Zeile des ausgewählten Steins </td></tr>
+    <tr><td class="paramname">[int]</td><td>spalte Spalte des ausgewählten Steins</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="image">
+<img src="GUI_zeichneZug.png" alt="GUI_zeichneZug.png"/>
+</div>
+  
 </div>
 </div>
 <a class="anchor" id="ab679c856cec515619230cfc070b620a4"></a>
@@ -153,10 +168,20 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<p>zeichneSpielfeld(zug,spieler) Mit dieser Funktion wird das Spielfeld grafisch für den Spieler aufbereitet. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[int]</td><td>zug gibt den aktuelle Zug an </td></tr>
+    <tr><td class="paramname">[int]</td><td>spieler gibt an, welcher Spieler an Zug ist</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="image">
+<img src="GUI_zeichneSpielfeld.png" alt="GUI_zeichneSpielfeld.png"/>
+</div>
+  
 </div>
 </div>
-<a class="anchor" id="ace539a4c3fced16d41e8edfde612f08c"></a>
+<a class="anchor" id="a3c4186a30634b02fadf9088478fcd6d8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -179,10 +204,11 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="el" href="class_g_u_i.html">GUI</a> Diese Funktion ist ein Konstructor für eine Instanz von der Klasse Spielbrett. </p>
 
 </div>
 </div>
-<a class="anchor" id="a4f0ca6972fc65474e5002b0e588ac207"></a>
+<a class="anchor" id="ab892cc67dca7bd80350101493dd26542"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -217,7 +243,11 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<p>zeichenAnleitung() Diese Funktion gibt dem Benutzer Auskunft über die Spielregeln.</p>
+<div class="image">
+<img src="GUI_zeichneAnleitung.png" alt="GUI_zeichneAnleitung.png"/>
+</div>
+  
 </div>
 </div>
 <h2 class="groupheader">Dokumentation der Datenelemente</h2>
@@ -262,13 +292,13 @@ Private Attribute</h2></td></tr>
 </div>
 </div>
 <hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
-<li><a class="el" href="_g_u_i_8h_source.html">GUI.h</a></li>
-<li>C:/Users/franz/workspace/distanz/src/cpp/<a class="el" href="_g_u_i_8cpp.html">GUI.cpp</a></li>
+<li><a class="el" href="_g_u_i_8h.html">GUI.h</a></li>
+<li><a class="el" href="_g_u_i_8cpp.html">GUI.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Fre Jun 19 2015 23:38:34 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Jun 21 2015 22:49:03 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -33,7 +33,7 @@ private:
 	 * Vereint zwei Strategien und führt die Wertigkeiten zusammen.
 	 * Je kleiner die Wertigkeits-Zahl desto besser ist der zug.
 	 * \image html KI_mergeStrategie.png
-	 * \image latex KI_mergeStrategie.png
+	 * \image latex KI_mergeStrategie.eps
 	 * @param [in] st1 Pointer auf eine Strategie
 	 * @param [in] st2Zuege Vector mit Zügen.
 	 * @return	Vector mit nach wertigkeit sortierten zügen.
@@ -66,7 +66,7 @@ private:
 	 * Vereint zwei Strategien und fürt die Wertigkeiten zusammen.
 	 * Je kleiner die wertigkeits Zahl desto besser ist der Zug.
 	 * \image html KI_mergeStrategie.png
-	 * \image latex KI_mergeStrategie.png
+	 * \image latex KI_mergeStrategie.eps
 	 * @param [in] st1 Pointer auf eine Strategie.
 	 * @param [in] st2 Pointer auf eine Strategie.
 	 * @return Vector mit nach Wertigkeit sortierten Zügen.
@@ -78,7 +78,7 @@ private:
 	 * Wählt aus den zusammengefürten Strategien den besten Zug aus.
 	 * Und stelt sicher das der König nicht in Gefahr ist bzw. kommt.
 	 * \image html KI_searchBestZug.png
-	 * \image latex KI_searchBestZug.png
+	 * \image latex KI_searchBestZug.eps
 	 * @startuml{KI_searchBestZug.png}
 	 * start
 	 * :Strategie schütze König->berechnen;
@@ -119,8 +119,8 @@ public:
 	/**
 	 * nexZug
 	 * Führt den nächsten Zug aus
-	 * \image html nexZug.png
-	 * \image latex nexZug.png
+	 * \image html KI_nexZug.png
+	 * \image latex KI_nexZug.eps
 	 * @startuml{KI_nexZug.png}
 	 * start
 	 * :searchBestZug;

@@ -140,7 +140,7 @@ INLINE_INHERITED_MEMB = NO
 # shortest path that makes the file name unique will be used
 # The default value is: YES.
 
-FULL_PATH_NAMES = YES
+FULL_PATH_NAMES = NO
 
 # The STRIP_FROM_PATH tag can be used to strip a user-defined part of the path.
 # Stripping is only done if one of the specified strings matches the left-hand
@@ -228,7 +228,7 @@ TAB_SIZE = 4
 # "Side Effects:". You can put \n's in the value part of an alias to insert
 # newlines.
 
-ALIASES = "startuml{1}=\\if DontIgnorePlantUMLCode" enduml=\endif 
+ALIASES = "startuml{1}=\\if DontIgnorePlantUMLCode" enduml=\endif
 
 # This tag can be used to specify a number of word-keyword mappings (TCL only).
 # A mapping has the form "name=value". For example adding "class=itcl::class"
@@ -518,7 +518,7 @@ HIDE_COMPOUND_REFERENCE = NO
 # the files that are included by a file in the documentation of that file.
 # The default value is: YES.
 
-SHOW_INCLUDE_FILES = YES
+SHOW_INCLUDE_FILES = 
 
 # If the SHOW_GROUPED_MEMB_INC tag is set to YES then Doxygen will add for each
 # grouped member an include statement to the documentation, telling the reader
@@ -597,7 +597,7 @@ STRICT_PROTO_MATCHING = NO
 # list. This list is created by putting \todo commands in the documentation.
 # The default value is: YES.
 
-GENERATE_TODOLIST = YES
+GENERATE_TODOLIST = NO
 
 # The GENERATE_TESTLIST tag can be used to enable (YES) or disable (NO) the test
 # list. This list is created by putting \test commands in the documentation.
@@ -609,7 +609,7 @@ GENERATE_TESTLIST = YES
 # list. This list is created by putting \bug commands in the documentation.
 # The default value is: YES.
 
-GENERATE_BUGLIST = YES
+GENERATE_BUGLIST = NO
 
 # The GENERATE_DEPRECATEDLIST tag can be used to enable (YES) or disable (NO)
 # the deprecated list. This list is created by putting \deprecated commands in
@@ -640,7 +640,7 @@ MAX_INITIALIZER_LINES = 30
 # list will mention the files that were used to generate the documentation.
 # The default value is: YES.
 
-SHOW_USED_FILES = YES
+SHOW_USED_FILES = 
 
 # Set the SHOW_FILES tag to NO to disable the generation of the Files page. This
 # will remove the Files entry from the Quick Index and from the Folder Tree View
@@ -980,7 +980,7 @@ USE_HTAGS = NO
 # See also: Section \class.
 # The default value is: YES.
 
-VERBATIM_HEADERS = YES
+VERBATIM_HEADERS = NO
 
 # If the CLANG_ASSISTED_PARSING tag is set to YES then doxygen will use the
 # clang parser (see: http://clang.llvm.org/) for more accurate parsing at the

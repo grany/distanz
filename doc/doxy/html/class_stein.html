@@ -52,7 +52,7 @@
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_stein_8h_source.html">Stein.h</a>&gt;</code></p>
+<p><code>#include &lt;Stein.h&gt;</code></p>
 <div class="dynheader">
 Klassendiagramm für Stein:</div>
 <div class="dyncontent">
@@ -107,7 +107,8 @@ Geschützte Attribute</h2></td></tr>
 <tr class="separator:ab8a179db9a227d710ce7d236ecae37ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
-<div class="textblock"><p>class <a class="el" href="class_stein.html">Stein</a> </p>
+<div class="textblock"><p>class <a class="el" href="class_stein.html">Stein</a></p>
+<p>Jedes <a class="el" href="class_team.html">Team</a> besitzt drei Helfer. Sie können sich auf dem Spielfeld bewegen, festgesetzt (gefangen) werden, gegnerische Spielfiguren festsetzen, indem man sie ganz einfach auf das vom Gegner besetzte <a class="el" href="class_feld.html">Feld</a> schickt und in Verbindung mit dem teameigenen KÃ¶nig kÃ¶nnen sie auch selber befreit werden, sollte der Gegner sie gefangen genommen haben. Jede Spielfigur und damit auch jeder Helfer, bekommt bei Spielbeginn einen Platz mittels Pointern zugewiesen. Die Spielfigur-ID und die Spielfeld-ID bestimmen also, welche Spielfigur von welchem <a class="el" href="class_team.html">Team</a> sich wo im <a class="el" href="class_feld.html">Feld</a> befindet. </p>
 </div><h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
 <a class="anchor" id="a04fd5b2d635673ebf25d1c1cdac886c2"></a>
 <div class="memitem">
@@ -121,7 +122,7 @@ Geschützte Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor </p>
+<p>Konstruktor </p>
 
 </div>
 </div>
@@ -202,7 +203,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the value of gefangen </p><dl class="section return"><dt>Rückgabe</dt><dd>the value of gefangen </dd></dl>
+<p><a class="el" href="class_stein.html#a00dce1ad2cade0f5570d3e5c3b835a5b">getGeffangen()</a> Die Funktion beschreibt, ob der <a class="el" href="class_stein.html">Stein</a> gefangen ist oder nicht. </p><dl class="section return"><dt>Rückgabe</dt><dd>the value of gefangen </dd></dl>
 
 </div>
 </div>
@@ -218,6 +219,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="el" href="class_stein.html#a2076f66967b65fcb8e551e9522222a95">getid()</a> <a class="el" href="class_stein.html#a2076f66967b65fcb8e551e9522222a95">getid()</a> Diese Funktion sagt aus, ob es sich hierbei um weiß oder schwarz handelt. </p><dl class="section return"><dt>Rückgabe</dt><dd>id der Instanz </dd></dl>
 
 </div>
 </div>
@@ -263,6 +265,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="el" href="class_stein.html#a7136341c45149bfb929134b87f180a5b">setFrei()</a> Setzt den <a class="el" href="class_stein.html">Stein</a> frei Setzt gefangen -&gt; false </p>
 
 </div>
 </div>
@@ -286,7 +289,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Setzt den <a class="el" href="class_stein.html">Stein</a> Gefangen. gefangen -&gt; true </p>
+<p>setGefangen() Setzt den <a class="el" href="class_stein.html">Stein</a> gefangen. gefangen -&gt; true </p>
 
 <p>Erneute Implementation in <a class="el" href="class_koenig.html#a66d3242a51e934cc35bb8adabdba8a4a">Koenig</a>.</p>
 
@@ -329,7 +332,12 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Rueckt auf das uebergebene <a class="el" href="class_feld.html">Feld</a>. </p>
+<p>setOrt Rückt auf das übergebene <a class="el" href="class_feld.html">Feld</a>. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[Feld]</td><td>gibt die neue Position an </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Erneute Implementation in <a class="el" href="class_koenig.html#a6060e36b885b96aad97fa4c66646942f">Koenig</a>.</p>
 
@@ -356,7 +364,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gibt ein Array von erreichbaren Feldern zurueck </p><dl class="section return"><dt>Rückgabe</dt><dd><a class="el" href="class_feld.html">Feld</a> </dd></dl>
+<p><a class="el" href="class_stein.html#a788ece6ca232c408243620cfbc943382">zuege()</a> Die Funktion Zuege ermittelt alle möglichen Züge und gibt diese als Vector zurück. </p><dl class="section return"><dt>Rückgabe</dt><dd><a class="el" href="class_feld.html">Feld</a> zue </dd></dl>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
@@ -451,13 +459,13 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 </div>
 </div>
 <hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
-<li><a class="el" href="_stein_8h_source.html">Stein.h</a></li>
-<li>C:/Users/franz/workspace/distanz/src/cpp/<a class="el" href="_stein_8cpp.html">Stein.cpp</a></li>
+<li><a class="el" href="_stein_8h.html">Stein.h</a></li>
+<li><a class="el" href="_stein_8cpp.html">Stein.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Fre Jun 19 2015 23:38:35 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Jun 21 2015 22:49:06 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

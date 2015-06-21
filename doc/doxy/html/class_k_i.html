@@ -54,7 +54,7 @@
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_k_i_8h_source.html">KI.h</a>&gt;</code></p>
+<p><code>#include &lt;KI.h&gt;</code></p>
 <div class="dynheader">
 Zusammengehörigkeiten von KI:</div>
 <div class="dyncontent">
@@ -104,7 +104,7 @@ Statische, private Attribute</h2></td></tr>
 <tr class="separator:a16d7b067120b9b638781d5e5e6dcc005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
-<div class="textblock"><p>class <a class="el" href="class_k_i.html">KI</a> Ist eine Klasse die aus den Möglichen Spielzügen den besten Auswählt sie ist mit zusetzlichen Strategien erweiterbar. </p>
+<div class="textblock"><p>class <a class="el" href="class_k_i.html">KI</a> Ist eine Klasse die aus den möglichen Spielzügen den besten auswählt. Sie ist mit zusätzlichen Strategien erweiterbar. </p>
 </div><h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
 <a class="anchor" id="aa3c0a5eadcdf9c5fee6d8180dac17d0a"></a>
 <div class="memitem">
@@ -121,7 +121,7 @@ Statische, private Attribute</h2></td></tr>
 </div><div class="memdoc">
 <p><a class="el" href="class_k_i.html">KI</a> Konstruktor </p><dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">t</td><td>Reference auf das <a class="el" href="class_team.html">Team</a> was gesteuertwerden soll </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">t</td><td>Referenz auf das <a class="el" href="class_team.html">Team</a>, das gesteuert werden soll </td></tr>
   </table>
   </dd>
 </dl>
@@ -164,7 +164,7 @@ Statische, private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>getBrett </p><dl class="section return"><dt>Rückgabe</dt><dd>Reference auf Spielbrett </dd></dl>
+<p>getBrett </p><dl class="section return"><dt>Rückgabe</dt><dd>Referenz auf das Spielbrett </dd></dl>
 
 </div>
 </div>
@@ -180,7 +180,7 @@ Statische, private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>getTeam </p><dl class="section return"><dt>Rückgabe</dt><dd>Reference auf das Gesteuerte <a class="el" href="class_team.html">Team</a> </dd></dl>
+<p>getTeam </p><dl class="section return"><dt>Rückgabe</dt><dd>Referenz auf das gesteuerte <a class="el" href="class_team.html">Team</a> </dd></dl>
 
 </div>
 </div>
@@ -215,7 +215,7 @@ Statische, private Attribute</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>mergeStrategie Vereint zwei Strategien und fürt die Wertigkeiten zusammen. Je kleiner die wertigkeits Zahl desto besser ist der zug. </p><div class="image">
+<p>mergeStrategie Vereint zwei Strategien und führt die Wertigkeiten zusammen. Je kleiner die Wertigkeits-Zahl desto besser ist der zug. </p><div class="image">
 <img src="KI_mergeStrategie.png" alt="KI_mergeStrategie.png"/>
 </div>
   <dl class="params"><dt>Parameter</dt><dd>
@@ -270,7 +270,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 </table>
 </div><div class="memdoc">
 <ul>
-<li>mergeStrategie Vereint zwei Strategien und fürt die Wertigkeiten zusammen. Je kleiner die wertigkeits Zahl desto besser ist der zug. <div class="image">
+<li>mergeStrategie Vereint zwei Strategien und fürt die Wertigkeiten zusammen. Je kleiner die wertigkeits Zahl desto besser ist der Zug. <div class="image">
 <img src="KI_mergeStrategie.png" alt="KI_mergeStrategie.png"/>
 </div>
   <dl class="params"><dt>Parameter</dt><dd>
@@ -280,7 +280,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Rückgabe</dt><dd>Vector mit nach wertigkeit sortierten zügen. </dd></dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>Vector mit nach Wertigkeit sortierten Zügen. </dd></dl>
 </li>
 </ul>
 
@@ -308,7 +308,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
       </table>
 </div><div class="memdoc">
 <p>nexZug Führt den nächsten Zug aus </p><div class="image">
-<img src="nexZug.png" alt="nexZug.png"/>
+<img src="KI_nexZug.png" alt="KI_nexZug.png"/>
 </div>
    
 <p><div class="dynheader">
@@ -342,7 +342,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>seachBestZug Wählt aus den Zusammen gefürten Strategieen den besten aus. Und stelt sicher das der König nicht in gefar ist/kommt. </p><div class="image">
+<p>seachBestZug Wählt aus den zusammengefürten Strategien den besten Zug aus. Und stelt sicher das der König nicht in Gefahr ist bzw. kommt. </p><div class="image">
 <img src="KI_searchBestZug.png" alt="KI_searchBestZug.png"/>
 </div>
    
@@ -479,13 +479,13 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 </div>
 </div>
 <hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
-<li><a class="el" href="_k_i_8h_source.html">KI.h</a></li>
-<li>C:/Users/franz/workspace/distanz/src/cpp/<a class="el" href="_k_i_8cpp.html">KI.cpp</a></li>
+<li><a class="el" href="_k_i_8h.html">KI.h</a></li>
+<li><a class="el" href="_k_i_8cpp.html">KI.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Fre Jun 19 2015 23:38:34 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Jun 21 2015 22:49:05 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

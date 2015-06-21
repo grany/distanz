@@ -44,6 +44,7 @@ public:
 		 *  :Wert der Strategie = 0;
 		 * else (nein)
 		 *  :Wert der Strategie = 1;
+		 *  endif
 		 * end
 		 * @enduml
 		 */

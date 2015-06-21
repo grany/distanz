@@ -57,50 +57,50 @@
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_strategie_8h.html">Strategie.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sf_k_8h.html">SfK.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_ss_k.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_ss_k.html">SsK</a>: <span class="keyword">public</span> <a class="code" href="class_strategie.html">Strategie</a> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_ss_k.html#a4c117e68ae76434738995801a4a1fbcc">   22</a></span>&#160;    <a class="code" href="class_sf_k.html">SfK</a> <a class="code" href="class_ss_k.html#a4c117e68ae76434738995801a4a1fbcc">gegner</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_ss_k.html#af5cfdbc60256434dbb73e61e737e056a">   23</a></span>&#160;    std::vector&lt;zug&gt; <a class="code" href="class_ss_k.html#af5cfdbc60256434dbb73e61e737e056a">gZuege</a>;    <span class="comment">//Gegnerische Zuege</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     * bewerten()</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     * Bewertet moegliche Zuege nach der Moeglichkeit eigenen Koenig zu sichern.</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_ss_k.html#aac922686e66332aae431ec05d06937a0">bewerten</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_ss_k.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_ss_k.html">SsK</a>: <span class="keyword">public</span> <a class="code" href="class_strategie.html">Strategie</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_ss_k.html#a4c117e68ae76434738995801a4a1fbcc">   28</a></span>&#160;    <a class="code" href="class_sf_k.html">SfK</a> <a class="code" href="class_ss_k.html#a4c117e68ae76434738995801a4a1fbcc">gegner</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_ss_k.html#af5cfdbc60256434dbb73e61e737e056a">   29</a></span>&#160;    std::vector&lt;zug&gt; <a class="code" href="class_ss_k.html#af5cfdbc60256434dbb73e61e737e056a">gZuege</a>;    <span class="comment">//Gegnerische Zuege</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * posSicher(Position p)</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     * Prueft ob uebergebene Position vom Gegner im naechsten Zug besetzt werden kann.</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     * @param p : Position</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     * @return bool false-&gt; gefaehrdet; true-&gt;sicher;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_ss_k.html#a7034ff44a447cef0d24117e9a1fa9fef">posSicher</a>(<a class="code" href="struct_possition.html">Possition</a> p);        <span class="comment">//Position</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_ss_k.html#a24d667d15c076686914ad331b2306f14">SsK</a>(<a class="code" href="class_team.html">Team</a> &amp;<a class="code" href="class_strategie.html#a4f55e74f189ec8c6df88a57119fb3def">team</a>, <a class="code" href="class_spiel_brett.html">SpielBrett</a> &amp;b);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_ss_k.html#a24d667d15c076686914ad331b2306f14">SsK</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_ss_k.html#a3912f76c805a0d1810e0ab0c12bf49b4">~SsK</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_H_SSK_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_ss_k_html_a4c117e68ae76434738995801a4a1fbcc"><div class="ttname"><a href="class_ss_k.html#a4c117e68ae76434738995801a4a1fbcc">SsK::gegner</a></div><div class="ttdeci">SfK gegner</div><div class="ttdef"><b>Definition:</b> SsK.h:22</div></div>
-<div class="ttc" id="class_team_html"><div class="ttname"><a href="class_team.html">Team</a></div><div class="ttdef"><b>Definition:</b> Team.h:23</div></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * bewerten()</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     * Bewertet moegliche Zuege nach der Moeglichkeit eigenen Koenig zu sichern.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_ss_k.html#aac922686e66332aae431ec05d06937a0">bewerten</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     * posSicher(Position p)</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     * Prueft ob uebergebene Position vom Gegner im naechsten Zug besetzt werden kann.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">     * @param p : Position</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     * @return bool false-&gt; gefaehrdet; true-&gt;sicher;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_ss_k.html#a7034ff44a447cef0d24117e9a1fa9fef">posSicher</a>(<a class="code" href="struct_possition.html">Possition</a> p);        <span class="comment">//Position</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_ss_k.html#a24d667d15c076686914ad331b2306f14">SsK</a>(<a class="code" href="class_team.html">Team</a> &amp;<a class="code" href="class_strategie.html#a4f55e74f189ec8c6df88a57119fb3def">team</a>, <a class="code" href="class_spiel_brett.html">SpielBrett</a> &amp;b);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_ss_k.html#a24d667d15c076686914ad331b2306f14">SsK</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_ss_k.html#a3912f76c805a0d1810e0ab0c12bf49b4">~SsK</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_H_SSK_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_ss_k_html_a4c117e68ae76434738995801a4a1fbcc"><div class="ttname"><a href="class_ss_k.html#a4c117e68ae76434738995801a4a1fbcc">SsK::gegner</a></div><div class="ttdeci">SfK gegner</div><div class="ttdef"><b>Definition:</b> SsK.h:28</div></div>
+<div class="ttc" id="class_team_html"><div class="ttname"><a href="class_team.html">Team</a></div><div class="ttdef"><b>Definition:</b> Team.h:29</div></div>
 <div class="ttc" id="_sf_k_8h_html"><div class="ttname"><a href="_sf_k_8h.html">SfK.h</a></div></div>
-<div class="ttc" id="class_ss_k_html_af5cfdbc60256434dbb73e61e737e056a"><div class="ttname"><a href="class_ss_k.html#af5cfdbc60256434dbb73e61e737e056a">SsK::gZuege</a></div><div class="ttdeci">std::vector&lt; zug &gt; gZuege</div><div class="ttdef"><b>Definition:</b> SsK.h:23</div></div>
+<div class="ttc" id="class_ss_k_html_af5cfdbc60256434dbb73e61e737e056a"><div class="ttname"><a href="class_ss_k.html#af5cfdbc60256434dbb73e61e737e056a">SsK::gZuege</a></div><div class="ttdeci">std::vector&lt; zug &gt; gZuege</div><div class="ttdef"><b>Definition:</b> SsK.h:29</div></div>
 <div class="ttc" id="struct_possition_html"><div class="ttname"><a href="struct_possition.html">Possition</a></div><div class="ttdef"><b>Definition:</b> Possition.h:10</div></div>
-<div class="ttc" id="class_sf_k_html"><div class="ttname"><a href="class_sf_k.html">SfK</a></div><div class="ttdef"><b>Definition:</b> SfK.h:22</div></div>
-<div class="ttc" id="class_ss_k_html"><div class="ttname"><a href="class_ss_k.html">SsK</a></div><div class="ttdef"><b>Definition:</b> SsK.h:20</div></div>
-<div class="ttc" id="class_spiel_brett_html"><div class="ttname"><a href="class_spiel_brett.html">SpielBrett</a></div><div class="ttdef"><b>Definition:</b> SpielBrett.h:14</div></div>
-<div class="ttc" id="class_strategie_html_a4f55e74f189ec8c6df88a57119fb3def"><div class="ttname"><a href="class_strategie.html#a4f55e74f189ec8c6df88a57119fb3def">Strategie::team</a></div><div class="ttdeci">Team &amp; team</div><div class="ttdef"><b>Definition:</b> Strategie.h:24</div></div>
+<div class="ttc" id="class_sf_k_html"><div class="ttname"><a href="class_sf_k.html">SfK</a></div><div class="ttdef"><b>Definition:</b> SfK.h:27</div></div>
+<div class="ttc" id="class_ss_k_html"><div class="ttname"><a href="class_ss_k.html">SsK</a></div><div class="ttdef"><b>Definition:</b> SsK.h:26</div></div>
+<div class="ttc" id="class_spiel_brett_html"><div class="ttname"><a href="class_spiel_brett.html">SpielBrett</a></div><div class="ttdef"><b>Definition:</b> SpielBrett.h:18</div></div>
+<div class="ttc" id="class_strategie_html_a4f55e74f189ec8c6df88a57119fb3def"><div class="ttname"><a href="class_strategie.html#a4f55e74f189ec8c6df88a57119fb3def">Strategie::team</a></div><div class="ttdeci">Team &amp; team</div><div class="ttdef"><b>Definition:</b> Strategie.h:31</div></div>
 <div class="ttc" id="class_ss_k_html_aac922686e66332aae431ec05d06937a0"><div class="ttname"><a href="class_ss_k.html#aac922686e66332aae431ec05d06937a0">SsK::bewerten</a></div><div class="ttdeci">virtual void bewerten() override</div><div class="ttdef"><b>Definition:</b> SsK.cpp:27</div></div>
 <div class="ttc" id="class_ss_k_html_a24d667d15c076686914ad331b2306f14"><div class="ttname"><a href="class_ss_k.html#a24d667d15c076686914ad331b2306f14">SsK::SsK</a></div><div class="ttdeci">SsK()</div></div>
-<div class="ttc" id="class_strategie_html"><div class="ttname"><a href="class_strategie.html">Strategie</a></div><div class="ttdef"><b>Definition:</b> Strategie.h:22</div></div>
+<div class="ttc" id="class_strategie_html"><div class="ttname"><a href="class_strategie.html">Strategie</a></div><div class="ttdef"><b>Definition:</b> Strategie.h:29</div></div>
 <div class="ttc" id="_strategie_8h_html"><div class="ttname"><a href="_strategie_8h.html">Strategie.h</a></div></div>
 <div class="ttc" id="class_ss_k_html_a3912f76c805a0d1810e0ab0c12bf49b4"><div class="ttname"><a href="class_ss_k.html#a3912f76c805a0d1810e0ab0c12bf49b4">SsK::~SsK</a></div><div class="ttdeci">virtual ~SsK()</div><div class="ttdef"><b>Definition:</b> SsK.cpp:61</div></div>
 <div class="ttc" id="class_ss_k_html_a7034ff44a447cef0d24117e9a1fa9fef"><div class="ttname"><a href="class_ss_k.html#a7034ff44a447cef0d24117e9a1fa9fef">SsK::posSicher</a></div><div class="ttdeci">bool posSicher(Possition p)</div><div class="ttdef"><b>Definition:</b> SsK.cpp:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Fre Jun 19 2015 23:38:34 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Jun 21 2015 21:42:08 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -45,57 +45,36 @@
 <div class="title">GUI.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_g_u_i_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*  GUI.cpp</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *  </span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Diese Klasse stellt die Grafische Ausgabe bereit.</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Man unterscheidet zwischen 4 verschiedenen Ausgaben</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *      1. Spielanleitung</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *      2. Spielbrett</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *      3. Gewonnen</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *      4. Verloren</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *  @Created on: 26.04.2015;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  @Author: Martin Bauer</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_spiel_brett_8h.html">SpielBrett.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../h/KI.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_g_u_i.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_g_u_i.html">GUI</a>{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_g_u_i.html#ad27ec30e361c6b18ba0b03f4eb3c2697">   18</a></span>&#160;<a class="code" href="class_spiel_brett.html">SpielBrett</a> *<a class="code" href="class_g_u_i.html#ad27ec30e361c6b18ba0b03f4eb3c2697">brett</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_g_u_i.html#a859788c2a71895514783423c305cf886">   19</a></span>&#160;<a class="code" href="class_k_i.html">KI</a> *<a class="code" href="class_g_u_i.html#a859788c2a71895514783423c305cf886">KIsw</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_g_u_i.html#abdb64f04f2492fbe458a9585265457ed">GUI</a>(<a class="code" href="class_spiel_brett.html">SpielBrett</a> *br, <a class="code" href="class_k_i.html">KI</a> *ki);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">    * Diese Funktion ist ein Constructor für eine Instanz von der Klasse Spielbrett.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">    *</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_g_u_i.html#ace539a4c3fced16d41e8edfde612f08c">zeichneSpielfeld</a>(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">    * Mit dieser Funktion wird das Spielfeld grafisch für den Spieler aufbereitet.</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    *</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_g_u_i.html#ab679c856cec515619230cfc070b620a4">zeichneAnleitung</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_g_u_i.html#a4f0ca6972fc65474e5002b0e588ac207">zeichneZug</a>(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>,<span class="keywordtype">int</span>,<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_g_u_i.html#a7d8b792feaff29ccbcdfdc75613df811">Spieler</a>(<span class="keywordtype">bool</span>,<span class="keywordtype">int</span>,<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<a href="_g_u_i_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_spiel_brett_8h.html">SpielBrett.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;../h/KI.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_g_u_i.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_g_u_i.html">GUI</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_g_u_i.html#ad27ec30e361c6b18ba0b03f4eb3c2697">   14</a></span>&#160;<a class="code" href="class_spiel_brett.html">SpielBrett</a> *<a class="code" href="class_g_u_i.html#ad27ec30e361c6b18ba0b03f4eb3c2697">brett</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_g_u_i.html#a859788c2a71895514783423c305cf886">   15</a></span>&#160;<a class="code" href="class_k_i.html">KI</a> *<a class="code" href="class_g_u_i.html#a859788c2a71895514783423c305cf886">KIsw</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_g_u_i.html#abdb64f04f2492fbe458a9585265457ed">GUI</a>(<a class="code" href="class_spiel_brett.html">SpielBrett</a> *br, <a class="code" href="class_k_i.html">KI</a> *ki);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_g_u_i.html#a3c4186a30634b02fadf9088478fcd6d8">zeichneSpielfeld</a>(<span class="keywordtype">int</span> <a class="code" href="structzug.html">zug</a>,<span class="keywordtype">int</span> spieler);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_g_u_i.html#ab679c856cec515619230cfc070b620a4">zeichneAnleitung</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_g_u_i.html#ab892cc67dca7bd80350101493dd26542">zeichneZug</a>(<span class="keywordtype">int</span> <a class="code" href="structzug.html">zug</a>,<span class="keywordtype">int</span> spieler,<span class="keywordtype">int</span> zeile,<span class="keywordtype">int</span> spalte);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_g_u_i.html#a96e74958db22ad7359287eb2e06d0cb2">Spieler</a>(<span class="keywordtype">bool</span> farbe,<span class="keywordtype">int</span> <a class="code" href="structzug.html">zug</a>,<span class="keywordtype">int</span> spieler);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;};</div>
 <div class="ttc" id="_spiel_brett_8h_html"><div class="ttname"><a href="_spiel_brett_8h.html">SpielBrett.h</a></div></div>
-<div class="ttc" id="class_g_u_i_html_ace539a4c3fced16d41e8edfde612f08c"><div class="ttname"><a href="class_g_u_i.html#ace539a4c3fced16d41e8edfde612f08c">GUI::zeichneSpielfeld</a></div><div class="ttdeci">void zeichneSpielfeld(int, int)</div><div class="ttdef"><b>Definition:</b> GUI.cpp:285</div></div>
-<div class="ttc" id="class_g_u_i_html_a4f0ca6972fc65474e5002b0e588ac207"><div class="ttname"><a href="class_g_u_i.html#a4f0ca6972fc65474e5002b0e588ac207">GUI::zeichneZug</a></div><div class="ttdeci">void zeichneZug(int, int, int, int)</div><div class="ttdef"><b>Definition:</b> GUI.cpp:17</div></div>
-<div class="ttc" id="class_g_u_i_html_a859788c2a71895514783423c305cf886"><div class="ttname"><a href="class_g_u_i.html#a859788c2a71895514783423c305cf886">GUI::KIsw</a></div><div class="ttdeci">KI * KIsw</div><div class="ttdef"><b>Definition:</b> GUI.h:19</div></div>
-<div class="ttc" id="class_spiel_brett_html"><div class="ttname"><a href="class_spiel_brett.html">SpielBrett</a></div><div class="ttdef"><b>Definition:</b> SpielBrett.h:14</div></div>
-<div class="ttc" id="class_g_u_i_html_a7d8b792feaff29ccbcdfdc75613df811"><div class="ttname"><a href="class_g_u_i.html#a7d8b792feaff29ccbcdfdc75613df811">GUI::Spieler</a></div><div class="ttdeci">void Spieler(bool, int, int)</div><div class="ttdef"><b>Definition:</b> GUI.cpp:93</div></div>
+<div class="ttc" id="class_g_u_i_html_a859788c2a71895514783423c305cf886"><div class="ttname"><a href="class_g_u_i.html#a859788c2a71895514783423c305cf886">GUI::KIsw</a></div><div class="ttdeci">KI * KIsw</div><div class="ttdef"><b>Definition:</b> GUI.h:15</div></div>
+<div class="ttc" id="class_g_u_i_html_ab892cc67dca7bd80350101493dd26542"><div class="ttname"><a href="class_g_u_i.html#ab892cc67dca7bd80350101493dd26542">GUI::zeichneZug</a></div><div class="ttdeci">void zeichneZug(int zug, int spieler, int zeile, int spalte)</div><div class="ttdef"><b>Definition:</b> GUI.cpp:300</div></div>
+<div class="ttc" id="class_spiel_brett_html"><div class="ttname"><a href="class_spiel_brett.html">SpielBrett</a></div><div class="ttdef"><b>Definition:</b> SpielBrett.h:18</div></div>
 <div class="ttc" id="class_k_i_html"><div class="ttname"><a href="class_k_i.html">KI</a></div><div class="ttdef"><b>Definition:</b> KI.h:22</div></div>
-<div class="ttc" id="class_g_u_i_html"><div class="ttname"><a href="class_g_u_i.html">GUI</a></div><div class="ttdef"><b>Definition:</b> GUI.h:16</div></div>
-<div class="ttc" id="class_g_u_i_html_abdb64f04f2492fbe458a9585265457ed"><div class="ttname"><a href="class_g_u_i.html#abdb64f04f2492fbe458a9585265457ed">GUI::GUI</a></div><div class="ttdeci">GUI(SpielBrett *br, KI *ki)</div><div class="ttdef"><b>Definition:</b> GUI.cpp:11</div></div>
-<div class="ttc" id="class_g_u_i_html_ab679c856cec515619230cfc070b620a4"><div class="ttname"><a href="class_g_u_i.html#ab679c856cec515619230cfc070b620a4">GUI::zeichneAnleitung</a></div><div class="ttdeci">void zeichneAnleitung()</div><div class="ttdef"><b>Definition:</b> GUI.cpp:264</div></div>
-<div class="ttc" id="class_g_u_i_html_ad27ec30e361c6b18ba0b03f4eb3c2697"><div class="ttname"><a href="class_g_u_i.html#ad27ec30e361c6b18ba0b03f4eb3c2697">GUI::brett</a></div><div class="ttdeci">SpielBrett * brett</div><div class="ttdef"><b>Definition:</b> GUI.h:18</div></div>
+<div class="ttc" id="class_g_u_i_html"><div class="ttname"><a href="class_g_u_i.html">GUI</a></div><div class="ttdef"><b>Definition:</b> GUI.h:11</div></div>
+<div class="ttc" id="class_g_u_i_html_a3c4186a30634b02fadf9088478fcd6d8"><div class="ttname"><a href="class_g_u_i.html#a3c4186a30634b02fadf9088478fcd6d8">GUI::zeichneSpielfeld</a></div><div class="ttdeci">void zeichneSpielfeld(int zug, int spieler)</div><div class="ttdef"><b>Definition:</b> GUI.cpp:248</div></div>
+<div class="ttc" id="class_g_u_i_html_abdb64f04f2492fbe458a9585265457ed"><div class="ttname"><a href="class_g_u_i.html#abdb64f04f2492fbe458a9585265457ed">GUI::GUI</a></div><div class="ttdeci">GUI(SpielBrett *br, KI *ki)</div><div class="ttdef"><b>Definition:</b> GUI.cpp:12</div></div>
+<div class="ttc" id="structzug_html"><div class="ttname"><a href="structzug.html">zug</a></div><div class="ttdef"><b>Definition:</b> zug.h:18</div></div>
+<div class="ttc" id="class_g_u_i_html_a96e74958db22ad7359287eb2e06d0cb2"><div class="ttname"><a href="class_g_u_i.html#a96e74958db22ad7359287eb2e06d0cb2">GUI::Spieler</a></div><div class="ttdeci">void Spieler(bool farbe, int zug, int spieler)</div><div class="ttdef"><b>Definition:</b> GUI.cpp:18</div></div>
+<div class="ttc" id="class_g_u_i_html_ab679c856cec515619230cfc070b620a4"><div class="ttname"><a href="class_g_u_i.html#ab679c856cec515619230cfc070b620a4">GUI::zeichneAnleitung</a></div><div class="ttdeci">void zeichneAnleitung()</div><div class="ttdef"><b>Definition:</b> GUI.cpp:227</div></div>
+<div class="ttc" id="class_g_u_i_html_ad27ec30e361c6b18ba0b03f4eb3c2697"><div class="ttname"><a href="class_g_u_i.html#ad27ec30e361c6b18ba0b03f4eb3c2697">GUI::brett</a></div><div class="ttdeci">SpielBrett * brett</div><div class="ttdef"><b>Definition:</b> GUI.h:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Fre Jun 19 2015 23:38:34 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Jun 21 2015 21:42:08 für DistanzSpiel von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
