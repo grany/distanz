@@ -44,16 +44,16 @@ public:
    virtual ~Team ( );
 
     /**
-    * Distanzen
-    * Traegt x und y Distanzen der "Anderen" Steine in Array ein.
-    * Array muss 6 Felder besitzen und vom typ Integer sein.
+    * distanzen()
+    * Trägt x und y Distanzen der "Anderen" Steine in einem Array ein.
+    * Array muss 6 Felder besitzen und vom Typ Integer sein.
     *
     * @param [in] &anfrage : Stein, [out] *arr : int array[6]
     */
    void distanzen (const Stein &anfrage, int *arr );
    /**
     * getStein
-    * Gibt Referenz auf Stein mit uebergebener ID zurueck, bei falschen IDÂ´s wird Referenz auf Koenig zurÃ¼ckgegeben.
+    * Gibt Referenz auf Stein mit übergebener ID zurück, bei falschen ID´s wird Referenz auf Koenig zurückgegeben.
     * 1-3 -> Helfer
     * 4 -> Koenig
     * @param [in] id : int
@@ -66,11 +66,11 @@ public:
    * @param new_var the new value of Sieg
    */
   void setSieg ( bool new_var );
-  /*
+  /**
    * Setze Gegnerisches Team
    */
   void setGegner ( Team *new_var );
-  /*
+  /**
    * Gibt Pointer auf Gegnerisches Team aus.
    */
   Team* getGegner () const;

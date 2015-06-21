@@ -16,8 +16,8 @@
 class Strategie;
 /**
  * class KI
- * Ist eine Klasse die aus den Möglichen Spielzügen den besten Auswählt
- * sie ist mit zusetzlichen Strategien erweiterbar.
+ * Ist eine Klasse die aus den möglichen Spielzügen den besten auswählt.
+ * Sie ist mit zusätzlichen Strategien erweiterbar.
  */
 class KI {
 private:
@@ -30,8 +30,8 @@ private:
 	zug nZug;
 	/**
 	 * mergeStrategie
-	 * Vereint zwei Strategien und fürt die Wertigkeiten zusammen.
-	 * Je kleiner die wertigkeits Zahl desto besser ist der zug.
+	 * Vereint zwei Strategien und führt die Wertigkeiten zusammen.
+	 * Je kleiner die Wertigkeits-Zahl desto besser ist der zug.
 	 * \image html KI_mergeStrategie.png
 	 * \image latex KI_mergeStrategie.png
 	 * @param [in] st1 Pointer auf eine Strategie
@@ -64,24 +64,24 @@ private:
 	/**
 	 * * mergeStrategie
 	 * Vereint zwei Strategien und fürt die Wertigkeiten zusammen.
-	 * Je kleiner die wertigkeits Zahl desto besser ist der zug.
+	 * Je kleiner die wertigkeits Zahl desto besser ist der Zug.
 	 * \image html KI_mergeStrategie.png
 	 * \image latex KI_mergeStrategie.png
 	 * @param [in] st1 Pointer auf eine Strategie.
 	 * @param [in] st2 Pointer auf eine Strategie.
-	 * @return Vector mit nach wertigkeit sortierten zügen.
+	 * @return Vector mit nach Wertigkeit sortierten Zügen.
 	 */
 	std::vector<zug> mergeStrategie(Strategie *st1, Strategie *st2);
 
 	/**
 	 * seachBestZug
-	 * Wählt aus den Zusammen gefürten Strategieen den besten aus.
-	 * Und stelt sicher das der König nicht in gefar ist/kommt.
+	 * Wählt aus den zusammengefürten Strategien den besten Zug aus.
+	 * Und stelt sicher das der König nicht in Gefahr ist bzw. kommt.
 	 * \image html KI_searchBestZug.png
 	 * \image latex KI_searchBestZug.png
 	 * @startuml{KI_searchBestZug.png}
 	 * start
-	 * :Strategie Schütze König->Berechnen;
+	 * :Strategie schütze König->berechnen;
 	 * if (König in Gefahr?) then (nein)
 	 *  while (nächste Strategie?)
 	 *   :mergeStrategie(Strategie, nächste Strategie);
@@ -96,7 +96,7 @@ private:
 	 *   endif
 	 *  endwhile
 	 * else (ja)
-	 *  :nächster Zug = Erster zug aus Defensiver Strategie;
+	 *  :nächster Zug = Erster Zug aus defensiver Strategie;
 	 * endif
 	 * end
 	 * @enduml
@@ -106,13 +106,13 @@ private:
 public:
 	/**
 	 * getTeam
-	 * @return Reference auf das Gesteuerte Team
+	 * @return Referenz auf das gesteuerte Team
 	 */
 	Team& getTeam();
 
 	/**
 	 * getBrett
-	 * @return Reference auf Spielbrett
+	 * @return Referenz auf das Spielbrett
 	 */
 	SpielBrett& getBrett();
 
@@ -131,7 +131,7 @@ public:
 	void nexZug();
 	/**
 	 * KI Konstruktor
-	 * @param [in,out] t Reference auf das Team was gesteuertwerden soll
+	 * @param [in,out] t Referenz auf das Team, das gesteuert werden soll
 	 */
 	KI(Team &t);
 	virtual ~KI();

@@ -14,7 +14,7 @@
  * class SfH (Strategie fange Helfer)
  * implementiert die Methode bewerten();
  * ################################################################################################################
- * Diese Strategie sorgt dafuer, dass die gegnerischen Helfer festgesetzt/gefangen werden. Ein festgesetzter/gefangener
+ * Diese Strategie sorgt dafür, dass die gegnerischen Helfer festgesetzt/gefangen werden. Ein festgesetzter/gefangener
  * Helfer stellt insofern keine Bedrohung mehr dar, bis er wieder vom Koenig befreit wird. Dies gilt es durch andere
  * Strategien zu verhindern.
  * ################################################################################################################
@@ -26,7 +26,7 @@ class SfH: public Strategie {
 public:
 	/**
 	 * bewerten()
-	 * Bewertet moegliche Zuege nach der Moeglichkeit gegnerische Helfer zu fangen.
+	 * Bewertet mögliche Züge nach der Möglichkeit gegnerische Helfer zu fangen.
 	 * \image html SfH_bewerten.png
 	 * \image latex SfH_bewerten.png
 	 * @startuml{SfH_bewerten.png}

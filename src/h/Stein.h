@@ -7,7 +7,7 @@ class Feld;
 /**
   * class Stein
   * 
-  * Jedes Team besitzt drei Helfer. Sie kÃ¶nnen sich auf dem Spielfeld bewegen, festgesetzt (gefangen) 	
+  * Jedes Team besitzt drei Helfer. Sie können sich auf dem Spielfeld bewegen, festgesetzt (gefangen)
   * werden, gegnerische Spielfiguren festsetzen, indem man sie ganz einfach auf das vom Gegner besetzte 	
   * Feld schickt und in Verbindung mit dem teameigenen KÃ¶nig kÃ¶nnen sie auch selber befreit werden, 	
   * sollte der Gegner sie gefangen genommen haben. Jede Spielfigur und damit auch jeder Helfer, bekommt 	
@@ -26,37 +26,39 @@ protected:
 public:
 
   /**
-   * Constructor
+   * Konstruktor
    */
 	Stein();
   Stein (int id, Feld *startplatz, Team *mt);
 
-  /*
+  /**getid()
    * getid()
+   * Diese Funktion sagt aus, ob es sich hierbei um weiß oder schwarz handelt.
    * @return id der Instanz
    */
   int getid() const;
 
-  /**
-   * Setzt den Stein Gefangen.
+  /**setGefangen()
+   * Setzt den Stein gefangen.
    * gefangen -> true
    */
  virtual void setGeffangen ( );		//gefangen
 
-  /*
+  /**setFrei()
    * Setzt den Stein frei
    * Setzt gefangen -> false
    */
   void setFrei();
 
-  /**
-   * Rueckt auf das uebergebene Feld.
+  /**setOrt
+   * Rückt auf das übergebene Feld.
+   * @param [Feld]	gibt die neue Position an
    */
   virtual bool ziehenach(Feld *ziehl);		//ziehl? :s
   void setOrt(Feld* o);
 
-  /**
-   * Get the value of gefangen
+  /**getGeffangen()
+   * Die Funktion beschreibt, ob der Stein gefangen ist oder nicht.
    * @return the value of gefangen
    */
   bool getGeffangen ( );		//gefangen
@@ -66,9 +68,9 @@ public:
   Feld* getOrt();
 
 
-  /**
-   * Gibt ein Array von erreichbaren Feldern zurueck
-   * @return Feld
+  /**zuege()
+   * Die Funktion Zuege ermittelt alle möglichen Züge und gibt diese als Vector zurück.
+   * @return Feld	zue
    */
   std::vector<Feld*> zuege ( );
   virtual ~Stein()=default;

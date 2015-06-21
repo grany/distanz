@@ -5,7 +5,7 @@
 #include "Stein.h"
 /**
  * class Feld
- * Symbolisiert ein Feld auf einem Spielbrett.
+ * Diese Klasse Symbolisiert ein Feld auf einem Spielbrett.
  */
 class Feld
 {
@@ -34,7 +34,7 @@ public:
    * start
    * if (Feld besetzt?) then (ja)
    * 	:im alten Gast Ort auf Feld vom neuen Stein setzen;
-   * 	:im alten Feld GÃ¤ste loeschen;
+   * 	:im alten Feld Gäste loeschen;
    * 	:im alten Feld Gast auf alten Gast setzen;
    * 	:im Feld Gast auf neuen Stein setzen;
    * 	:im neuen Stein Ort auf Feld setzen;

@@ -15,7 +15,7 @@
  * Ist eine Ableitung der abstrakten Klasse Strategie.
  * ################################################################################################################
  * Diese Strategie sorgt dafuer, dass der teameigene Koenig vor festsetzen/gefangen nehmen durch feindliche Spielfiguren
- * geschuetzt wird. Zu beobachten ist hierbei das fangen von gegnerischen Spielfiguren, sobald sie dem KÃ¶nig zu nahe kommen.
+ * geschuetzt wird. Zu beobachten ist hierbei das fangen von gegnerischen Spielfiguren, sobald sie dem König zu nahe kommen.
  * Auch der Koenig selber nimmt ein sehr defensives Verhalten an und haelt sich von den Gegnern fern, um ein fruehzeitiges
  * Ableben zu verhindern.
  * ################################################################################################################

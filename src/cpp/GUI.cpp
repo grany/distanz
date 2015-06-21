@@ -11,8 +11,8 @@ using namespace std;
 
 GUI::GUI(SpielBrett *br, KI *ki)
 {
-	brett=br;
-	KIsw=ki;
+	brett = br;
+	KIsw = ki;
 }
 
 void GUI::Spieler(bool farbe,int zug,int spieler)
