@@ -1,0 +1,159 @@
+\hypertarget{class_feld}{}\section{Feld Klassenreferenz}
+\label{class_feld}\index{Feld@{Feld}}
+
+
+{\ttfamily \#include $<$Feld.\+h$>$}
+
+
+
+Zusammengehörigkeiten von Feld\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_feld__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_feld_a8a3098df53c8ae2ef988d0d2e34be1db}{Feld} ()
+\item 
+\hyperlink{class_feld_a5305572f4799035e118ff6c5e87df7f3}{Feld} (short nx, short ny)
+\item 
+\hyperlink{class_feld_a6594ff1a9881daa807483ea3754e16d0}{Feld} (\hyperlink{class_feld}{Feld} \&f)
+\item 
+void \hyperlink{class_feld_a00d3eec0ced82a8aee97de9b5f030df2}{set\+Stein} (\hyperlink{class_stein}{Stein} $\ast$newstein)
+\item 
+void \hyperlink{class_feld_a6bb4ad9a5e5ba0b7c50e43b149535a5c}{del\+Stein} ()
+\item 
+bool \hyperlink{class_feld_a70456d20a55214db1af93ccab6d192cd}{get\+Besetzt} ()
+\item 
+\hyperlink{class_stein}{Stein} $\ast$ \hyperlink{class_feld_a41f1e0c497b688ac87d6ab95c9b4914d}{get\+Gast} ()
+\item 
+\hyperlink{struct_possition}{Possition} \hyperlink{class_feld_adaeedb54cddaa27a5081237b60389bd3}{get\+Pos} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_feld_aae4074e0032cce9eb0162394c639a4a0}{besetzt}
+\item 
+\hyperlink{struct_possition}{Possition} \hyperlink{class_feld_a1ac2c5d077b149682a32a238aec77991}{pos}
+\item 
+\hyperlink{class_stein}{Stein} $\ast$ \hyperlink{class_feld_a95773640265709ae8632d6a91655575d}{gast} =nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+class \hyperlink{class_feld}{Feld} Diese Klasse Symbolisiert ein \hyperlink{class_feld}{Feld} auf einem Spielbrett. 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{class_feld_a8a3098df53c8ae2ef988d0d2e34be1db}{}\index{Feld@{Feld}!Feld@{Feld}}
+\index{Feld@{Feld}!Feld@{Feld}}
+\subsubsection[{Feld}]{\setlength{\rightskip}{0pt plus 5cm}Feld\+::\+Feld (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_feld_a8a3098df53c8ae2ef988d0d2e34be1db}
+\hypertarget{class_feld_a5305572f4799035e118ff6c5e87df7f3}{}\index{Feld@{Feld}!Feld@{Feld}}
+\index{Feld@{Feld}!Feld@{Feld}}
+\subsubsection[{Feld}]{\setlength{\rightskip}{0pt plus 5cm}Feld\+::\+Feld (
+\begin{DoxyParamCaption}
+\item[{short}]{nx, }
+\item[{short}]{ny}
+\end{DoxyParamCaption}
+)}\label{class_feld_a5305572f4799035e118ff6c5e87df7f3}
+\hyperlink{class_feld}{Feld} Konstruktor 
+\begin{DoxyParams}[1]{Parameter}
+\mbox{\tt in}  & {\em nx} & x Koordinaten des Feldes \\
+\hline
+\mbox{\tt in}  & {\em ny} & y Koordinaten des Feldes \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_feld_a6594ff1a9881daa807483ea3754e16d0}{}\index{Feld@{Feld}!Feld@{Feld}}
+\index{Feld@{Feld}!Feld@{Feld}}
+\subsubsection[{Feld}]{\setlength{\rightskip}{0pt plus 5cm}Feld\+::\+Feld (
+\begin{DoxyParamCaption}
+\item[{{\bf Feld} \&}]{f}
+\end{DoxyParamCaption}
+)}\label{class_feld_a6594ff1a9881daa807483ea3754e16d0}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_feld_a6bb4ad9a5e5ba0b7c50e43b149535a5c}{}\index{Feld@{Feld}!del\+Stein@{del\+Stein}}
+\index{del\+Stein@{del\+Stein}!Feld@{Feld}}
+\subsubsection[{del\+Stein}]{\setlength{\rightskip}{0pt plus 5cm}void Feld\+::del\+Stein (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_feld_a6bb4ad9a5e5ba0b7c50e43b149535a5c}
+del\+Stein Loescht Zeiger auf Gast Setzt besetzt auf false   \hypertarget{class_feld_a70456d20a55214db1af93ccab6d192cd}{}\index{Feld@{Feld}!get\+Besetzt@{get\+Besetzt}}
+\index{get\+Besetzt@{get\+Besetzt}!Feld@{Feld}}
+\subsubsection[{get\+Besetzt}]{\setlength{\rightskip}{0pt plus 5cm}bool Feld\+::get\+Besetzt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_feld_a70456d20a55214db1af93ccab6d192cd}
+Get the value of besetzt. \begin{DoxyReturn}{Rückgabe}
+the value of besetzt. 
+\end{DoxyReturn}
+\hypertarget{class_feld_a41f1e0c497b688ac87d6ab95c9b4914d}{}\index{Feld@{Feld}!get\+Gast@{get\+Gast}}
+\index{get\+Gast@{get\+Gast}!Feld@{Feld}}
+\subsubsection[{get\+Gast}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stein} $\ast$ Feld\+::get\+Gast (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_feld_a41f1e0c497b688ac87d6ab95c9b4914d}
+get\+Gast \begin{DoxyReturn}{Rückgabe}
+Gibt einen Pointer auf den Gast zurueck. 
+\end{DoxyReturn}
+\hypertarget{class_feld_adaeedb54cddaa27a5081237b60389bd3}{}\index{Feld@{Feld}!get\+Pos@{get\+Pos}}
+\index{get\+Pos@{get\+Pos}!Feld@{Feld}}
+\subsubsection[{get\+Pos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Possition} Feld\+::get\+Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_feld_adaeedb54cddaa27a5081237b60389bd3}
+get\+Pos \begin{DoxyReturn}{Rückgabe}
+the value of pos. 
+\end{DoxyReturn}
+\hypertarget{class_feld_a00d3eec0ced82a8aee97de9b5f030df2}{}\index{Feld@{Feld}!set\+Stein@{set\+Stein}}
+\index{set\+Stein@{set\+Stein}!Feld@{Feld}}
+\subsubsection[{set\+Stein}]{\setlength{\rightskip}{0pt plus 5cm}void Feld\+::set\+Stein (
+\begin{DoxyParamCaption}
+\item[{{\bf Stein} $\ast$}]{newstein}
+\end{DoxyParamCaption}
+)}\label{class_feld_a00d3eec0ced82a8aee97de9b5f030df2}
+Setzt \hyperlink{class_stein}{Stein} auf das \hyperlink{class_feld}{Feld} und Markiert das \hyperlink{class_feld}{Feld} als Besetzt. Falls das \hyperlink{class_feld}{Feld} besetzt ist, werden die Gaeste/\+Steine getauscht. 
+\begin{DoxyParams}{Parameter}
+{\em \mbox{[}in/out\mbox{]}} & $\ast$newstein pointer auf den zu setzenden \hyperlink{class_stein}{Stein}.   \\
+\hline
+\end{DoxyParams}
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_feld_a00d3eec0ced82a8aee97de9b5f030df2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{class_feld_aae4074e0032cce9eb0162394c639a4a0}{}\index{Feld@{Feld}!besetzt@{besetzt}}
+\index{besetzt@{besetzt}!Feld@{Feld}}
+\subsubsection[{besetzt}]{\setlength{\rightskip}{0pt plus 5cm}bool Feld\+::besetzt\hspace{0.3cm}{\ttfamily [private]}}\label{class_feld_aae4074e0032cce9eb0162394c639a4a0}
+\hypertarget{class_feld_a95773640265709ae8632d6a91655575d}{}\index{Feld@{Feld}!gast@{gast}}
+\index{gast@{gast}!Feld@{Feld}}
+\subsubsection[{gast}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stein}$\ast$ Feld\+::gast =nullptr\hspace{0.3cm}{\ttfamily [private]}}\label{class_feld_a95773640265709ae8632d6a91655575d}
+\hypertarget{class_feld_a1ac2c5d077b149682a32a238aec77991}{}\index{Feld@{Feld}!pos@{pos}}
+\index{pos@{pos}!Feld@{Feld}}
+\subsubsection[{pos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Possition} Feld\+::pos\hspace{0.3cm}{\ttfamily [private]}}\label{class_feld_a1ac2c5d077b149682a32a238aec77991}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_feld_8h}{Feld.\+h}\item 
+\hyperlink{_feld_8cpp}{Feld.\+cpp}\end{DoxyCompactItemize}

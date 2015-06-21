@@ -1,0 +1,207 @@
+\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage[ngerman]{babel}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.2cm}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Erzeugt am Son Jun 21 2015 22\+:49\+:06 für Distanz\+Spiel von Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Erzeugt am Son Jun 21 2015 22\+:49\+:06 für Distanz\+Spiel von Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarks=true,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{roman}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large Distanz\+Spiel }\\
+\vspace*{1cm}
+{\large Erzeugt von Doxygen 1.8.9.1}\\
+\vspace*{0.5cm}
+{\small Son Jun 21 2015 22:49:06}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\chapter{Hierarchie-\/\+Verzeichnis}
+\input{hierarchy}
+\chapter{Klassen-\/\+Verzeichnis}
+\input{annotated}
+\chapter{Datei-\/\+Verzeichnis}
+\input{files}
+\chapter{Klassen-\/\+Dokumentation}
+\input{class_feld}
+\input{class_g_u_i}
+\input{class_k_i}
+\input{class_koenig}
+\input{struct_possition}
+\input{class_sf_h}
+\input{class_sf_k}
+\input{class_spiel_brett}
+\input{class_sr_h}
+\input{class_ss_k}
+\input{class_stein}
+\input{class_strategie}
+\input{class_team}
+\input{class_user}
+\input{structzug}
+\chapter{Datei-\/\+Dokumentation}
+\input{_feld_8cpp}
+\input{_feld_8h}
+\input{_g_u_i_8cpp}
+\input{_g_u_i_8h}
+\input{_k_i_8cpp}
+\input{_k_i_8h}
+\input{_koenig_8cpp}
+\input{_koenig_8h}
+\input{main_8cpp}
+\input{_main_8h}
+\input{_possition_8h}
+\input{_sf_h_8cpp}
+\input{_sf_h_8h}
+\input{_sf_k_8cpp}
+\input{_sf_k_8h}
+\input{_spiel_brett_8cpp}
+\input{_spiel_brett_8h}
+\input{_sr_h_8cpp}
+\input{_sr_h_8h}
+\input{_ss_k_8cpp}
+\input{_ss_k_8h}
+\input{_stein_8cpp}
+\input{_stein_8h}
+\input{_strategie_8cpp}
+\input{_strategie_8h}
+\input{_team_8cpp}
+\input{_team_8h}
+\input{_user_8cpp}
+\input{_user_8h}
+\input{zug_8h}
+%--- End generated contents ---
+
+% Index
+\backmatter
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+
+\end{document}

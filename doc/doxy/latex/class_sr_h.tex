@@ -1,0 +1,97 @@
+\hypertarget{class_sr_h}{}\section{Sr\+H Klassenreferenz}
+\label{class_sr_h}\index{Sr\+H@{Sr\+H}}
+
+
+{\ttfamily \#include $<$Sr\+H.\+h$>$}
+
+
+
+Klassendiagramm für Sr\+H\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{class_sr_h__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von Sr\+H\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sr_h__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_sr_h_a55d77665881d6810fbde7d761ecbb02c}{bewerten} () override
+\item 
+\hyperlink{class_sr_h_a82cf641600edd8043d09c03478fac61e}{Sr\+H} (\hyperlink{class_team}{Team} \&\hyperlink{class_strategie_a4f55e74f189ec8c6df88a57119fb3def}{team}, \hyperlink{class_spiel_brett}{Spiel\+Brett} \&b)
+\item 
+virtual \hyperlink{class_sr_h_ac7f7f95344ee9e1517f8f5dcb515cc40}{$\sim$\+Sr\+H} ()
+\end{DoxyCompactItemize}
+\subsection*{Weitere Geerbte Elemente}
+
+
+\subsection{Ausführliche Beschreibung}
+class \hyperlink{class_sr_h}{Sr\+H} (\hyperlink{class_strategie}{Strategie} rette Helfer) Ist eine Ableitung der abstrakten Klasse \hyperlink{class_strategie}{Strategie}. \subparagraph*{}
+
+Diese \hyperlink{class_strategie}{Strategie} sorgt dafuer, dass der \hyperlink{class_koenig}{Koenig} teameigene festgesetzte/gefangene Helfer befreit. Dies tut er allerdings nach Moeglichkeit erst dann, wenn sie sich auch in unmittelbarer Umgebung befinden, da der \hyperlink{class_koenig}{Koenig} selber eine sehr defensive Rolle im Spielverlauf einnimmt. \subparagraph*{}
+
+Ueberschreibt/implementiert die Methode \hyperlink{class_sr_h_a55d77665881d6810fbde7d761ecbb02c}{bewerten()}; 
+\begin{DoxyParams}{Parameter}
+{\em \&team} & Referenz auf Instanz von \hyperlink{class_team}{Team} \\
+\hline
+{\em \&b} & Referenz auf Instanz von \hyperlink{class_spiel_brett}{Spiel\+Brett} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{class_sr_h_a82cf641600edd8043d09c03478fac61e}{}\index{Sr\+H@{Sr\+H}!Sr\+H@{Sr\+H}}
+\index{Sr\+H@{Sr\+H}!Sr\+H@{Sr\+H}}
+\subsubsection[{Sr\+H}]{\setlength{\rightskip}{0pt plus 5cm}Sr\+H\+::\+Sr\+H (
+\begin{DoxyParamCaption}
+\item[{{\bf Team} \&}]{team, }
+\item[{{\bf Spiel\+Brett} \&}]{b}
+\end{DoxyParamCaption}
+)}\label{class_sr_h_a82cf641600edd8043d09c03478fac61e}
+\hypertarget{class_sr_h_ac7f7f95344ee9e1517f8f5dcb515cc40}{}\index{Sr\+H@{Sr\+H}!````~Sr\+H@{$\sim$\+Sr\+H}}
+\index{````~Sr\+H@{$\sim$\+Sr\+H}!Sr\+H@{Sr\+H}}
+\subsubsection[{$\sim$\+Sr\+H}]{\setlength{\rightskip}{0pt plus 5cm}Sr\+H\+::$\sim$\+Sr\+H (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_sr_h_ac7f7f95344ee9e1517f8f5dcb515cc40}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_sr_h_a55d77665881d6810fbde7d761ecbb02c}{}\index{Sr\+H@{Sr\+H}!bewerten@{bewerten}}
+\index{bewerten@{bewerten}!Sr\+H@{Sr\+H}}
+\subsubsection[{bewerten}]{\setlength{\rightskip}{0pt plus 5cm}void Sr\+H\+::bewerten (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_sr_h_a55d77665881d6810fbde7d761ecbb02c}
+
+
+Implementiert \hyperlink{class_strategie_a6e11413c1c8e4ca8bd0bcac21be3c1bf}{Strategie}.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sr_h_a55d77665881d6810fbde7d761ecbb02c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_sr_h_8h}{Sr\+H.\+h}\item 
+\hyperlink{_sr_h_8cpp}{Sr\+H.\+cpp}\end{DoxyCompactItemize}

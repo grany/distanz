@@ -1,0 +1,235 @@
+\hypertarget{class_stein}{}\section{Stein Klassenreferenz}
+\label{class_stein}\index{Stein@{Stein}}
+
+
+{\ttfamily \#include $<$Stein.\+h$>$}
+
+
+
+Klassendiagramm für Stein\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_stein__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von Stein\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_stein__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_stein_a04fd5b2d635673ebf25d1c1cdac886c2}{Stein} ()
+\item 
+\hyperlink{class_stein_a4296de20f474a5186e1830025600b8bd}{Stein} (int \hyperlink{class_stein_ab8a179db9a227d710ce7d236ecae37ee}{id}, \hyperlink{class_feld}{Feld} $\ast$startplatz, \hyperlink{class_team}{Team} $\ast$mt)
+\item 
+int \hyperlink{class_stein_a2076f66967b65fcb8e551e9522222a95}{getid} () const 
+\item 
+virtual void \hyperlink{class_stein_a8a98cf8c96426bf5164c6eb41b03154b}{set\+Geffangen} ()
+\item 
+void \hyperlink{class_stein_a7136341c45149bfb929134b87f180a5b}{set\+Frei} ()
+\item 
+virtual bool \hyperlink{class_stein_afdac18155661536e25eda360038c1ca7}{ziehenach} (\hyperlink{class_feld}{Feld} $\ast$ziehl)
+\item 
+void \hyperlink{class_stein_a84a9276f99fd15f2f16d31c5c33cc66c}{set\+Ort} (\hyperlink{class_feld}{Feld} $\ast$o)
+\item 
+bool \hyperlink{class_stein_a00dce1ad2cade0f5570d3e5c3b835a5b}{get\+Geffangen} ()
+\item 
+\hyperlink{class_team}{Team} $\ast$ \hyperlink{class_stein_aa8e6142169b14b20350ffb2e0fa526ce}{get\+Mteam} ()
+\item 
+\hyperlink{class_feld}{Feld} $\ast$ \hyperlink{class_stein_af1c9430ba1a60572e73d9ed16199e185}{get\+Ort} ()
+\item 
+std\+::vector$<$ \hyperlink{class_feld}{Feld} $\ast$ $>$ \hyperlink{class_stein_a788ece6ca232c408243620cfbc943382}{zuege} ()
+\item 
+virtual \hyperlink{class_stein_aeebc529dd953c23c35a3ad8f8f78981d}{$\sim$\+Stein} ()=default
+\end{DoxyCompactItemize}
+\subsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_stein_a4151b35edce6df36a415536c9fd0d247}{geffangen} =false
+\item 
+\hyperlink{class_feld}{Feld} $\ast$ \hyperlink{class_stein_aee940baa567743384754215cbdb5657d}{ort} =nullptr
+\item 
+\hyperlink{class_team}{Team} $\ast$ \hyperlink{class_stein_ae2b58e289026a8afaf8e22f8b9ad3d9c}{mteam} =nullptr
+\item 
+const int \hyperlink{class_stein_ab8a179db9a227d710ce7d236ecae37ee}{id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+class \hyperlink{class_stein}{Stein}
+
+Jedes \hyperlink{class_team}{Team} besitzt drei Helfer. Sie können sich auf dem Spielfeld bewegen, festgesetzt (gefangen) werden, gegnerische Spielfiguren festsetzen, indem man sie ganz einfach auf das vom Gegner besetzte \hyperlink{class_feld}{Feld} schickt und in Verbindung mit dem teameigenen KÃ¶nig kÃ¶nnen sie auch selber befreit werden, sollte der Gegner sie gefangen genommen haben. Jede Spielfigur und damit auch jeder Helfer, bekommt bei Spielbeginn einen Platz mittels Pointern zugewiesen. Die Spielfigur-\/\+I\+D und die Spielfeld-\/\+I\+D bestimmen also, welche Spielfigur von welchem \hyperlink{class_team}{Team} sich wo im \hyperlink{class_feld}{Feld} befindet. 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{class_stein_a04fd5b2d635673ebf25d1c1cdac886c2}{}\index{Stein@{Stein}!Stein@{Stein}}
+\index{Stein@{Stein}!Stein@{Stein}}
+\subsubsection[{Stein}]{\setlength{\rightskip}{0pt plus 5cm}Stein\+::\+Stein (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_stein_a04fd5b2d635673ebf25d1c1cdac886c2}
+Konstruktor \hypertarget{class_stein_a4296de20f474a5186e1830025600b8bd}{}\index{Stein@{Stein}!Stein@{Stein}}
+\index{Stein@{Stein}!Stein@{Stein}}
+\subsubsection[{Stein}]{\setlength{\rightskip}{0pt plus 5cm}Stein\+::\+Stein (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{{\bf Feld} $\ast$}]{startplatz, }
+\item[{{\bf Team} $\ast$}]{mt}
+\end{DoxyParamCaption}
+)}\label{class_stein_a4296de20f474a5186e1830025600b8bd}
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_stein_a4296de20f474a5186e1830025600b8bd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_stein_aeebc529dd953c23c35a3ad8f8f78981d}{}\index{Stein@{Stein}!````~Stein@{$\sim$\+Stein}}
+\index{````~Stein@{$\sim$\+Stein}!Stein@{Stein}}
+\subsubsection[{$\sim$\+Stein}]{\setlength{\rightskip}{0pt plus 5cm}virtual Stein\+::$\sim$\+Stein (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\label{class_stein_aeebc529dd953c23c35a3ad8f8f78981d}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_stein_a00dce1ad2cade0f5570d3e5c3b835a5b}{}\index{Stein@{Stein}!get\+Geffangen@{get\+Geffangen}}
+\index{get\+Geffangen@{get\+Geffangen}!Stein@{Stein}}
+\subsubsection[{get\+Geffangen}]{\setlength{\rightskip}{0pt plus 5cm}bool Stein\+::get\+Geffangen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_stein_a00dce1ad2cade0f5570d3e5c3b835a5b}
+\hyperlink{class_stein_a00dce1ad2cade0f5570d3e5c3b835a5b}{get\+Geffangen()} Die Funktion beschreibt, ob der \hyperlink{class_stein}{Stein} gefangen ist oder nicht. \begin{DoxyReturn}{Rückgabe}
+the value of gefangen 
+\end{DoxyReturn}
+\hypertarget{class_stein_a2076f66967b65fcb8e551e9522222a95}{}\index{Stein@{Stein}!getid@{getid}}
+\index{getid@{getid}!Stein@{Stein}}
+\subsubsection[{getid}]{\setlength{\rightskip}{0pt plus 5cm}int Stein\+::getid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_stein_a2076f66967b65fcb8e551e9522222a95}
+\hyperlink{class_stein_a2076f66967b65fcb8e551e9522222a95}{getid()} \hyperlink{class_stein_a2076f66967b65fcb8e551e9522222a95}{getid()} Diese Funktion sagt aus, ob es sich hierbei um weiß oder schwarz handelt. \begin{DoxyReturn}{Rückgabe}
+id der Instanz 
+\end{DoxyReturn}
+\hypertarget{class_stein_aa8e6142169b14b20350ffb2e0fa526ce}{}\index{Stein@{Stein}!get\+Mteam@{get\+Mteam}}
+\index{get\+Mteam@{get\+Mteam}!Stein@{Stein}}
+\subsubsection[{get\+Mteam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Team} $\ast$ Stein\+::get\+Mteam (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_stein_aa8e6142169b14b20350ffb2e0fa526ce}
+\hypertarget{class_stein_af1c9430ba1a60572e73d9ed16199e185}{}\index{Stein@{Stein}!get\+Ort@{get\+Ort}}
+\index{get\+Ort@{get\+Ort}!Stein@{Stein}}
+\subsubsection[{get\+Ort}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feld} $\ast$ Stein\+::get\+Ort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_stein_af1c9430ba1a60572e73d9ed16199e185}
+\hypertarget{class_stein_a7136341c45149bfb929134b87f180a5b}{}\index{Stein@{Stein}!set\+Frei@{set\+Frei}}
+\index{set\+Frei@{set\+Frei}!Stein@{Stein}}
+\subsubsection[{set\+Frei}]{\setlength{\rightskip}{0pt plus 5cm}void Stein\+::set\+Frei (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_stein_a7136341c45149bfb929134b87f180a5b}
+\hyperlink{class_stein_a7136341c45149bfb929134b87f180a5b}{set\+Frei()} Setzt den \hyperlink{class_stein}{Stein} frei Setzt gefangen -\/$>$ false \hypertarget{class_stein_a8a98cf8c96426bf5164c6eb41b03154b}{}\index{Stein@{Stein}!set\+Geffangen@{set\+Geffangen}}
+\index{set\+Geffangen@{set\+Geffangen}!Stein@{Stein}}
+\subsubsection[{set\+Geffangen}]{\setlength{\rightskip}{0pt plus 5cm}void Stein\+::set\+Geffangen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_stein_a8a98cf8c96426bf5164c6eb41b03154b}
+set\+Gefangen() Setzt den \hyperlink{class_stein}{Stein} gefangen. gefangen -\/$>$ true 
+
+Erneute Implementation in \hyperlink{class_koenig_a66d3242a51e934cc35bb8adabdba8a4a}{Koenig}.
+
+\hypertarget{class_stein_a84a9276f99fd15f2f16d31c5c33cc66c}{}\index{Stein@{Stein}!set\+Ort@{set\+Ort}}
+\index{set\+Ort@{set\+Ort}!Stein@{Stein}}
+\subsubsection[{set\+Ort}]{\setlength{\rightskip}{0pt plus 5cm}void Stein\+::set\+Ort (
+\begin{DoxyParamCaption}
+\item[{{\bf Feld} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\label{class_stein_a84a9276f99fd15f2f16d31c5c33cc66c}
+\hypertarget{class_stein_afdac18155661536e25eda360038c1ca7}{}\index{Stein@{Stein}!ziehenach@{ziehenach}}
+\index{ziehenach@{ziehenach}!Stein@{Stein}}
+\subsubsection[{ziehenach}]{\setlength{\rightskip}{0pt plus 5cm}bool Stein\+::ziehenach (
+\begin{DoxyParamCaption}
+\item[{{\bf Feld} $\ast$}]{ziehl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_stein_afdac18155661536e25eda360038c1ca7}
+set\+Ort Rückt auf das übergebene \hyperlink{class_feld}{Feld}. 
+\begin{DoxyParams}{Parameter}
+{\em \mbox{[}\+Feld\mbox{]}} & gibt die neue Position an \\
+\hline
+\end{DoxyParams}
+
+
+Erneute Implementation in \hyperlink{class_koenig_a6060e36b885b96aad97fa4c66646942f}{Koenig}.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_stein_afdac18155661536e25eda360038c1ca7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_stein_a788ece6ca232c408243620cfbc943382}{}\index{Stein@{Stein}!zuege@{zuege}}
+\index{zuege@{zuege}!Stein@{Stein}}
+\subsubsection[{zuege}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Feld} $\ast$ $>$ Stein\+::zuege (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_stein_a788ece6ca232c408243620cfbc943382}
+\hyperlink{class_stein_a788ece6ca232c408243620cfbc943382}{zuege()} Die Funktion Zuege ermittelt alle möglichen Züge und gibt diese als Vector zurück. \begin{DoxyReturn}{Rückgabe}
+\hyperlink{class_feld}{Feld} zue 
+\end{DoxyReturn}
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_stein_a788ece6ca232c408243620cfbc943382_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{class_stein_a4151b35edce6df36a415536c9fd0d247}{}\index{Stein@{Stein}!geffangen@{geffangen}}
+\index{geffangen@{geffangen}!Stein@{Stein}}
+\subsubsection[{geffangen}]{\setlength{\rightskip}{0pt plus 5cm}bool Stein\+::geffangen =false\hspace{0.3cm}{\ttfamily [protected]}}\label{class_stein_a4151b35edce6df36a415536c9fd0d247}
+\hypertarget{class_stein_ab8a179db9a227d710ce7d236ecae37ee}{}\index{Stein@{Stein}!id@{id}}
+\index{id@{id}!Stein@{Stein}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}const int Stein\+::id\hspace{0.3cm}{\ttfamily [protected]}}\label{class_stein_ab8a179db9a227d710ce7d236ecae37ee}
+\hypertarget{class_stein_ae2b58e289026a8afaf8e22f8b9ad3d9c}{}\index{Stein@{Stein}!mteam@{mteam}}
+\index{mteam@{mteam}!Stein@{Stein}}
+\subsubsection[{mteam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Team}$\ast$ Stein\+::mteam =nullptr\hspace{0.3cm}{\ttfamily [protected]}}\label{class_stein_ae2b58e289026a8afaf8e22f8b9ad3d9c}
+\hypertarget{class_stein_aee940baa567743384754215cbdb5657d}{}\index{Stein@{Stein}!ort@{ort}}
+\index{ort@{ort}!Stein@{Stein}}
+\subsubsection[{ort}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feld}$\ast$ Stein\+::ort =nullptr\hspace{0.3cm}{\ttfamily [protected]}}\label{class_stein_aee940baa567743384754215cbdb5657d}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_stein_8h}{Stein.\+h}\item 
+\hyperlink{_stein_8cpp}{Stein.\+cpp}\end{DoxyCompactItemize}

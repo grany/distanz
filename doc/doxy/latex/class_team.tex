@@ -1,0 +1,224 @@
+\hypertarget{class_team}{}\section{Team Klassenreferenz}
+\label{class_team}\index{Team@{Team}}
+
+
+{\ttfamily \#include $<$Team.\+h$>$}
+
+
+
+Zusammengehörigkeiten von Team\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_team__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_team_ac246630434b2154b18d7538f3886f89d}{Team} (\hyperlink{class_spiel_brett}{Spiel\+Brett} $\ast$br, bool f, \hyperlink{class_feld}{Feld} $\ast$s1, \hyperlink{class_feld}{Feld} $\ast$s2, \hyperlink{class_feld}{Feld} $\ast$s3, \hyperlink{class_feld}{Feld} $\ast$k, \hyperlink{class_team}{Team} $\ast$g)
+\item 
+\hyperlink{class_team_af4b0ef286d67546ce8208aeceb4f576a}{Team} ()=default
+\item 
+virtual \hyperlink{class_team_ab4218fddd612d52bab47bec4feeb49de}{$\sim$\+Team} ()
+\item 
+void \hyperlink{class_team_aca8bdbcf6d3fd6e4efbe84fc158089b1}{distanzen} (const \hyperlink{class_stein}{Stein} \&anfrage, int $\ast$arr)
+\item 
+\hyperlink{class_stein}{Stein} \& \hyperlink{class_team_a458bc7ccfe8325b848723774a9564729}{get\+Stein} (int id) const 
+\item 
+void \hyperlink{class_team_a118a601e0db3871796a6c5be8ef7883d}{set\+Sieg} (bool new\+\_\+var)
+\item 
+void \hyperlink{class_team_a57428fa9c4911a089cd317e71f2018ab}{set\+Gegner} (\hyperlink{class_team}{Team} $\ast$new\+\_\+var)
+\item 
+\hyperlink{class_team}{Team} $\ast$ \hyperlink{class_team_a4342344f18da4e843ff8bf08525628ec}{get\+Gegner} () const 
+\item 
+bool \hyperlink{class_team_adabf037f25d619ba30f6d19a9fd5c888}{get\+Farbe} () const 
+\item 
+bool \hyperlink{class_team_a8d92a4f530838898bb9ca43a7da3ff8d}{get\+Sieg} ()
+\item 
+\hyperlink{class_spiel_brett}{Spiel\+Brett} $\ast$ \hyperlink{class_team_abd4d61dc0590e55c906f22bfd49b4eb7}{get\+Brett} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_stein}{Stein} $\ast$ \hyperlink{class_team_a567566ff8b74878120070386105bb60d}{helfer1} =nullptr
+\item 
+\hyperlink{class_stein}{Stein} $\ast$ \hyperlink{class_team_a9df764cfcf97e0ca9f386a91da041f1f}{helfer2} =nullptr
+\item 
+\hyperlink{class_stein}{Stein} $\ast$ \hyperlink{class_team_a5d3c196e4039c8e4666fcd0156f3129b}{helfer3} =nullptr
+\item 
+\hyperlink{class_koenig}{Koenig} $\ast$ \hyperlink{class_team_a7e8d3c991b52c5bb72ddeaf2a4cec935}{koenig} =nullptr
+\item 
+bool \hyperlink{class_team_af4db822bc0edd1ff703f3c792b4df99e}{Sieg} =false
+\item 
+\hyperlink{class_team}{Team} $\ast$ \hyperlink{class_team_ac5014169ca8a0a48b4d2aeac44e693dd}{gegner} =nullptr
+\item 
+\hyperlink{class_spiel_brett}{Spiel\+Brett} $\ast$ \hyperlink{class_team_a11297253f6cd542d16cadda671e858fc}{brett} =nullptr
+\item 
+bool \hyperlink{class_team_a8177ac0df0beef8c2489401000be6868}{Farbe} =false
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+class \hyperlink{class_team}{Team} 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{class_team_ac246630434b2154b18d7538f3886f89d}{}\index{Team@{Team}!Team@{Team}}
+\index{Team@{Team}!Team@{Team}}
+\subsubsection[{Team}]{\setlength{\rightskip}{0pt plus 5cm}Team\+::\+Team (
+\begin{DoxyParamCaption}
+\item[{{\bf Spiel\+Brett} $\ast$}]{br, }
+\item[{bool}]{f, }
+\item[{{\bf Feld} $\ast$}]{s1, }
+\item[{{\bf Feld} $\ast$}]{s2, }
+\item[{{\bf Feld} $\ast$}]{s3, }
+\item[{{\bf Feld} $\ast$}]{k, }
+\item[{{\bf Team} $\ast$}]{g = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)}\label{class_team_ac246630434b2154b18d7538f3886f89d}
+Erzeugt \hyperlink{class_team}{Team}. \hypertarget{class_team_af4b0ef286d67546ce8208aeceb4f576a}{}\index{Team@{Team}!Team@{Team}}
+\index{Team@{Team}!Team@{Team}}
+\subsubsection[{Team}]{\setlength{\rightskip}{0pt plus 5cm}Team\+::\+Team (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_team_af4b0ef286d67546ce8208aeceb4f576a}
+\hypertarget{class_team_ab4218fddd612d52bab47bec4feeb49de}{}\index{Team@{Team}!````~Team@{$\sim$\+Team}}
+\index{````~Team@{$\sim$\+Team}!Team@{Team}}
+\subsubsection[{$\sim$\+Team}]{\setlength{\rightskip}{0pt plus 5cm}Team\+::$\sim$\+Team (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_team_ab4218fddd612d52bab47bec4feeb49de}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_team_aca8bdbcf6d3fd6e4efbe84fc158089b1}{}\index{Team@{Team}!distanzen@{distanzen}}
+\index{distanzen@{distanzen}!Team@{Team}}
+\subsubsection[{distanzen}]{\setlength{\rightskip}{0pt plus 5cm}void Team\+::distanzen (
+\begin{DoxyParamCaption}
+\item[{const {\bf Stein} \&}]{anfrage, }
+\item[{int $\ast$}]{arr}
+\end{DoxyParamCaption}
+)}\label{class_team_aca8bdbcf6d3fd6e4efbe84fc158089b1}
+\hyperlink{class_team_aca8bdbcf6d3fd6e4efbe84fc158089b1}{distanzen()} Trägt x und y Distanzen der \char`\"{}\+Anderen\char`\"{} Steine in einem Array ein. Array muss 6 Felder besitzen und vom Typ Integer sein.
+
+
+\begin{DoxyParams}[1]{Parameter}
+\mbox{\tt in}  & {\em \&anfrage} & \+: \hyperlink{class_stein}{Stein}, \mbox{[}out\mbox{]} $\ast$arr \+: int array\mbox{[}6\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+unsigned short 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameter}
+{\em anfrage} & \\
+\hline
+\end{DoxyParams}
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{class_team_aca8bdbcf6d3fd6e4efbe84fc158089b1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_team_abd4d61dc0590e55c906f22bfd49b4eb7}{}\index{Team@{Team}!get\+Brett@{get\+Brett}}
+\index{get\+Brett@{get\+Brett}!Team@{Team}}
+\subsubsection[{get\+Brett}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spiel\+Brett} $\ast$ Team\+::get\+Brett (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_team_abd4d61dc0590e55c906f22bfd49b4eb7}
+\hypertarget{class_team_adabf037f25d619ba30f6d19a9fd5c888}{}\index{Team@{Team}!get\+Farbe@{get\+Farbe}}
+\index{get\+Farbe@{get\+Farbe}!Team@{Team}}
+\subsubsection[{get\+Farbe}]{\setlength{\rightskip}{0pt plus 5cm}bool Team\+::get\+Farbe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_team_adabf037f25d619ba30f6d19a9fd5c888}
+\hypertarget{class_team_a4342344f18da4e843ff8bf08525628ec}{}\index{Team@{Team}!get\+Gegner@{get\+Gegner}}
+\index{get\+Gegner@{get\+Gegner}!Team@{Team}}
+\subsubsection[{get\+Gegner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Team} $\ast$ Team\+::get\+Gegner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_team_a4342344f18da4e843ff8bf08525628ec}
+Gibt Pointer auf Gegnerisches \hyperlink{class_team}{Team} aus. \hypertarget{class_team_a8d92a4f530838898bb9ca43a7da3ff8d}{}\index{Team@{Team}!get\+Sieg@{get\+Sieg}}
+\index{get\+Sieg@{get\+Sieg}!Team@{Team}}
+\subsubsection[{get\+Sieg}]{\setlength{\rightskip}{0pt plus 5cm}bool Team\+::get\+Sieg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_team_a8d92a4f530838898bb9ca43a7da3ff8d}
+\hypertarget{class_team_a458bc7ccfe8325b848723774a9564729}{}\index{Team@{Team}!get\+Stein@{get\+Stein}}
+\index{get\+Stein@{get\+Stein}!Team@{Team}}
+\subsubsection[{get\+Stein}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stein} \& Team\+::get\+Stein (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+) const}\label{class_team_a458bc7ccfe8325b848723774a9564729}
+get\+Stein Gibt Referenz auf \hyperlink{class_stein}{Stein} mit übergebener I\+D zurück, bei falschen I\+DŽs wird Referenz auf \hyperlink{class_koenig}{Koenig} zurückgegeben. 1-\/3 -\/$>$ Helfer 4 -\/$>$ \hyperlink{class_koenig}{Koenig} 
+\begin{DoxyParams}[1]{Parameter}
+\mbox{\tt in}  & {\em id} & \+: int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+\&\hyperlink{class_stein}{Stein} 
+\end{DoxyReturn}
+\hypertarget{class_team_a57428fa9c4911a089cd317e71f2018ab}{}\index{Team@{Team}!set\+Gegner@{set\+Gegner}}
+\index{set\+Gegner@{set\+Gegner}!Team@{Team}}
+\subsubsection[{set\+Gegner}]{\setlength{\rightskip}{0pt plus 5cm}void Team\+::set\+Gegner (
+\begin{DoxyParamCaption}
+\item[{{\bf Team} $\ast$}]{new\+\_\+var}
+\end{DoxyParamCaption}
+)}\label{class_team_a57428fa9c4911a089cd317e71f2018ab}
+Setze Gegnerisches \hyperlink{class_team}{Team} \hypertarget{class_team_a118a601e0db3871796a6c5be8ef7883d}{}\index{Team@{Team}!set\+Sieg@{set\+Sieg}}
+\index{set\+Sieg@{set\+Sieg}!Team@{Team}}
+\subsubsection[{set\+Sieg}]{\setlength{\rightskip}{0pt plus 5cm}void Team\+::set\+Sieg (
+\begin{DoxyParamCaption}
+\item[{bool}]{new\+\_\+var}
+\end{DoxyParamCaption}
+)}\label{class_team_a118a601e0db3871796a6c5be8ef7883d}
+Set the value of Sieg 
+\begin{DoxyParams}{Parameter}
+{\em new\+\_\+var} & the new value of Sieg \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{class_team_a11297253f6cd542d16cadda671e858fc}{}\index{Team@{Team}!brett@{brett}}
+\index{brett@{brett}!Team@{Team}}
+\subsubsection[{brett}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spiel\+Brett}$\ast$ Team\+::brett =nullptr\hspace{0.3cm}{\ttfamily [private]}}\label{class_team_a11297253f6cd542d16cadda671e858fc}
+\hypertarget{class_team_a8177ac0df0beef8c2489401000be6868}{}\index{Team@{Team}!Farbe@{Farbe}}
+\index{Farbe@{Farbe}!Team@{Team}}
+\subsubsection[{Farbe}]{\setlength{\rightskip}{0pt plus 5cm}bool Team\+::\+Farbe =false\hspace{0.3cm}{\ttfamily [private]}}\label{class_team_a8177ac0df0beef8c2489401000be6868}
+\hypertarget{class_team_ac5014169ca8a0a48b4d2aeac44e693dd}{}\index{Team@{Team}!gegner@{gegner}}
+\index{gegner@{gegner}!Team@{Team}}
+\subsubsection[{gegner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Team}$\ast$ Team\+::gegner =nullptr\hspace{0.3cm}{\ttfamily [private]}}\label{class_team_ac5014169ca8a0a48b4d2aeac44e693dd}
+\hypertarget{class_team_a567566ff8b74878120070386105bb60d}{}\index{Team@{Team}!helfer1@{helfer1}}
+\index{helfer1@{helfer1}!Team@{Team}}
+\subsubsection[{helfer1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stein}$\ast$ Team\+::helfer1 =nullptr\hspace{0.3cm}{\ttfamily [private]}}\label{class_team_a567566ff8b74878120070386105bb60d}
+\hypertarget{class_team_a9df764cfcf97e0ca9f386a91da041f1f}{}\index{Team@{Team}!helfer2@{helfer2}}
+\index{helfer2@{helfer2}!Team@{Team}}
+\subsubsection[{helfer2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stein} $\ast$ Team\+::helfer2 =nullptr\hspace{0.3cm}{\ttfamily [private]}}\label{class_team_a9df764cfcf97e0ca9f386a91da041f1f}
+\hypertarget{class_team_a5d3c196e4039c8e4666fcd0156f3129b}{}\index{Team@{Team}!helfer3@{helfer3}}
+\index{helfer3@{helfer3}!Team@{Team}}
+\subsubsection[{helfer3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stein} $\ast$ Team\+::helfer3 =nullptr\hspace{0.3cm}{\ttfamily [private]}}\label{class_team_a5d3c196e4039c8e4666fcd0156f3129b}
+\hypertarget{class_team_a7e8d3c991b52c5bb72ddeaf2a4cec935}{}\index{Team@{Team}!koenig@{koenig}}
+\index{koenig@{koenig}!Team@{Team}}
+\subsubsection[{koenig}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Koenig}$\ast$ Team\+::koenig =nullptr\hspace{0.3cm}{\ttfamily [private]}}\label{class_team_a7e8d3c991b52c5bb72ddeaf2a4cec935}
+\hypertarget{class_team_af4db822bc0edd1ff703f3c792b4df99e}{}\index{Team@{Team}!Sieg@{Sieg}}
+\index{Sieg@{Sieg}!Team@{Team}}
+\subsubsection[{Sieg}]{\setlength{\rightskip}{0pt plus 5cm}bool Team\+::\+Sieg =false\hspace{0.3cm}{\ttfamily [private]}}\label{class_team_af4db822bc0edd1ff703f3c792b4df99e}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_team_8h}{Team.\+h}\item 
+\hyperlink{_team_8cpp}{Team.\+cpp}\end{DoxyCompactItemize}

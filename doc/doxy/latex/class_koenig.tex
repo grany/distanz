@@ -1,0 +1,115 @@
+\hypertarget{class_koenig}{}\section{Koenig Klassenreferenz}
+\label{class_koenig}\index{Koenig@{Koenig}}
+
+
+{\ttfamily \#include $<$Koenig.\+h$>$}
+
+
+
+Klassendiagramm für Koenig\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_koenig__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von Koenig\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_koenig__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_koenig_a213d4b6961d0709bd1b48e469c7e5edf}{Koenig} ()
+\item 
+\hyperlink{class_koenig_a66858d9341213d157c1e478b74efb974}{Koenig} (int \hyperlink{class_stein_ab8a179db9a227d710ce7d236ecae37ee}{id}, \hyperlink{class_feld}{Feld} $\ast$startplatz, \hyperlink{class_team}{Team} $\ast$mt)
+\item 
+virtual bool \hyperlink{class_koenig_a6060e36b885b96aad97fa4c66646942f}{ziehenach} (\hyperlink{class_feld}{Feld} $\ast$ziehe) override
+\item 
+virtual void \hyperlink{class_koenig_a66d3242a51e934cc35bb8adabdba8a4a}{set\+Geffangen} () override
+\end{DoxyCompactItemize}
+\subsection*{Weitere Geerbte Elemente}
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{class_koenig_a213d4b6961d0709bd1b48e469c7e5edf}{}\index{Koenig@{Koenig}!Koenig@{Koenig}}
+\index{Koenig@{Koenig}!Koenig@{Koenig}}
+\subsubsection[{Koenig}]{\setlength{\rightskip}{0pt plus 5cm}Koenig\+::\+Koenig (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_koenig_a213d4b6961d0709bd1b48e469c7e5edf}
+\hypertarget{class_koenig_a66858d9341213d157c1e478b74efb974}{}\index{Koenig@{Koenig}!Koenig@{Koenig}}
+\index{Koenig@{Koenig}!Koenig@{Koenig}}
+\subsubsection[{Koenig}]{\setlength{\rightskip}{0pt plus 5cm}Koenig\+::\+Koenig (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{{\bf Feld} $\ast$}]{startplatz, }
+\item[{{\bf Team} $\ast$}]{mt}
+\end{DoxyParamCaption}
+)}\label{class_koenig_a66858d9341213d157c1e478b74efb974}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_koenig_a66d3242a51e934cc35bb8adabdba8a4a}{}\index{Koenig@{Koenig}!set\+Geffangen@{set\+Geffangen}}
+\index{set\+Geffangen@{set\+Geffangen}!Koenig@{Koenig}}
+\subsubsection[{set\+Geffangen}]{\setlength{\rightskip}{0pt plus 5cm}void Koenig\+::set\+Geffangen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_koenig_a66d3242a51e934cc35bb8adabdba8a4a}
+ziehenach(\+Feld) Mit dieser Methode hat der König die Möglichkeit seine Helfer zu befreien und sich auf dem Spielfeld zu bewegen.
+
+
+\begin{DoxyParams}{Parameter}
+{\em \mbox{[}\+Feld\mbox{]}} & $\ast$ziehe hierbei handelt sich um einen Pointer auf das \hyperlink{class_feld}{Feld}, das er springen soll\\
+\hline
+\end{DoxyParams}
+  
+
+Erneute Implementation von \hyperlink{class_stein_a8a98cf8c96426bf5164c6eb41b03154b}{Stein}.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_koenig_a66d3242a51e934cc35bb8adabdba8a4a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_koenig_a6060e36b885b96aad97fa4c66646942f}{}\index{Koenig@{Koenig}!ziehenach@{ziehenach}}
+\index{ziehenach@{ziehenach}!Koenig@{Koenig}}
+\subsubsection[{ziehenach}]{\setlength{\rightskip}{0pt plus 5cm}bool Koenig\+::ziehenach (
+\begin{DoxyParamCaption}
+\item[{{\bf Feld} $\ast$}]{ziehe}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_koenig_a6060e36b885b96aad97fa4c66646942f}
+Implementiert den Startplatz des Königs. 
+
+Erneute Implementation von \hyperlink{class_stein_afdac18155661536e25eda360038c1ca7}{Stein}.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_koenig_a6060e36b885b96aad97fa4c66646942f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_koenig_8h}{Koenig.\+h}\item 
+\hyperlink{_koenig_8cpp}{Koenig.\+cpp}\end{DoxyCompactItemize}

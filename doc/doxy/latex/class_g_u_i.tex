@@ -1,0 +1,123 @@
+\hypertarget{class_g_u_i}{}\section{G\+U\+I Klassenreferenz}
+\label{class_g_u_i}\index{G\+U\+I@{G\+U\+I}}
+
+
+{\ttfamily \#include $<$G\+U\+I.\+h$>$}
+
+
+
+Zusammengehörigkeiten von G\+U\+I\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_g_u_i__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_g_u_i_abdb64f04f2492fbe458a9585265457ed}{G\+U\+I} (\hyperlink{class_spiel_brett}{Spiel\+Brett} $\ast$br, \hyperlink{class_k_i}{K\+I} $\ast$ki)
+\item 
+void \hyperlink{class_g_u_i_a3c4186a30634b02fadf9088478fcd6d8}{zeichne\+Spielfeld} (int \hyperlink{structzug}{zug}, int spieler)
+\item 
+void \hyperlink{class_g_u_i_ab679c856cec515619230cfc070b620a4}{zeichne\+Anleitung} ()
+\item 
+void \hyperlink{class_g_u_i_ab892cc67dca7bd80350101493dd26542}{zeichne\+Zug} (int \hyperlink{structzug}{zug}, int spieler, int zeile, int spalte)
+\item 
+void \hyperlink{class_g_u_i_a96e74958db22ad7359287eb2e06d0cb2}{Spieler} (bool farbe, int \hyperlink{structzug}{zug}, int spieler)
+\end{DoxyCompactItemize}
+\subsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_spiel_brett}{Spiel\+Brett} $\ast$ \hyperlink{class_g_u_i_ad27ec30e361c6b18ba0b03f4eb3c2697}{brett}
+\item 
+\hyperlink{class_k_i}{K\+I} $\ast$ \hyperlink{class_g_u_i_a859788c2a71895514783423c305cf886}{K\+Isw}
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+class \hyperlink{class_g_u_i}{G\+U\+I} Die Abkürzung \hyperlink{class_g_u_i}{G\+U\+I} steht für graphical user interface bzw. grafische Benutzeroberfläche. Durch diese Klasse wird dem Benutzer eine grafische Oberfläche zur Verfügung gestellt, über die er mit dem Programm interagierien kann. Alle Benutzereingaben erfolgen ausschließlich über die Tastatur. Unterstützend wird die Strucktur der erwarteten Eingabe in Klammern mit angegeben. Sollte dennoch der Benutzer eine Falsch Eingabe tätigen, so wird er darauf hingewiesen und kann seine Eingabe nach 3 Sekunken wiederholen. Die Darstellung des Spielfeldes und wichtiger Spielparameter erfolgt in der Windows Konsole über A\+N\+S\+I-\/\+Zeichen. 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{class_g_u_i_abdb64f04f2492fbe458a9585265457ed}{}\index{G\+U\+I@{G\+U\+I}!G\+U\+I@{G\+U\+I}}
+\index{G\+U\+I@{G\+U\+I}!G\+U\+I@{G\+U\+I}}
+\subsubsection[{G\+U\+I}]{\setlength{\rightskip}{0pt plus 5cm}G\+U\+I\+::\+G\+U\+I (
+\begin{DoxyParamCaption}
+\item[{{\bf Spiel\+Brett} $\ast$}]{br, }
+\item[{{\bf K\+I} $\ast$}]{ki}
+\end{DoxyParamCaption}
+)}\label{class_g_u_i_abdb64f04f2492fbe458a9585265457ed}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_g_u_i_a96e74958db22ad7359287eb2e06d0cb2}{}\index{G\+U\+I@{G\+U\+I}!Spieler@{Spieler}}
+\index{Spieler@{Spieler}!G\+U\+I@{G\+U\+I}}
+\subsubsection[{Spieler}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+::\+Spieler (
+\begin{DoxyParamCaption}
+\item[{bool}]{farbe, }
+\item[{int}]{zug, }
+\item[{int}]{spieler}
+\end{DoxyParamCaption}
+)}\label{class_g_u_i_a96e74958db22ad7359287eb2e06d0cb2}
+zeichne\+Zug(zug,spieler,zeile,spalte) Mit dieser Funktion wird dem Spieler alle zulässigen Züge des ausgewählten Steins angezeigt.
+
+
+\begin{DoxyParams}{Parameter}
+{\em \mbox{[}int\mbox{]}} & zug gibt den aktuellen Zug an \\
+\hline
+{\em \mbox{[}int\mbox{]}} & spieler gibt an, welcher Spieler gerade am Zug ist \\
+\hline
+{\em \mbox{[}int\mbox{]}} & zeile Zeile des ausgewählten Steins \\
+\hline
+{\em \mbox{[}int\mbox{]}} & spalte Spalte des ausgewählten Steins\\
+\hline
+\end{DoxyParams}
+  \hypertarget{class_g_u_i_ab679c856cec515619230cfc070b620a4}{}\index{G\+U\+I@{G\+U\+I}!zeichne\+Anleitung@{zeichne\+Anleitung}}
+\index{zeichne\+Anleitung@{zeichne\+Anleitung}!G\+U\+I@{G\+U\+I}}
+\subsubsection[{zeichne\+Anleitung}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+::zeichne\+Anleitung (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_g_u_i_ab679c856cec515619230cfc070b620a4}
+zeichne\+Spielfeld(zug,spieler) Mit dieser Funktion wird das Spielfeld grafisch für den Spieler aufbereitet. 
+\begin{DoxyParams}{Parameter}
+{\em \mbox{[}int\mbox{]}} & zug gibt den aktuelle Zug an \\
+\hline
+{\em \mbox{[}int\mbox{]}} & spieler gibt an, welcher Spieler an Zug ist\\
+\hline
+\end{DoxyParams}
+  \hypertarget{class_g_u_i_a3c4186a30634b02fadf9088478fcd6d8}{}\index{G\+U\+I@{G\+U\+I}!zeichne\+Spielfeld@{zeichne\+Spielfeld}}
+\index{zeichne\+Spielfeld@{zeichne\+Spielfeld}!G\+U\+I@{G\+U\+I}}
+\subsubsection[{zeichne\+Spielfeld}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+::zeichne\+Spielfeld (
+\begin{DoxyParamCaption}
+\item[{int}]{zug, }
+\item[{int}]{spieler}
+\end{DoxyParamCaption}
+)}\label{class_g_u_i_a3c4186a30634b02fadf9088478fcd6d8}
+\hyperlink{class_g_u_i}{G\+U\+I} Diese Funktion ist ein Konstructor für eine Instanz von der Klasse Spielbrett. \hypertarget{class_g_u_i_ab892cc67dca7bd80350101493dd26542}{}\index{G\+U\+I@{G\+U\+I}!zeichne\+Zug@{zeichne\+Zug}}
+\index{zeichne\+Zug@{zeichne\+Zug}!G\+U\+I@{G\+U\+I}}
+\subsubsection[{zeichne\+Zug}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+::zeichne\+Zug (
+\begin{DoxyParamCaption}
+\item[{int}]{zug, }
+\item[{int}]{spieler, }
+\item[{int}]{zeile, }
+\item[{int}]{spalte}
+\end{DoxyParamCaption}
+)}\label{class_g_u_i_ab892cc67dca7bd80350101493dd26542}
+zeichen\+Anleitung() Diese Funktion gibt dem Benutzer Auskunft über die Spielregeln.
+
+  
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{class_g_u_i_ad27ec30e361c6b18ba0b03f4eb3c2697}{}\index{G\+U\+I@{G\+U\+I}!brett@{brett}}
+\index{brett@{brett}!G\+U\+I@{G\+U\+I}}
+\subsubsection[{brett}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spiel\+Brett}$\ast$ G\+U\+I\+::brett\hspace{0.3cm}{\ttfamily [private]}}\label{class_g_u_i_ad27ec30e361c6b18ba0b03f4eb3c2697}
+\hypertarget{class_g_u_i_a859788c2a71895514783423c305cf886}{}\index{G\+U\+I@{G\+U\+I}!K\+Isw@{K\+Isw}}
+\index{K\+Isw@{K\+Isw}!G\+U\+I@{G\+U\+I}}
+\subsubsection[{K\+Isw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf K\+I}$\ast$ G\+U\+I\+::\+K\+Isw\hspace{0.3cm}{\ttfamily [private]}}\label{class_g_u_i_a859788c2a71895514783423c305cf886}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_g_u_i_8h}{G\+U\+I.\+h}\item 
+\hyperlink{_g_u_i_8cpp}{G\+U\+I.\+cpp}\end{DoxyCompactItemize}

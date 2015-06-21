@@ -1,0 +1,110 @@
+\hypertarget{class_sf_k}{}\section{Sf\+K Klassenreferenz}
+\label{class_sf_k}\index{Sf\+K@{Sf\+K}}
+
+
+{\ttfamily \#include $<$Sf\+K.\+h$>$}
+
+
+
+Klassendiagramm für Sf\+K\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{class_sf_k__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von Sf\+K\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sf_k__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_sf_k_a54410f0aa0c2f76704a0eb181a5737f0}{bewerten} () override
+\item 
+\hyperlink{class_sf_k_ae54f5f252db3e81aac89de1cdf4db5b2}{Sf\+K} (\hyperlink{class_team}{Team} \&\hyperlink{class_strategie_a4f55e74f189ec8c6df88a57119fb3def}{team}, \hyperlink{class_spiel_brett}{Spiel\+Brett} \&b)
+\item 
+\hyperlink{class_sf_k_a0b2852d8f0518f85092ec55db9ac3fd4}{Sf\+K} ()
+\item 
+virtual \hyperlink{class_sf_k_a5cd7cf22bfa7535a5a43a975595b73b7}{$\sim$\+Sf\+K} ()
+\end{DoxyCompactItemize}
+\subsection*{Weitere Geerbte Elemente}
+
+
+\subsection{Ausführliche Beschreibung}
+class \hyperlink{class_sf_k}{Sf\+K} (\hyperlink{class_strategie}{Strategie} fange König) Ist eine Ableitung der abstrakten Klasse \hyperlink{class_strategie}{Strategie}. \subparagraph*{}
+
+Diese \hyperlink{class_strategie}{Strategie} sorgt dafür, dass sich die Spielfiguren dem gegnerischen König nähern, um in festsetzen/gefangen nehmen zu können. Ein festgesetzter/gefangener König bedeutet das Spielende. Ein Sieg wird erzielt, sobald der gegnerische König festgesetzt/gefangen ist. \subparagraph*{}
+
+Überschreibt/implementiert die Methode \hyperlink{class_sf_k_a54410f0aa0c2f76704a0eb181a5737f0}{bewerten()}; 
+\begin{DoxyParams}{Parameter}
+{\em \&team} & Referenz auf Instanz von \hyperlink{class_team}{Team} \\
+\hline
+{\em \&b} & Referenz auf Instanz von \hyperlink{class_spiel_brett}{Spiel\+Brett} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{class_sf_k_ae54f5f252db3e81aac89de1cdf4db5b2}{}\index{Sf\+K@{Sf\+K}!Sf\+K@{Sf\+K}}
+\index{Sf\+K@{Sf\+K}!Sf\+K@{Sf\+K}}
+\subsubsection[{Sf\+K}]{\setlength{\rightskip}{0pt plus 5cm}Sf\+K\+::\+Sf\+K (
+\begin{DoxyParamCaption}
+\item[{{\bf Team} \&}]{team, }
+\item[{{\bf Spiel\+Brett} \&}]{b}
+\end{DoxyParamCaption}
+)}\label{class_sf_k_ae54f5f252db3e81aac89de1cdf4db5b2}
+\hypertarget{class_sf_k_a0b2852d8f0518f85092ec55db9ac3fd4}{}\index{Sf\+K@{Sf\+K}!Sf\+K@{Sf\+K}}
+\index{Sf\+K@{Sf\+K}!Sf\+K@{Sf\+K}}
+\subsubsection[{Sf\+K}]{\setlength{\rightskip}{0pt plus 5cm}Sf\+K\+::\+Sf\+K (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_sf_k_a0b2852d8f0518f85092ec55db9ac3fd4}
+\hypertarget{class_sf_k_a5cd7cf22bfa7535a5a43a975595b73b7}{}\index{Sf\+K@{Sf\+K}!````~Sf\+K@{$\sim$\+Sf\+K}}
+\index{````~Sf\+K@{$\sim$\+Sf\+K}!Sf\+K@{Sf\+K}}
+\subsubsection[{$\sim$\+Sf\+K}]{\setlength{\rightskip}{0pt plus 5cm}Sf\+K\+::$\sim$\+Sf\+K (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_sf_k_a5cd7cf22bfa7535a5a43a975595b73b7}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_sf_k_a54410f0aa0c2f76704a0eb181a5737f0}{}\index{Sf\+K@{Sf\+K}!bewerten@{bewerten}}
+\index{bewerten@{bewerten}!Sf\+K@{Sf\+K}}
+\subsubsection[{bewerten}]{\setlength{\rightskip}{0pt plus 5cm}void Sf\+K\+::bewerten (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_sf_k_a54410f0aa0c2f76704a0eb181a5737f0}
+\hyperlink{class_sf_k_a54410f0aa0c2f76704a0eb181a5737f0}{bewerten()} Bewertet mögliche Züge nach der Möglichkeit gegnerischen König zu fangen.  
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{SfK_bewerten}}
+\end{DoxyImageNoCaption}
+  
+
+Implementiert \hyperlink{class_strategie_a6e11413c1c8e4ca8bd0bcac21be3c1bf}{Strategie}.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sf_k_a54410f0aa0c2f76704a0eb181a5737f0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_sf_k_8h}{Sf\+K.\+h}\item 
+\hyperlink{_sf_k_8cpp}{Sf\+K.\+cpp}\end{DoxyCompactItemize}

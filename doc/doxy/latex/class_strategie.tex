@@ -1,0 +1,206 @@
+\hypertarget{class_strategie}{}\section{Strategie Klassenreferenz}
+\label{class_strategie}\index{Strategie@{Strategie}}
+
+
+{\ttfamily \#include $<$Strategie.\+h$>$}
+
+
+
+Klassendiagramm für Strategie\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_strategie__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von Strategie\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_strategie__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_strategie_a607fb1d583895e1e61905488e8836933}{Strategie} (\hyperlink{class_team}{Team} \&\hyperlink{class_strategie_a4f55e74f189ec8c6df88a57119fb3def}{team}, \hyperlink{class_spiel_brett}{Spiel\+Brett} \&b)
+\item 
+\hyperlink{class_strategie_a374010dd594a0977765d179377e76c12}{Strategie} ()
+\item 
+int \hyperlink{class_strategie_afeba2e4743f7cfe036115b92af4fc624}{get\+Wert} () const 
+\item 
+\hyperlink{structzug}{zug} \hyperlink{class_strategie_a106e1746778cc926fc7392c3224025b1}{nex\+Zug} ()
+\item 
+std\+::vector$<$ \hyperlink{structzug}{zug} $>$ \hyperlink{class_strategie_a4fd1fa322e0c44651cd72893c3ed5e9c}{get\+Zuege} () const 
+\item 
+virtual \hyperlink{class_strategie_a6eaa087b8a8f41d3e99ce7ed617d0432}{$\sim$\+Strategie} ()
+\end{DoxyCompactItemize}
+\subsection*{Geschützte Methoden}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_strategie_a0766167436598f635562bcf8b3b10430}{getm\+Zuege} (std\+::vector$<$ \hyperlink{structzug}{zug} $>$ \&zuege)
+\item 
+virtual void \hyperlink{class_strategie_a6e11413c1c8e4ca8bd0bcac21be3c1bf}{bewerten} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_team}{Team} \& \hyperlink{class_strategie_a4f55e74f189ec8c6df88a57119fb3def}{team}
+\item 
+\hyperlink{class_stein}{Stein} \& \hyperlink{class_strategie_a0b64b5969f835653965957eab7f1f5a9}{h1}
+\item 
+\hyperlink{class_stein}{Stein} \& \hyperlink{class_strategie_a6721c42de183333c6f49fe9724b907ae}{h2}
+\item 
+\hyperlink{class_stein}{Stein} \& \hyperlink{class_strategie_a82f2549dabdf1afbe888405d1adfb9e6}{h3}
+\item 
+\hyperlink{class_stein}{Stein} \& \hyperlink{class_strategie_abbf970c05c0033ae9f5df3766316846c}{k}
+\item 
+\hyperlink{class_spiel_brett}{Spiel\+Brett} \& \hyperlink{class_strategie_a2a498380f5a837cd9e5afdd9b546ed46}{brett}
+\item 
+int \hyperlink{class_strategie_ad0b73259d206b7114d026f7c50074554}{wert}
+\item 
+std\+::vector$<$ \hyperlink{structzug}{zug} $>$ \hyperlink{class_strategie_a99c5724d40dc860fc30c17a449815aa5}{m\+Zuege}
+\item 
+std\+::vector$<$ \hyperlink{structzug}{zug} $>$ \hyperlink{class_strategie_a6d800c6d8636540d16b41d7abf8c9ad3}{a\+Zuege}
+\item 
+\hyperlink{structzug}{zug} \hyperlink{class_strategie_a3f2847acbd3cd961853f0eadb6c05daf}{n\+Zug}
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+class \hyperlink{class_strategie}{Strategie}
+
+Abstrakte Klasse zur Erzeugung von speziellen Zug-\/\+Strategien.
+
+Als Strategien sind jene Funktionen gemeint, welche neben der Bewegung im \hyperlink{class_feld}{Feld}, zusätzlich auch dafür sorgen, dass es zu einer Sieg/\+Niederlage Situation kommt. Sie stellen die Möglichkeiten dar, welche die Spielfiguren in den jeweiligen Momenten besitzen. Die Bewertung erfolgt in Echtzeit.
+
+Wir programmierten 4 Strategien ein. Jede der 4 Strategien ist eine Vererbung dieser Klasse. 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{class_strategie_a607fb1d583895e1e61905488e8836933}{}\index{Strategie@{Strategie}!Strategie@{Strategie}}
+\index{Strategie@{Strategie}!Strategie@{Strategie}}
+\subsubsection[{Strategie}]{\setlength{\rightskip}{0pt plus 5cm}Strategie\+::\+Strategie (
+\begin{DoxyParamCaption}
+\item[{{\bf Team} \&}]{team, }
+\item[{{\bf Spiel\+Brett} \&}]{b}
+\end{DoxyParamCaption}
+)}\label{class_strategie_a607fb1d583895e1e61905488e8836933}
+\hypertarget{class_strategie_a374010dd594a0977765d179377e76c12}{}\index{Strategie@{Strategie}!Strategie@{Strategie}}
+\index{Strategie@{Strategie}!Strategie@{Strategie}}
+\subsubsection[{Strategie}]{\setlength{\rightskip}{0pt plus 5cm}Strategie\+::\+Strategie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_strategie_a374010dd594a0977765d179377e76c12}
+\hypertarget{class_strategie_a6eaa087b8a8f41d3e99ce7ed617d0432}{}\index{Strategie@{Strategie}!````~Strategie@{$\sim$\+Strategie}}
+\index{````~Strategie@{$\sim$\+Strategie}!Strategie@{Strategie}}
+\subsubsection[{$\sim$\+Strategie}]{\setlength{\rightskip}{0pt plus 5cm}Strategie\+::$\sim$\+Strategie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_strategie_a6eaa087b8a8f41d3e99ce7ed617d0432}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_strategie_a6e11413c1c8e4ca8bd0bcac21be3c1bf}{}\index{Strategie@{Strategie}!bewerten@{bewerten}}
+\index{bewerten@{bewerten}!Strategie@{Strategie}}
+\subsubsection[{bewerten}]{\setlength{\rightskip}{0pt plus 5cm}void Strategie\+::bewerten (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\label{class_strategie_a6e11413c1c8e4ca8bd0bcac21be3c1bf}
+
+
+Implementiert in \hyperlink{class_sf_k_a54410f0aa0c2f76704a0eb181a5737f0}{Sf\+K}, \hyperlink{class_sf_h_a9790a3fab6619e16961568d735678d4f}{Sf\+H}, \hyperlink{class_ss_k_aac922686e66332aae431ec05d06937a0}{Ss\+K} und \hyperlink{class_sr_h_a55d77665881d6810fbde7d761ecbb02c}{Sr\+H}.
+
+\hypertarget{class_strategie_a0766167436598f635562bcf8b3b10430}{}\index{Strategie@{Strategie}!getm\+Zuege@{getm\+Zuege}}
+\index{getm\+Zuege@{getm\+Zuege}!Strategie@{Strategie}}
+\subsubsection[{getm\+Zuege}]{\setlength{\rightskip}{0pt plus 5cm}void Strategie\+::getm\+Zuege (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf zug} $>$ \&}]{zuege}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_strategie_a0766167436598f635562bcf8b3b10430}
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_strategie_a0766167436598f635562bcf8b3b10430_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_strategie_afeba2e4743f7cfe036115b92af4fc624}{}\index{Strategie@{Strategie}!get\+Wert@{get\+Wert}}
+\index{get\+Wert@{get\+Wert}!Strategie@{Strategie}}
+\subsubsection[{get\+Wert}]{\setlength{\rightskip}{0pt plus 5cm}int Strategie\+::get\+Wert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_strategie_afeba2e4743f7cfe036115b92af4fc624}
+\hypertarget{class_strategie_a4fd1fa322e0c44651cd72893c3ed5e9c}{}\index{Strategie@{Strategie}!get\+Zuege@{get\+Zuege}}
+\index{get\+Zuege@{get\+Zuege}!Strategie@{Strategie}}
+\subsubsection[{get\+Zuege}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf zug} $>$ Strategie\+::get\+Zuege (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_strategie_a4fd1fa322e0c44651cd72893c3ed5e9c}
+\hypertarget{class_strategie_a106e1746778cc926fc7392c3224025b1}{}\index{Strategie@{Strategie}!nex\+Zug@{nex\+Zug}}
+\index{nex\+Zug@{nex\+Zug}!Strategie@{Strategie}}
+\subsubsection[{nex\+Zug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf zug} Strategie\+::nex\+Zug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_strategie_a106e1746778cc926fc7392c3224025b1}
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_strategie_a106e1746778cc926fc7392c3224025b1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{class_strategie_a6d800c6d8636540d16b41d7abf8c9ad3}{}\index{Strategie@{Strategie}!a\+Zuege@{a\+Zuege}}
+\index{a\+Zuege@{a\+Zuege}!Strategie@{Strategie}}
+\subsubsection[{a\+Zuege}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf zug}$>$ Strategie\+::a\+Zuege\hspace{0.3cm}{\ttfamily [protected]}}\label{class_strategie_a6d800c6d8636540d16b41d7abf8c9ad3}
+\hypertarget{class_strategie_a2a498380f5a837cd9e5afdd9b546ed46}{}\index{Strategie@{Strategie}!brett@{brett}}
+\index{brett@{brett}!Strategie@{Strategie}}
+\subsubsection[{brett}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spiel\+Brett}\& Strategie\+::brett\hspace{0.3cm}{\ttfamily [protected]}}\label{class_strategie_a2a498380f5a837cd9e5afdd9b546ed46}
+\hypertarget{class_strategie_a0b64b5969f835653965957eab7f1f5a9}{}\index{Strategie@{Strategie}!h1@{h1}}
+\index{h1@{h1}!Strategie@{Strategie}}
+\subsubsection[{h1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stein}\& Strategie\+::h1\hspace{0.3cm}{\ttfamily [protected]}}\label{class_strategie_a0b64b5969f835653965957eab7f1f5a9}
+\hypertarget{class_strategie_a6721c42de183333c6f49fe9724b907ae}{}\index{Strategie@{Strategie}!h2@{h2}}
+\index{h2@{h2}!Strategie@{Strategie}}
+\subsubsection[{h2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stein} \& Strategie\+::h2\hspace{0.3cm}{\ttfamily [protected]}}\label{class_strategie_a6721c42de183333c6f49fe9724b907ae}
+\hypertarget{class_strategie_a82f2549dabdf1afbe888405d1adfb9e6}{}\index{Strategie@{Strategie}!h3@{h3}}
+\index{h3@{h3}!Strategie@{Strategie}}
+\subsubsection[{h3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stein} \& Strategie\+::h3\hspace{0.3cm}{\ttfamily [protected]}}\label{class_strategie_a82f2549dabdf1afbe888405d1adfb9e6}
+\hypertarget{class_strategie_abbf970c05c0033ae9f5df3766316846c}{}\index{Strategie@{Strategie}!k@{k}}
+\index{k@{k}!Strategie@{Strategie}}
+\subsubsection[{k}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stein} \& Strategie\+::k\hspace{0.3cm}{\ttfamily [protected]}}\label{class_strategie_abbf970c05c0033ae9f5df3766316846c}
+\hypertarget{class_strategie_a99c5724d40dc860fc30c17a449815aa5}{}\index{Strategie@{Strategie}!m\+Zuege@{m\+Zuege}}
+\index{m\+Zuege@{m\+Zuege}!Strategie@{Strategie}}
+\subsubsection[{m\+Zuege}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf zug}$>$ Strategie\+::m\+Zuege\hspace{0.3cm}{\ttfamily [protected]}}\label{class_strategie_a99c5724d40dc860fc30c17a449815aa5}
+\hypertarget{class_strategie_a3f2847acbd3cd961853f0eadb6c05daf}{}\index{Strategie@{Strategie}!n\+Zug@{n\+Zug}}
+\index{n\+Zug@{n\+Zug}!Strategie@{Strategie}}
+\subsubsection[{n\+Zug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf zug} Strategie\+::n\+Zug\hspace{0.3cm}{\ttfamily [protected]}}\label{class_strategie_a3f2847acbd3cd961853f0eadb6c05daf}
+\hypertarget{class_strategie_a4f55e74f189ec8c6df88a57119fb3def}{}\index{Strategie@{Strategie}!team@{team}}
+\index{team@{team}!Strategie@{Strategie}}
+\subsubsection[{team}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Team}\& Strategie\+::team\hspace{0.3cm}{\ttfamily [protected]}}\label{class_strategie_a4f55e74f189ec8c6df88a57119fb3def}
+\hypertarget{class_strategie_ad0b73259d206b7114d026f7c50074554}{}\index{Strategie@{Strategie}!wert@{wert}}
+\index{wert@{wert}!Strategie@{Strategie}}
+\subsubsection[{wert}]{\setlength{\rightskip}{0pt plus 5cm}int Strategie\+::wert\hspace{0.3cm}{\ttfamily [protected]}}\label{class_strategie_ad0b73259d206b7114d026f7c50074554}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_strategie_8h}{Strategie.\+h}\item 
+\hyperlink{_strategie_8cpp}{Strategie.\+cpp}\end{DoxyCompactItemize}

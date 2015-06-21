@@ -1,0 +1,158 @@
+\hypertarget{class_spiel_brett}{}\section{Spiel\+Brett Klassenreferenz}
+\label{class_spiel_brett}\index{Spiel\+Brett@{Spiel\+Brett}}
+
+
+{\ttfamily \#include $<$Spiel\+Brett.\+h$>$}
+
+
+
+Zusammengehörigkeiten von Spiel\+Brett\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_spiel_brett__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_spiel_brett_abd1c86dc9518ff9c368b43d8c49db6c0}{Spiel\+Brett} ()
+\item 
+\hyperlink{class_spiel_brett_aa81d890cf06cc6c834f98cb0411d9026}{Spiel\+Brett} (const \hyperlink{class_spiel_brett}{Spiel\+Brett} \&sb)
+\item 
+\hyperlink{class_spiel_brett_ab61306e45606cab9ab9d073c43cf30f8}{$\sim$\+Spiel\+Brett} ()
+\item 
+\hyperlink{class_team}{Team} $\ast$ \hyperlink{class_spiel_brett_acb3a18d766bd52142672b8d0300d6686}{get\+Weis} () const 
+\item 
+\hyperlink{class_team}{Team} $\ast$ \hyperlink{class_spiel_brett_a30fb11863bee09200875119d15d282b1}{get\+Schwarz} () const 
+\item 
+\hyperlink{class_feld}{Feld} $\ast$ \hyperlink{class_spiel_brett_a6fc31b54e16797baf80285872ce2dab1}{get\+Feld} (int x, int y) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Methoden}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_spiel_brett_a1a4090a83c4c6fc7205ee80764bebcf0}{init\+Brett} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_feld}{Feld} $\ast$$\ast$ \hyperlink{class_spiel_brett_a507b430b3d9f96db6eaa02b9dd9d5f99}{Brett} =nullptr
+\item 
+\hyperlink{class_team}{Team} $\ast$ \hyperlink{class_spiel_brett_afc28f676d2b3556b29adbf0ef32ba679}{schwarz} =nullptr
+\item 
+\hyperlink{class_team}{Team} $\ast$ \hyperlink{class_spiel_brett_aa5c83f7c16af3ea1c51d2ea9745875ac}{weis} =nullptr
+\end{DoxyCompactItemize}
+\subsection*{Statische, private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+static const short int \hyperlink{class_spiel_brett_a428ac783e187cd6a25f15b833555312a}{dimmension} = 8
+\end{DoxyCompactItemize}
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{class_spiel_brett_abd1c86dc9518ff9c368b43d8c49db6c0}{}\index{Spiel\+Brett@{Spiel\+Brett}!Spiel\+Brett@{Spiel\+Brett}}
+\index{Spiel\+Brett@{Spiel\+Brett}!Spiel\+Brett@{Spiel\+Brett}}
+\subsubsection[{Spiel\+Brett}]{\setlength{\rightskip}{0pt plus 5cm}Spiel\+Brett\+::\+Spiel\+Brett (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_spiel_brett_abd1c86dc9518ff9c368b43d8c49db6c0}
+\hyperlink{class_spiel_brett_a1a4090a83c4c6fc7205ee80764bebcf0}{init\+Brett()} Erzeugt das 8x8 großes \hyperlink{class_feld}{Feld}. 
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{class_spiel_brett_abd1c86dc9518ff9c368b43d8c49db6c0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_spiel_brett_aa81d890cf06cc6c834f98cb0411d9026}{}\index{Spiel\+Brett@{Spiel\+Brett}!Spiel\+Brett@{Spiel\+Brett}}
+\index{Spiel\+Brett@{Spiel\+Brett}!Spiel\+Brett@{Spiel\+Brett}}
+\subsubsection[{Spiel\+Brett}]{\setlength{\rightskip}{0pt plus 5cm}Spiel\+Brett\+::\+Spiel\+Brett (
+\begin{DoxyParamCaption}
+\item[{const {\bf Spiel\+Brett} \&}]{sb}
+\end{DoxyParamCaption}
+)}\label{class_spiel_brett_aa81d890cf06cc6c834f98cb0411d9026}
+\hyperlink{class_spiel_brett_abd1c86dc9518ff9c368b43d8c49db6c0}{Spiel\+Brett()} Beinhaltet die Startaufstellung. 
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_spiel_brett_aa81d890cf06cc6c834f98cb0411d9026_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_spiel_brett_ab61306e45606cab9ab9d073c43cf30f8}{}\index{Spiel\+Brett@{Spiel\+Brett}!````~Spiel\+Brett@{$\sim$\+Spiel\+Brett}}
+\index{````~Spiel\+Brett@{$\sim$\+Spiel\+Brett}!Spiel\+Brett@{Spiel\+Brett}}
+\subsubsection[{$\sim$\+Spiel\+Brett}]{\setlength{\rightskip}{0pt plus 5cm}Spiel\+Brett\+::$\sim$\+Spiel\+Brett (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_spiel_brett_ab61306e45606cab9ab9d073c43cf30f8}
+\hyperlink{class_spiel_brett}{Spiel\+Brett} (const \hyperlink{class_spiel_brett}{Spiel\+Brett} \&sb) Verweißt auf die Pointer, der einzelnen Spielsteine. 
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_spiel_brett_a6fc31b54e16797baf80285872ce2dab1}{}\index{Spiel\+Brett@{Spiel\+Brett}!get\+Feld@{get\+Feld}}
+\index{get\+Feld@{get\+Feld}!Spiel\+Brett@{Spiel\+Brett}}
+\subsubsection[{get\+Feld}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feld} $\ast$ Spiel\+Brett\+::get\+Feld (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const}\label{class_spiel_brett_a6fc31b54e16797baf80285872ce2dab1}
+\hyperlink{class_spiel_brett_a30fb11863bee09200875119d15d282b1}{get\+Schwarz()} Kennzeichnet die schwarzen Steine.
+
+\begin{DoxyReturn}{Rückgabe}
+schwarz 
+\end{DoxyReturn}
+\hypertarget{class_spiel_brett_a30fb11863bee09200875119d15d282b1}{}\index{Spiel\+Brett@{Spiel\+Brett}!get\+Schwarz@{get\+Schwarz}}
+\index{get\+Schwarz@{get\+Schwarz}!Spiel\+Brett@{Spiel\+Brett}}
+\subsubsection[{get\+Schwarz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Team} $\ast$ Spiel\+Brett\+::get\+Schwarz (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_spiel_brett_a30fb11863bee09200875119d15d282b1}
+\hyperlink{class_spiel_brett_acb3a18d766bd52142672b8d0300d6686}{get\+Weis()} Kennzeichnet die weißen Steine.
+
+\begin{DoxyReturn}{Rückgabe}
+weiß 
+\end{DoxyReturn}
+\hypertarget{class_spiel_brett_acb3a18d766bd52142672b8d0300d6686}{}\index{Spiel\+Brett@{Spiel\+Brett}!get\+Weis@{get\+Weis}}
+\index{get\+Weis@{get\+Weis}!Spiel\+Brett@{Spiel\+Brett}}
+\subsubsection[{get\+Weis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Team} $\ast$ Spiel\+Brett\+::get\+Weis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_spiel_brett_acb3a18d766bd52142672b8d0300d6686}
+$\sim$\+Spiel\+Brett Destruktor des Spiels \hypertarget{class_spiel_brett_a1a4090a83c4c6fc7205ee80764bebcf0}{}\index{Spiel\+Brett@{Spiel\+Brett}!init\+Brett@{init\+Brett}}
+\index{init\+Brett@{init\+Brett}!Spiel\+Brett@{Spiel\+Brett}}
+\subsubsection[{init\+Brett}]{\setlength{\rightskip}{0pt plus 5cm}void Spiel\+Brett\+::init\+Brett (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_spiel_brett_a1a4090a83c4c6fc7205ee80764bebcf0}
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{class_spiel_brett_a507b430b3d9f96db6eaa02b9dd9d5f99}{}\index{Spiel\+Brett@{Spiel\+Brett}!Brett@{Brett}}
+\index{Brett@{Brett}!Spiel\+Brett@{Spiel\+Brett}}
+\subsubsection[{Brett}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feld}$\ast$$\ast$ Spiel\+Brett\+::\+Brett =nullptr\hspace{0.3cm}{\ttfamily [private]}}\label{class_spiel_brett_a507b430b3d9f96db6eaa02b9dd9d5f99}
+\hypertarget{class_spiel_brett_a428ac783e187cd6a25f15b833555312a}{}\index{Spiel\+Brett@{Spiel\+Brett}!dimmension@{dimmension}}
+\index{dimmension@{dimmension}!Spiel\+Brett@{Spiel\+Brett}}
+\subsubsection[{dimmension}]{\setlength{\rightskip}{0pt plus 5cm}const short int Spiel\+Brett\+::dimmension = 8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_spiel_brett_a428ac783e187cd6a25f15b833555312a}
+\hypertarget{class_spiel_brett_afc28f676d2b3556b29adbf0ef32ba679}{}\index{Spiel\+Brett@{Spiel\+Brett}!schwarz@{schwarz}}
+\index{schwarz@{schwarz}!Spiel\+Brett@{Spiel\+Brett}}
+\subsubsection[{schwarz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Team}$\ast$ Spiel\+Brett\+::schwarz =nullptr\hspace{0.3cm}{\ttfamily [private]}}\label{class_spiel_brett_afc28f676d2b3556b29adbf0ef32ba679}
+\hypertarget{class_spiel_brett_aa5c83f7c16af3ea1c51d2ea9745875ac}{}\index{Spiel\+Brett@{Spiel\+Brett}!weis@{weis}}
+\index{weis@{weis}!Spiel\+Brett@{Spiel\+Brett}}
+\subsubsection[{weis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Team} $\ast$ Spiel\+Brett\+::weis =nullptr\hspace{0.3cm}{\ttfamily [private]}}\label{class_spiel_brett_aa5c83f7c16af3ea1c51d2ea9745875ac}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_spiel_brett_8h}{Spiel\+Brett.\+h}\item 
+\hyperlink{_spiel_brett_8cpp}{Spiel\+Brett.\+cpp}\end{DoxyCompactItemize}

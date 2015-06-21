@@ -1,0 +1,142 @@
+\hypertarget{class_ss_k}{}\section{Ss\+K Klassenreferenz}
+\label{class_ss_k}\index{Ss\+K@{Ss\+K}}
+
+
+{\ttfamily \#include $<$Ss\+K.\+h$>$}
+
+
+
+Klassendiagramm für Ss\+K\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{class_ss_k__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von Ss\+K\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_ss_k__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_ss_k_aac922686e66332aae431ec05d06937a0}{bewerten} () override
+\item 
+bool \hyperlink{class_ss_k_a7034ff44a447cef0d24117e9a1fa9fef}{pos\+Sicher} (\hyperlink{struct_possition}{Possition} p)
+\item 
+\hyperlink{class_ss_k_a2cb13922fb8c0bdbad4dd36f98c0448b}{Ss\+K} (\hyperlink{class_team}{Team} \&\hyperlink{class_strategie_a4f55e74f189ec8c6df88a57119fb3def}{team}, \hyperlink{class_spiel_brett}{Spiel\+Brett} \&b)
+\item 
+\hyperlink{class_ss_k_a24d667d15c076686914ad331b2306f14}{Ss\+K} ()
+\item 
+virtual \hyperlink{class_ss_k_a3912f76c805a0d1810e0ab0c12bf49b4}{$\sim$\+Ss\+K} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sf_k}{Sf\+K} \hyperlink{class_ss_k_a4c117e68ae76434738995801a4a1fbcc}{gegner}
+\item 
+std\+::vector$<$ \hyperlink{structzug}{zug} $>$ \hyperlink{class_ss_k_af5cfdbc60256434dbb73e61e737e056a}{g\+Zuege}
+\end{DoxyCompactItemize}
+\subsection*{Weitere Geerbte Elemente}
+
+
+\subsection{Ausführliche Beschreibung}
+class \hyperlink{class_ss_k}{Ss\+K} (\hyperlink{class_strategie}{Strategie} schuetze \hyperlink{class_koenig}{Koenig}) Ist eine Ableitung der abstrakten Klasse \hyperlink{class_strategie}{Strategie}. \subparagraph*{}
+
+Diese \hyperlink{class_strategie}{Strategie} sorgt dafuer, dass der teameigene \hyperlink{class_koenig}{Koenig} vor festsetzen/gefangen nehmen durch feindliche Spielfiguren geschuetzt wird. Zu beobachten ist hierbei das fangen von gegnerischen Spielfiguren, sobald sie dem König zu nahe kommen. Auch der \hyperlink{class_koenig}{Koenig} selber nimmt ein sehr defensives Verhalten an und haelt sich von den Gegnern fern, um ein fruehzeitiges Ableben zu verhindern. \subparagraph*{}
+
+Ueberschreibt/implementiert die Methode \hyperlink{class_ss_k_aac922686e66332aae431ec05d06937a0}{bewerten()}; 
+\begin{DoxyParams}{Parameter}
+{\em \&team} & Referenz auf Instanz von \hyperlink{class_team}{Team} \\
+\hline
+{\em \&b} & Referenz auf Instanz von \hyperlink{class_spiel_brett}{Spiel\+Brett} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{class_ss_k_a2cb13922fb8c0bdbad4dd36f98c0448b}{}\index{Ss\+K@{Ss\+K}!Ss\+K@{Ss\+K}}
+\index{Ss\+K@{Ss\+K}!Ss\+K@{Ss\+K}}
+\subsubsection[{Ss\+K}]{\setlength{\rightskip}{0pt plus 5cm}Ss\+K\+::\+Ss\+K (
+\begin{DoxyParamCaption}
+\item[{{\bf Team} \&}]{team, }
+\item[{{\bf Spiel\+Brett} \&}]{b}
+\end{DoxyParamCaption}
+)}\label{class_ss_k_a2cb13922fb8c0bdbad4dd36f98c0448b}
+\hypertarget{class_ss_k_a24d667d15c076686914ad331b2306f14}{}\index{Ss\+K@{Ss\+K}!Ss\+K@{Ss\+K}}
+\index{Ss\+K@{Ss\+K}!Ss\+K@{Ss\+K}}
+\subsubsection[{Ss\+K}]{\setlength{\rightskip}{0pt plus 5cm}Ss\+K\+::\+Ss\+K (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_ss_k_a24d667d15c076686914ad331b2306f14}
+\hypertarget{class_ss_k_a3912f76c805a0d1810e0ab0c12bf49b4}{}\index{Ss\+K@{Ss\+K}!````~Ss\+K@{$\sim$\+Ss\+K}}
+\index{````~Ss\+K@{$\sim$\+Ss\+K}!Ss\+K@{Ss\+K}}
+\subsubsection[{$\sim$\+Ss\+K}]{\setlength{\rightskip}{0pt plus 5cm}Ss\+K\+::$\sim$\+Ss\+K (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_ss_k_a3912f76c805a0d1810e0ab0c12bf49b4}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_ss_k_aac922686e66332aae431ec05d06937a0}{}\index{Ss\+K@{Ss\+K}!bewerten@{bewerten}}
+\index{bewerten@{bewerten}!Ss\+K@{Ss\+K}}
+\subsubsection[{bewerten}]{\setlength{\rightskip}{0pt plus 5cm}void Ss\+K\+::bewerten (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_ss_k_aac922686e66332aae431ec05d06937a0}
+
+
+Implementiert \hyperlink{class_strategie_a6e11413c1c8e4ca8bd0bcac21be3c1bf}{Strategie}.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ss_k_aac922686e66332aae431ec05d06937a0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_ss_k_a7034ff44a447cef0d24117e9a1fa9fef}{}\index{Ss\+K@{Ss\+K}!pos\+Sicher@{pos\+Sicher}}
+\index{pos\+Sicher@{pos\+Sicher}!Ss\+K@{Ss\+K}}
+\subsubsection[{pos\+Sicher}]{\setlength{\rightskip}{0pt plus 5cm}bool Ss\+K\+::pos\+Sicher (
+\begin{DoxyParamCaption}
+\item[{{\bf Possition}}]{p}
+\end{DoxyParamCaption}
+)}\label{class_ss_k_a7034ff44a447cef0d24117e9a1fa9fef}
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ss_k_a7034ff44a447cef0d24117e9a1fa9fef_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{class_ss_k_a4c117e68ae76434738995801a4a1fbcc}{}\index{Ss\+K@{Ss\+K}!gegner@{gegner}}
+\index{gegner@{gegner}!Ss\+K@{Ss\+K}}
+\subsubsection[{gegner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sf\+K} Ss\+K\+::gegner\hspace{0.3cm}{\ttfamily [private]}}\label{class_ss_k_a4c117e68ae76434738995801a4a1fbcc}
+\hypertarget{class_ss_k_af5cfdbc60256434dbb73e61e737e056a}{}\index{Ss\+K@{Ss\+K}!g\+Zuege@{g\+Zuege}}
+\index{g\+Zuege@{g\+Zuege}!Ss\+K@{Ss\+K}}
+\subsubsection[{g\+Zuege}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf zug}$>$ Ss\+K\+::g\+Zuege\hspace{0.3cm}{\ttfamily [private]}}\label{class_ss_k_af5cfdbc60256434dbb73e61e737e056a}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_ss_k_8h}{Ss\+K.\+h}\item 
+\hyperlink{_ss_k_8cpp}{Ss\+K.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,261 @@
+\select@language {ngerman}
+\contentsline {chapter}{\numberline {1}Hierarchie-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Verzeichnis}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Klassenhierarchie}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Klassen-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Verzeichnis}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Auflistung der Klassen}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Datei-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Verzeichnis}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Auflistung der Dateien}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Klassen-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dokumentation}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Feld Klassenreferenz}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Ausf\IeC {\"u}hrliche Beschreibung}{9}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Beschreibung der Konstruktoren und Destruktoren}{9}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Feld}{9}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}Feld}{9}{subsubsection.4.1.2.2}
+\contentsline {subsubsection}{\numberline {4.1.2.3}Feld}{9}{subsubsection.4.1.2.3}
+\contentsline {subsection}{\numberline {4.1.3}Dokumentation der Elementfunktionen}{9}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.3.1}del\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Stein}{9}{subsubsection.4.1.3.1}
+\contentsline {subsubsection}{\numberline {4.1.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Besetzt}{9}{subsubsection.4.1.3.2}
+\contentsline {subsubsection}{\numberline {4.1.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Gast}{9}{subsubsection.4.1.3.3}
+\contentsline {subsubsection}{\numberline {4.1.3.4}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pos}{10}{subsubsection.4.1.3.4}
+\contentsline {subsubsection}{\numberline {4.1.3.5}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Stein}{10}{subsubsection.4.1.3.5}
+\contentsline {subsection}{\numberline {4.1.4}Dokumentation der Datenelemente}{10}{subsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.4.1}besetzt}{10}{subsubsection.4.1.4.1}
+\contentsline {subsubsection}{\numberline {4.1.4.2}gast}{10}{subsubsection.4.1.4.2}
+\contentsline {subsubsection}{\numberline {4.1.4.3}pos}{10}{subsubsection.4.1.4.3}
+\contentsline {section}{\numberline {4.2}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I Klassenreferenz}{10}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Ausf\IeC {\"u}hrliche Beschreibung}{12}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Beschreibung der Konstruktoren und Destruktoren}{12}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I}{12}{subsubsection.4.2.2.1}
+\contentsline {subsection}{\numberline {4.2.3}Dokumentation der Elementfunktionen}{12}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}Spieler}{12}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}zeichne\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Anleitung}{12}{subsubsection.4.2.3.2}
+\contentsline {subsubsection}{\numberline {4.2.3.3}zeichne\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Spielfeld}{12}{subsubsection.4.2.3.3}
+\contentsline {subsubsection}{\numberline {4.2.3.4}zeichne\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Zug}{12}{subsubsection.4.2.3.4}
+\contentsline {subsection}{\numberline {4.2.4}Dokumentation der Datenelemente}{12}{subsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.4.1}brett}{12}{subsubsection.4.2.4.1}
+\contentsline {subsubsection}{\numberline {4.2.4.2}K\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Isw}{13}{subsubsection.4.2.4.2}
+\contentsline {section}{\numberline {4.3}K\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I Klassenreferenz}{13}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Ausf\IeC {\"u}hrliche Beschreibung}{15}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Beschreibung der Konstruktoren und Destruktoren}{15}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}K\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I}{15}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I}{15}{subsubsection.4.3.2.2}
+\contentsline {subsection}{\numberline {4.3.3}Dokumentation der Elementfunktionen}{15}{subsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Brett}{15}{subsubsection.4.3.3.1}
+\contentsline {subsubsection}{\numberline {4.3.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Team}{15}{subsubsection.4.3.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3.3}merge\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Strategie}{16}{subsubsection.4.3.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.4}merge\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Strategie}{17}{subsubsection.4.3.3.4}
+\contentsline {subsubsection}{\numberline {4.3.3.5}nex\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Zug}{18}{subsubsection.4.3.3.5}
+\contentsline {subsubsection}{\numberline {4.3.3.6}seach\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Best\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Zug}{18}{subsubsection.4.3.3.6}
+\contentsline {subsection}{\numberline {4.3.4}Dokumentation der Datenelemente}{19}{subsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.4.1}abrett}{19}{subsubsection.4.3.4.1}
+\contentsline {subsubsection}{\numberline {4.3.4.2}anzstrat}{19}{subsubsection.4.3.4.2}
+\contentsline {subsubsection}{\numberline {4.3.4.3}dv}{19}{subsubsection.4.3.4.3}
+\contentsline {subsubsection}{\numberline {4.3.4.4}n\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Zug}{19}{subsubsection.4.3.4.4}
+\contentsline {subsubsection}{\numberline {4.3.4.5}strat}{19}{subsubsection.4.3.4.5}
+\contentsline {subsubsection}{\numberline {4.3.4.6}t}{19}{subsubsection.4.3.4.6}
+\contentsline {section}{\numberline {4.4}Koenig Klassenreferenz}{20}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Beschreibung der Konstruktoren und Destruktoren}{22}{subsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.1.1}Koenig}{22}{subsubsection.4.4.1.1}
+\contentsline {subsubsection}{\numberline {4.4.1.2}Koenig}{22}{subsubsection.4.4.1.2}
+\contentsline {subsection}{\numberline {4.4.2}Dokumentation der Elementfunktionen}{22}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Geffangen}{22}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}ziehenach}{22}{subsubsection.4.4.2.2}
+\contentsline {section}{\numberline {4.5}Possition Strukturreferenz}{23}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Ausf\IeC {\"u}hrliche Beschreibung}{24}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Beschreibung der Konstruktoren und Destruktoren}{24}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}Possition}{24}{subsubsection.4.5.2.1}
+\contentsline {subsubsection}{\numberline {4.5.2.2}Possition}{24}{subsubsection.4.5.2.2}
+\contentsline {subsection}{\numberline {4.5.3}Dokumentation der Elementfunktionen}{24}{subsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.3.1}operator==}{24}{subsubsection.4.5.3.1}
+\contentsline {subsection}{\numberline {4.5.4}Dokumentation der Datenelemente}{24}{subsection.4.5.4}
+\contentsline {subsubsection}{\numberline {4.5.4.1}x}{24}{subsubsection.4.5.4.1}
+\contentsline {subsubsection}{\numberline {4.5.4.2}y}{24}{subsubsection.4.5.4.2}
+\contentsline {section}{\numberline {4.6}Sf\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H Klassenreferenz}{24}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Ausf\IeC {\"u}hrliche Beschreibung}{27}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Beschreibung der Konstruktoren und Destruktoren}{27}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}Sf\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H}{27}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sf\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H}{27}{subsubsection.4.6.2.2}
+\contentsline {subsection}{\numberline {4.6.3}Dokumentation der Elementfunktionen}{27}{subsection.4.6.3}
+\contentsline {subsubsection}{\numberline {4.6.3.1}bewerten}{27}{subsubsection.4.6.3.1}
+\contentsline {section}{\numberline {4.7}Sf\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K Klassenreferenz}{28}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Ausf\IeC {\"u}hrliche Beschreibung}{31}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Beschreibung der Konstruktoren und Destruktoren}{31}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}Sf\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K}{31}{subsubsection.4.7.2.1}
+\contentsline {subsubsection}{\numberline {4.7.2.2}Sf\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K}{31}{subsubsection.4.7.2.2}
+\contentsline {subsubsection}{\numberline {4.7.2.3}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sf\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K}{31}{subsubsection.4.7.2.3}
+\contentsline {subsection}{\numberline {4.7.3}Dokumentation der Elementfunktionen}{31}{subsection.4.7.3}
+\contentsline {subsubsection}{\numberline {4.7.3.1}bewerten}{31}{subsubsection.4.7.3.1}
+\contentsline {section}{\numberline {4.8}Spiel\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Brett Klassenreferenz}{33}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Beschreibung der Konstruktoren und Destruktoren}{34}{subsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.1.1}Spiel\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Brett}{34}{subsubsection.4.8.1.1}
+\contentsline {subsubsection}{\numberline {4.8.1.2}Spiel\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Brett}{34}{subsubsection.4.8.1.2}
+\contentsline {subsubsection}{\numberline {4.8.1.3}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Spiel\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Brett}{35}{subsubsection.4.8.1.3}
+\contentsline {subsection}{\numberline {4.8.2}Dokumentation der Elementfunktionen}{35}{subsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.2.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Feld}{35}{subsubsection.4.8.2.1}
+\contentsline {subsubsection}{\numberline {4.8.2.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Schwarz}{35}{subsubsection.4.8.2.2}
+\contentsline {subsubsection}{\numberline {4.8.2.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weis}{36}{subsubsection.4.8.2.3}
+\contentsline {subsubsection}{\numberline {4.8.2.4}init\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Brett}{36}{subsubsection.4.8.2.4}
+\contentsline {subsection}{\numberline {4.8.3}Dokumentation der Datenelemente}{36}{subsection.4.8.3}
+\contentsline {subsubsection}{\numberline {4.8.3.1}Brett}{36}{subsubsection.4.8.3.1}
+\contentsline {subsubsection}{\numberline {4.8.3.2}dimmension}{36}{subsubsection.4.8.3.2}
+\contentsline {subsubsection}{\numberline {4.8.3.3}schwarz}{36}{subsubsection.4.8.3.3}
+\contentsline {subsubsection}{\numberline {4.8.3.4}weis}{36}{subsubsection.4.8.3.4}
+\contentsline {section}{\numberline {4.9}Sr\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H Klassenreferenz}{36}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Ausf\IeC {\"u}hrliche Beschreibung}{39}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Beschreibung der Konstruktoren und Destruktoren}{39}{subsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.2.1}Sr\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H}{39}{subsubsection.4.9.2.1}
+\contentsline {subsubsection}{\numberline {4.9.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sr\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H}{39}{subsubsection.4.9.2.2}
+\contentsline {subsection}{\numberline {4.9.3}Dokumentation der Elementfunktionen}{39}{subsection.4.9.3}
+\contentsline {subsubsection}{\numberline {4.9.3.1}bewerten}{39}{subsubsection.4.9.3.1}
+\contentsline {section}{\numberline {4.10}Ss\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K Klassenreferenz}{40}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Ausf\IeC {\"u}hrliche Beschreibung}{42}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Beschreibung der Konstruktoren und Destruktoren}{42}{subsection.4.10.2}
+\contentsline {subsubsection}{\numberline {4.10.2.1}Ss\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K}{42}{subsubsection.4.10.2.1}
+\contentsline {subsubsection}{\numberline {4.10.2.2}Ss\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K}{42}{subsubsection.4.10.2.2}
+\contentsline {subsubsection}{\numberline {4.10.2.3}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ss\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K}{42}{subsubsection.4.10.2.3}
+\contentsline {subsection}{\numberline {4.10.3}Dokumentation der Elementfunktionen}{42}{subsection.4.10.3}
+\contentsline {subsubsection}{\numberline {4.10.3.1}bewerten}{42}{subsubsection.4.10.3.1}
+\contentsline {subsubsection}{\numberline {4.10.3.2}pos\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sicher}{43}{subsubsection.4.10.3.2}
+\contentsline {subsection}{\numberline {4.10.4}Dokumentation der Datenelemente}{43}{subsection.4.10.4}
+\contentsline {subsubsection}{\numberline {4.10.4.1}gegner}{43}{subsubsection.4.10.4.1}
+\contentsline {subsubsection}{\numberline {4.10.4.2}g\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Zuege}{43}{subsubsection.4.10.4.2}
+\contentsline {section}{\numberline {4.11}Stein Klassenreferenz}{43}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Ausf\IeC {\"u}hrliche Beschreibung}{46}{subsection.4.11.1}
+\contentsline {subsection}{\numberline {4.11.2}Beschreibung der Konstruktoren und Destruktoren}{46}{subsection.4.11.2}
+\contentsline {subsubsection}{\numberline {4.11.2.1}Stein}{46}{subsubsection.4.11.2.1}
+\contentsline {subsubsection}{\numberline {4.11.2.2}Stein}{46}{subsubsection.4.11.2.2}
+\contentsline {subsubsection}{\numberline {4.11.2.3}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Stein}{47}{subsubsection.4.11.2.3}
+\contentsline {subsection}{\numberline {4.11.3}Dokumentation der Elementfunktionen}{47}{subsection.4.11.3}
+\contentsline {subsubsection}{\numberline {4.11.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Geffangen}{47}{subsubsection.4.11.3.1}
+\contentsline {subsubsection}{\numberline {4.11.3.2}getid}{47}{subsubsection.4.11.3.2}
+\contentsline {subsubsection}{\numberline {4.11.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mteam}{47}{subsubsection.4.11.3.3}
+\contentsline {subsubsection}{\numberline {4.11.3.4}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ort}{47}{subsubsection.4.11.3.4}
+\contentsline {subsubsection}{\numberline {4.11.3.5}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Frei}{47}{subsubsection.4.11.3.5}
+\contentsline {subsubsection}{\numberline {4.11.3.6}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Geffangen}{47}{subsubsection.4.11.3.6}
+\contentsline {subsubsection}{\numberline {4.11.3.7}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ort}{47}{subsubsection.4.11.3.7}
+\contentsline {subsubsection}{\numberline {4.11.3.8}ziehenach}{47}{subsubsection.4.11.3.8}
+\contentsline {subsubsection}{\numberline {4.11.3.9}zuege}{48}{subsubsection.4.11.3.9}
+\contentsline {subsection}{\numberline {4.11.4}Dokumentation der Datenelemente}{48}{subsection.4.11.4}
+\contentsline {subsubsection}{\numberline {4.11.4.1}geffangen}{48}{subsubsection.4.11.4.1}
+\contentsline {subsubsection}{\numberline {4.11.4.2}id}{48}{subsubsection.4.11.4.2}
+\contentsline {subsubsection}{\numberline {4.11.4.3}mteam}{49}{subsubsection.4.11.4.3}
+\contentsline {subsubsection}{\numberline {4.11.4.4}ort}{49}{subsubsection.4.11.4.4}
+\contentsline {section}{\numberline {4.12}Strategie Klassenreferenz}{49}{section.4.12}
+\contentsline {subsection}{\numberline {4.12.1}Ausf\IeC {\"u}hrliche Beschreibung}{51}{subsection.4.12.1}
+\contentsline {subsection}{\numberline {4.12.2}Beschreibung der Konstruktoren und Destruktoren}{51}{subsection.4.12.2}
+\contentsline {subsubsection}{\numberline {4.12.2.1}Strategie}{51}{subsubsection.4.12.2.1}
+\contentsline {subsubsection}{\numberline {4.12.2.2}Strategie}{51}{subsubsection.4.12.2.2}
+\contentsline {subsubsection}{\numberline {4.12.2.3}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Strategie}{51}{subsubsection.4.12.2.3}
+\contentsline {subsection}{\numberline {4.12.3}Dokumentation der Elementfunktionen}{51}{subsection.4.12.3}
+\contentsline {subsubsection}{\numberline {4.12.3.1}bewerten}{51}{subsubsection.4.12.3.1}
+\contentsline {subsubsection}{\numberline {4.12.3.2}getm\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Zuege}{52}{subsubsection.4.12.3.2}
+\contentsline {subsubsection}{\numberline {4.12.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Wert}{52}{subsubsection.4.12.3.3}
+\contentsline {subsubsection}{\numberline {4.12.3.4}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Zuege}{52}{subsubsection.4.12.3.4}
+\contentsline {subsubsection}{\numberline {4.12.3.5}nex\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Zug}{52}{subsubsection.4.12.3.5}
+\contentsline {subsection}{\numberline {4.12.4}Dokumentation der Datenelemente}{52}{subsection.4.12.4}
+\contentsline {subsubsection}{\numberline {4.12.4.1}a\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Zuege}{52}{subsubsection.4.12.4.1}
+\contentsline {subsubsection}{\numberline {4.12.4.2}brett}{52}{subsubsection.4.12.4.2}
+\contentsline {subsubsection}{\numberline {4.12.4.3}h1}{52}{subsubsection.4.12.4.3}
+\contentsline {subsubsection}{\numberline {4.12.4.4}h2}{52}{subsubsection.4.12.4.4}
+\contentsline {subsubsection}{\numberline {4.12.4.5}h3}{52}{subsubsection.4.12.4.5}
+\contentsline {subsubsection}{\numberline {4.12.4.6}k}{52}{subsubsection.4.12.4.6}
+\contentsline {subsubsection}{\numberline {4.12.4.7}m\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Zuege}{52}{subsubsection.4.12.4.7}
+\contentsline {subsubsection}{\numberline {4.12.4.8}n\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Zug}{52}{subsubsection.4.12.4.8}
+\contentsline {subsubsection}{\numberline {4.12.4.9}team}{52}{subsubsection.4.12.4.9}
+\contentsline {subsubsection}{\numberline {4.12.4.10}wert}{53}{subsubsection.4.12.4.10}
+\contentsline {section}{\numberline {4.13}Team Klassenreferenz}{53}{section.4.13}
+\contentsline {subsection}{\numberline {4.13.1}Ausf\IeC {\"u}hrliche Beschreibung}{55}{subsection.4.13.1}
+\contentsline {subsection}{\numberline {4.13.2}Beschreibung der Konstruktoren und Destruktoren}{55}{subsection.4.13.2}
+\contentsline {subsubsection}{\numberline {4.13.2.1}Team}{55}{subsubsection.4.13.2.1}
+\contentsline {subsubsection}{\numberline {4.13.2.2}Team}{55}{subsubsection.4.13.2.2}
+\contentsline {subsubsection}{\numberline {4.13.2.3}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Team}{55}{subsubsection.4.13.2.3}
+\contentsline {subsection}{\numberline {4.13.3}Dokumentation der Elementfunktionen}{55}{subsection.4.13.3}
+\contentsline {subsubsection}{\numberline {4.13.3.1}distanzen}{55}{subsubsection.4.13.3.1}
+\contentsline {subsubsection}{\numberline {4.13.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Brett}{56}{subsubsection.4.13.3.2}
+\contentsline {subsubsection}{\numberline {4.13.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Farbe}{56}{subsubsection.4.13.3.3}
+\contentsline {subsubsection}{\numberline {4.13.3.4}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Gegner}{56}{subsubsection.4.13.3.4}
+\contentsline {subsubsection}{\numberline {4.13.3.5}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sieg}{56}{subsubsection.4.13.3.5}
+\contentsline {subsubsection}{\numberline {4.13.3.6}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Stein}{56}{subsubsection.4.13.3.6}
+\contentsline {subsubsection}{\numberline {4.13.3.7}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Gegner}{56}{subsubsection.4.13.3.7}
+\contentsline {subsubsection}{\numberline {4.13.3.8}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sieg}{56}{subsubsection.4.13.3.8}
+\contentsline {subsection}{\numberline {4.13.4}Dokumentation der Datenelemente}{56}{subsection.4.13.4}
+\contentsline {subsubsection}{\numberline {4.13.4.1}brett}{56}{subsubsection.4.13.4.1}
+\contentsline {subsubsection}{\numberline {4.13.4.2}Farbe}{57}{subsubsection.4.13.4.2}
+\contentsline {subsubsection}{\numberline {4.13.4.3}gegner}{57}{subsubsection.4.13.4.3}
+\contentsline {subsubsection}{\numberline {4.13.4.4}helfer1}{57}{subsubsection.4.13.4.4}
+\contentsline {subsubsection}{\numberline {4.13.4.5}helfer2}{57}{subsubsection.4.13.4.5}
+\contentsline {subsubsection}{\numberline {4.13.4.6}helfer3}{57}{subsubsection.4.13.4.6}
+\contentsline {subsubsection}{\numberline {4.13.4.7}koenig}{57}{subsubsection.4.13.4.7}
+\contentsline {subsubsection}{\numberline {4.13.4.8}Sieg}{57}{subsubsection.4.13.4.8}
+\contentsline {section}{\numberline {4.14}User Klassenreferenz}{57}{section.4.14}
+\contentsline {subsection}{\numberline {4.14.1}Ausf\IeC {\"u}hrliche Beschreibung}{57}{subsection.4.14.1}
+\contentsline {subsection}{\numberline {4.14.2}Beschreibung der Konstruktoren und Destruktoren}{57}{subsection.4.14.2}
+\contentsline {subsubsection}{\numberline {4.14.2.1}User}{58}{subsubsection.4.14.2.1}
+\contentsline {subsubsection}{\numberline {4.14.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}User}{58}{subsubsection.4.14.2.2}
+\contentsline {subsection}{\numberline {4.14.3}Dokumentation der Elementfunktionen}{58}{subsection.4.14.3}
+\contentsline {subsubsection}{\numberline {4.14.3.1}Graphik}{58}{subsubsection.4.14.3.1}
+\contentsline {section}{\numberline {4.15}zug Strukturreferenz}{58}{section.4.15}
+\contentsline {subsection}{\numberline {4.15.1}Ausf\IeC {\"u}hrliche Beschreibung}{60}{subsection.4.15.1}
+\contentsline {subsection}{\numberline {4.15.2}Beschreibung der Konstruktoren und Destruktoren}{60}{subsection.4.15.2}
+\contentsline {subsubsection}{\numberline {4.15.2.1}zug}{60}{subsubsection.4.15.2.1}
+\contentsline {subsubsection}{\numberline {4.15.2.2}zug}{60}{subsubsection.4.15.2.2}
+\contentsline {subsubsection}{\numberline {4.15.2.3}zug}{60}{subsubsection.4.15.2.3}
+\contentsline {subsection}{\numberline {4.15.3}Dokumentation der Elementfunktionen}{60}{subsection.4.15.3}
+\contentsline {subsubsection}{\numberline {4.15.3.1}operator$<$}{60}{subsubsection.4.15.3.1}
+\contentsline {subsubsection}{\numberline {4.15.3.2}operator=}{60}{subsubsection.4.15.3.2}
+\contentsline {subsubsection}{\numberline {4.15.3.3}operator==}{60}{subsubsection.4.15.3.3}
+\contentsline {subsection}{\numberline {4.15.4}Dokumentation der Datenelemente}{60}{subsection.4.15.4}
+\contentsline {subsubsection}{\numberline {4.15.4.1}stein}{60}{subsubsection.4.15.4.1}
+\contentsline {subsubsection}{\numberline {4.15.4.2}wert}{60}{subsubsection.4.15.4.2}
+\contentsline {subsubsection}{\numberline {4.15.4.3}zpos}{60}{subsubsection.4.15.4.3}
+\contentsline {subsubsection}{\numberline {4.15.4.4}zu}{61}{subsubsection.4.15.4.4}
+\contentsline {chapter}{\numberline {5}Datei-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dokumentation}{63}{chapter.5}
+\contentsline {section}{\numberline {5.1}Feld.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{63}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Makro-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dokumentation}{63}{subsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.1}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C}{63}{subsubsection.5.1.1.1}
+\contentsline {section}{\numberline {5.2}Feld.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{64}{section.5.2}
+\contentsline {section}{\numberline {5.3}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{64}{section.5.3}
+\contentsline {section}{\numberline {5.4}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{65}{section.5.4}
+\contentsline {section}{\numberline {5.5}K\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{67}{section.5.5}
+\contentsline {section}{\numberline {5.6}K\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{68}{section.5.6}
+\contentsline {section}{\numberline {5.7}Koenig.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{70}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Makro-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dokumentation}{71}{subsection.5.7.1}
+\contentsline {subsubsection}{\numberline {5.7.1.1}K\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C}{71}{subsubsection.5.7.1.1}
+\contentsline {section}{\numberline {5.8}Koenig.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{71}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Makro-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dokumentation}{72}{subsection.5.8.1}
+\contentsline {subsubsection}{\numberline {5.8.1.1}K\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H}{72}{subsubsection.5.8.1.1}
+\contentsline {section}{\numberline {5.9}main.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{72}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}Dokumentation der Funktionen}{73}{subsection.5.9.1}
+\contentsline {subsubsection}{\numberline {5.9.1.1}main}{74}{subsubsection.5.9.1.1}
+\contentsline {section}{\numberline {5.10}Main.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{74}{section.5.10}
+\contentsline {section}{\numberline {5.11}Possition.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{74}{section.5.11}
+\contentsline {subsection}{\numberline {5.11.1}Makro-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dokumentation}{74}{subsection.5.11.1}
+\contentsline {subsubsection}{\numberline {5.11.1.1}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H}{74}{subsubsection.5.11.1.1}
+\contentsline {section}{\numberline {5.12}Sf\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{75}{section.5.12}
+\contentsline {section}{\numberline {5.13}Sf\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{76}{section.5.13}
+\contentsline {section}{\numberline {5.14}Sf\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{77}{section.5.14}
+\contentsline {section}{\numberline {5.15}Sf\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{78}{section.5.15}
+\contentsline {section}{\numberline {5.16}Spiel\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Brett.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{80}{section.5.16}
+\contentsline {subsection}{\numberline {5.16.1}Makro-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dokumentation}{81}{subsection.5.16.1}
+\contentsline {subsubsection}{\numberline {5.16.1.1}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C}{81}{subsubsection.5.16.1.1}
+\contentsline {section}{\numberline {5.17}Spiel\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Brett.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{81}{section.5.17}
+\contentsline {section}{\numberline {5.18}Sr\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{82}{section.5.18}
+\contentsline {section}{\numberline {5.19}Sr\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{83}{section.5.19}
+\contentsline {section}{\numberline {5.20}Ss\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{85}{section.5.20}
+\contentsline {section}{\numberline {5.21}Ss\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{85}{section.5.21}
+\contentsline {section}{\numberline {5.22}Stein.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{87}{section.5.22}
+\contentsline {subsection}{\numberline {5.22.1}Makro-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dokumentation}{88}{subsection.5.22.1}
+\contentsline {subsubsection}{\numberline {5.22.1.1}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C}{88}{subsubsection.5.22.1.1}
+\contentsline {section}{\numberline {5.23}Stein.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{88}{section.5.23}
+\contentsline {section}{\numberline {5.24}Strategie.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{89}{section.5.24}
+\contentsline {section}{\numberline {5.25}Strategie.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{90}{section.5.25}
+\contentsline {section}{\numberline {5.26}Team.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{92}{section.5.26}
+\contentsline {subsection}{\numberline {5.26.1}Makro-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dokumentation}{92}{subsection.5.26.1}
+\contentsline {subsubsection}{\numberline {5.26.1.1}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C}{92}{subsubsection.5.26.1.1}
+\contentsline {section}{\numberline {5.27}Team.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{92}{section.5.27}
+\contentsline {section}{\numberline {5.28}User.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{94}{section.5.28}
+\contentsline {subsection}{\numberline {5.28.1}Makro-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dokumentation}{94}{subsection.5.28.1}
+\contentsline {subsubsection}{\numberline {5.28.1.1}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C}{94}{subsubsection.5.28.1.1}
+\contentsline {section}{\numberline {5.29}User.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{94}{section.5.29}
+\contentsline {section}{\numberline {5.30}zug.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dateireferenz}{95}{section.5.30}
+\contentsline {chapter}{Index}{97}{section*.69}

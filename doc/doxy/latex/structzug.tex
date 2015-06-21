@@ -1,0 +1,129 @@
+\hypertarget{structzug}{}\section{zug Strukturreferenz}
+\label{structzug}\index{zug@{zug}}
+
+
+{\ttfamily \#include $<$zug.\+h$>$}
+
+
+
+Zusammengehörigkeiten von zug\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structzug__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structzug_ad28714c8da822cfa7324650d90e30947}{zug} ()=default
+\item 
+\hyperlink{structzug_ab089a9829071c1c2a242cef95b399e39}{zug} (\hyperlink{class_feld}{Feld} $\ast$z, \hyperlink{class_stein}{Stein} $\ast$s)
+\item 
+\hyperlink{structzug_aa390b6ca5a719bb107a66bd6ddb728f6}{zug} (const \hyperlink{structzug}{zug} \&z)
+\item 
+\hyperlink{structzug}{zug} \& \hyperlink{structzug_aee196f37d4c013c82c89715a09e63d75}{operator=} (const \hyperlink{structzug}{zug} \&z)
+\item 
+bool \hyperlink{structzug_afd3240046f4e7e9fb7495b1eee259d35}{operator$<$} (const \hyperlink{structzug}{zug} \&z) const 
+\item 
+bool \hyperlink{structzug_a5676590b96c8d14da3ca588718af33d7}{operator==} (const \hyperlink{structzug}{zug} \&z) const 
+\end{DoxyCompactItemize}
+\subsection*{Öffentliche Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_feld}{Feld} $\ast$ \hyperlink{structzug_aa1d47432b331308a510572187bfbe0ec}{zu} =nullptr
+\item 
+\hyperlink{class_stein}{Stein} $\ast$ \hyperlink{structzug_a4b431b73a9dbcfd9b2c20afb66f76998}{stein} =nullptr
+\item 
+int \hyperlink{structzug_adea5273c99ffd5fb46a9f5367a0fef3e}{wert} =100
+\item 
+\hyperlink{struct_possition}{Possition} \hyperlink{structzug_a849eec23abc7f17b4241197f48683bc8}{zpos}
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+struct Zug Daten Struktur die einen Spiel-\/\+Zug Symbolysiert. 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{structzug_ad28714c8da822cfa7324650d90e30947}{}\index{zug@{zug}!zug@{zug}}
+\index{zug@{zug}!zug@{zug}}
+\subsubsection[{zug}]{\setlength{\rightskip}{0pt plus 5cm}zug\+::zug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{structzug_ad28714c8da822cfa7324650d90e30947}
+\hypertarget{structzug_ab089a9829071c1c2a242cef95b399e39}{}\index{zug@{zug}!zug@{zug}}
+\index{zug@{zug}!zug@{zug}}
+\subsubsection[{zug}]{\setlength{\rightskip}{0pt plus 5cm}zug\+::zug (
+\begin{DoxyParamCaption}
+\item[{{\bf Feld} $\ast$}]{z, }
+\item[{{\bf Stein} $\ast$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structzug_ab089a9829071c1c2a242cef95b399e39}
+\hypertarget{structzug_aa390b6ca5a719bb107a66bd6ddb728f6}{}\index{zug@{zug}!zug@{zug}}
+\index{zug@{zug}!zug@{zug}}
+\subsubsection[{zug}]{\setlength{\rightskip}{0pt plus 5cm}zug\+::zug (
+\begin{DoxyParamCaption}
+\item[{const {\bf zug} \&}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structzug_aa390b6ca5a719bb107a66bd6ddb728f6}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{structzug_afd3240046f4e7e9fb7495b1eee259d35}{}\index{zug@{zug}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!zug@{zug}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool zug\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf zug} \&}]{z}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{structzug_afd3240046f4e7e9fb7495b1eee259d35}
+Kleiner als Operator Vergleicht Zuege nach Wertigkeit; 
+\begin{DoxyParams}{Parameter}
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+
+\end{DoxyReturn}
+\hypertarget{structzug_aee196f37d4c013c82c89715a09e63d75}{}\index{zug@{zug}!operator=@{operator=}}
+\index{operator=@{operator=}!zug@{zug}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf zug}\& zug\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf zug} \&}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structzug_aee196f37d4c013c82c89715a09e63d75}
+\hypertarget{structzug_a5676590b96c8d14da3ca588718af33d7}{}\index{zug@{zug}!operator==@{operator==}}
+\index{operator==@{operator==}!zug@{zug}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool zug\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf zug} \&}]{z}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{structzug_a5676590b96c8d14da3ca588718af33d7}
+Vergleichs-\/\+Operator Vergleicht Zuege auf gleiche Ziel-\/\+Position 
+\begin{DoxyParams}{Parameter}
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+
+\end{DoxyReturn}
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{structzug_a4b431b73a9dbcfd9b2c20afb66f76998}{}\index{zug@{zug}!stein@{stein}}
+\index{stein@{stein}!zug@{zug}}
+\subsubsection[{stein}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stein}$\ast$ zug\+::stein =nullptr}\label{structzug_a4b431b73a9dbcfd9b2c20afb66f76998}
+\hypertarget{structzug_adea5273c99ffd5fb46a9f5367a0fef3e}{}\index{zug@{zug}!wert@{wert}}
+\index{wert@{wert}!zug@{zug}}
+\subsubsection[{wert}]{\setlength{\rightskip}{0pt plus 5cm}int zug\+::wert =100}\label{structzug_adea5273c99ffd5fb46a9f5367a0fef3e}
+\hypertarget{structzug_a849eec23abc7f17b4241197f48683bc8}{}\index{zug@{zug}!zpos@{zpos}}
+\index{zpos@{zpos}!zug@{zug}}
+\subsubsection[{zpos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Possition} zug\+::zpos}\label{structzug_a849eec23abc7f17b4241197f48683bc8}
+\hypertarget{structzug_aa1d47432b331308a510572187bfbe0ec}{}\index{zug@{zug}!zu@{zu}}
+\index{zu@{zu}!zug@{zug}}
+\subsubsection[{zu}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feld}$\ast$ zug\+::zu =nullptr}\label{structzug_aa1d47432b331308a510572187bfbe0ec}
+
+
+Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{zug_8h}{zug.\+h}\end{DoxyCompactItemize}

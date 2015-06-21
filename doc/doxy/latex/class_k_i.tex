@@ -1,0 +1,243 @@
+\hypertarget{class_k_i}{}\section{K\+I Klassenreferenz}
+\label{class_k_i}\index{K\+I@{K\+I}}
+
+
+{\ttfamily \#include $<$K\+I.\+h$>$}
+
+
+
+Zusammengehörigkeiten von K\+I\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_k_i__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_team}{Team} \& \hyperlink{class_k_i_a731391b304aaf237500db42f8dee4690}{get\+Team} ()
+\item 
+\hyperlink{class_spiel_brett}{Spiel\+Brett} \& \hyperlink{class_k_i_a204bc5eb350c5d7cfc5f7e56fff9690c}{get\+Brett} ()
+\item 
+void \hyperlink{class_k_i_a840820c024ad7069c2064fc30f964169}{nex\+Zug} ()
+\item 
+\hyperlink{class_k_i_aa3c0a5eadcdf9c5fee6d8180dac17d0a}{K\+I} (\hyperlink{class_team}{Team} \&\hyperlink{class_k_i_a611b37548d94d9dce7e68024aa943733}{t})
+\item 
+virtual \hyperlink{class_k_i_afd1109cfccff505f519d60d9958efad9}{$\sim$\+K\+I} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Methoden}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{structzug}{zug} $>$ \hyperlink{class_k_i_af4bec8491d051702c49d780a25feb1cb}{merge\+Strategie} (\hyperlink{class_strategie}{Strategie} $\ast$st1, std\+::vector$<$ \hyperlink{structzug}{zug} $>$ st2\+Zuege)
+\item 
+std\+::vector$<$ \hyperlink{structzug}{zug} $>$ \hyperlink{class_k_i_ae97a6dd7ab3de2a934ca5c28c4cc63b3}{merge\+Strategie} (\hyperlink{class_strategie}{Strategie} $\ast$st1, \hyperlink{class_strategie}{Strategie} $\ast$st2)
+\item 
+void \hyperlink{class_k_i_afa90fdb068e7b06e58db40b1ceeb8216}{seach\+Best\+Zug} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_team}{Team} \& \hyperlink{class_k_i_a611b37548d94d9dce7e68024aa943733}{t}
+\item 
+\hyperlink{class_spiel_brett}{Spiel\+Brett} \& \hyperlink{class_k_i_a93f7368fa6746ddb1e51d804ddaea096}{abrett}
+\item 
+\hyperlink{class_strategie}{Strategie} $\ast$ \hyperlink{class_k_i_a6e07007b67f0a2778de3148ed5612921}{strat} \mbox{[}\hyperlink{class_k_i_a16d7b067120b9b638781d5e5e6dcc005}{anzstrat}\mbox{]}
+\item 
+\hyperlink{class_ss_k}{Ss\+K} $\ast$ \hyperlink{class_k_i_a34cb945060f752556a068ccf1771c531}{dv}
+\item 
+\hyperlink{structzug}{zug} \hyperlink{class_k_i_acfefb24fdddb36cbfe2dff9e1d5d8296}{n\+Zug}
+\end{DoxyCompactItemize}
+\subsection*{Statische, private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_k_i_a16d7b067120b9b638781d5e5e6dcc005}{anzstrat} =4
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+class \hyperlink{class_k_i}{K\+I} Ist eine Klasse die aus den möglichen Spielzügen den besten auswählt. Sie ist mit zusätzlichen Strategien erweiterbar. 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{class_k_i_aa3c0a5eadcdf9c5fee6d8180dac17d0a}{}\index{K\+I@{K\+I}!K\+I@{K\+I}}
+\index{K\+I@{K\+I}!K\+I@{K\+I}}
+\subsubsection[{K\+I}]{\setlength{\rightskip}{0pt plus 5cm}K\+I\+::\+K\+I (
+\begin{DoxyParamCaption}
+\item[{{\bf Team} \&}]{t}
+\end{DoxyParamCaption}
+)}\label{class_k_i_aa3c0a5eadcdf9c5fee6d8180dac17d0a}
+\hyperlink{class_k_i}{K\+I} Konstruktor 
+\begin{DoxyParams}[1]{Parameter}
+\mbox{\tt in,out}  & {\em t} & Referenz auf das \hyperlink{class_team}{Team}, das gesteuert werden soll \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_k_i_afd1109cfccff505f519d60d9958efad9}{}\index{K\+I@{K\+I}!````~K\+I@{$\sim$\+K\+I}}
+\index{````~K\+I@{$\sim$\+K\+I}!K\+I@{K\+I}}
+\subsubsection[{$\sim$\+K\+I}]{\setlength{\rightskip}{0pt plus 5cm}K\+I\+::$\sim$\+K\+I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_k_i_afd1109cfccff505f519d60d9958efad9}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_k_i_a204bc5eb350c5d7cfc5f7e56fff9690c}{}\index{K\+I@{K\+I}!get\+Brett@{get\+Brett}}
+\index{get\+Brett@{get\+Brett}!K\+I@{K\+I}}
+\subsubsection[{get\+Brett}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spiel\+Brett} \& K\+I\+::get\+Brett (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_k_i_a204bc5eb350c5d7cfc5f7e56fff9690c}
+get\+Brett \begin{DoxyReturn}{Rückgabe}
+Referenz auf das Spielbrett 
+\end{DoxyReturn}
+\hypertarget{class_k_i_a731391b304aaf237500db42f8dee4690}{}\index{K\+I@{K\+I}!get\+Team@{get\+Team}}
+\index{get\+Team@{get\+Team}!K\+I@{K\+I}}
+\subsubsection[{get\+Team}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Team} \& K\+I\+::get\+Team (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_k_i_a731391b304aaf237500db42f8dee4690}
+get\+Team \begin{DoxyReturn}{Rückgabe}
+Referenz auf das gesteuerte \hyperlink{class_team}{Team} 
+\end{DoxyReturn}
+\hypertarget{class_k_i_af4bec8491d051702c49d780a25feb1cb}{}\index{K\+I@{K\+I}!merge\+Strategie@{merge\+Strategie}}
+\index{merge\+Strategie@{merge\+Strategie}!K\+I@{K\+I}}
+\subsubsection[{merge\+Strategie}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf zug} $>$ K\+I\+::merge\+Strategie (
+\begin{DoxyParamCaption}
+\item[{{\bf Strategie} $\ast$}]{st1, }
+\item[{std\+::vector$<$ {\bf zug} $>$}]{st2\+Zuege}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_k_i_af4bec8491d051702c49d780a25feb1cb}
+merge\+Strategie Vereint zwei Strategien und führt die Wertigkeiten zusammen. Je kleiner die Wertigkeits-\/\+Zahl desto besser ist der zug.  
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{KI_mergeStrategie}}
+\end{DoxyImageNoCaption}
+ 
+\begin{DoxyParams}[1]{Parameter}
+\mbox{\tt in}  & {\em st1} & Pointer auf eine \hyperlink{class_strategie}{Strategie} \\
+\hline
+\mbox{\tt in}  & {\em st2\+Zuege} & Vector mit Zügen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Vector mit nach wertigkeit sortierten zügen.  
+\end{DoxyReturn}
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_i_af4bec8491d051702c49d780a25feb1cb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_k_i_ae97a6dd7ab3de2a934ca5c28c4cc63b3}{}\index{K\+I@{K\+I}!merge\+Strategie@{merge\+Strategie}}
+\index{merge\+Strategie@{merge\+Strategie}!K\+I@{K\+I}}
+\subsubsection[{merge\+Strategie}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf zug} $>$ K\+I\+::merge\+Strategie (
+\begin{DoxyParamCaption}
+\item[{{\bf Strategie} $\ast$}]{st1, }
+\item[{{\bf Strategie} $\ast$}]{st2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_k_i_ae97a6dd7ab3de2a934ca5c28c4cc63b3}
+
+\begin{DoxyItemize}
+\item merge\+Strategie Vereint zwei Strategien und fürt die Wertigkeiten zusammen. Je kleiner die wertigkeits Zahl desto besser ist der Zug.  
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{KI_mergeStrategie}}
+\end{DoxyImageNoCaption}
+ 
+\begin{DoxyParams}[1]{Parameter}
+\mbox{\tt in}  & {\em st1} & Pointer auf eine \hyperlink{class_strategie}{Strategie}. \\
+\hline
+\mbox{\tt in}  & {\em st2} & Pointer auf eine \hyperlink{class_strategie}{Strategie}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Vector mit nach Wertigkeit sortierten Zügen. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_i_ae97a6dd7ab3de2a934ca5c28c4cc63b3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_k_i_a840820c024ad7069c2064fc30f964169}{}\index{K\+I@{K\+I}!nex\+Zug@{nex\+Zug}}
+\index{nex\+Zug@{nex\+Zug}!K\+I@{K\+I}}
+\subsubsection[{nex\+Zug}]{\setlength{\rightskip}{0pt plus 5cm}void K\+I\+::nex\+Zug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_k_i_a840820c024ad7069c2064fc30f964169}
+nex\+Zug Führt den nächsten Zug aus  
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{KI_nexZug}}
+\end{DoxyImageNoCaption}
+  
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_i_a840820c024ad7069c2064fc30f964169_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_k_i_afa90fdb068e7b06e58db40b1ceeb8216}{}\index{K\+I@{K\+I}!seach\+Best\+Zug@{seach\+Best\+Zug}}
+\index{seach\+Best\+Zug@{seach\+Best\+Zug}!K\+I@{K\+I}}
+\subsubsection[{seach\+Best\+Zug}]{\setlength{\rightskip}{0pt plus 5cm}void K\+I\+::seach\+Best\+Zug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_k_i_afa90fdb068e7b06e58db40b1ceeb8216}
+seach\+Best\+Zug Wählt aus den zusammengefürten Strategien den besten Zug aus. Und stelt sicher das der König nicht in Gefahr ist bzw. kommt.  
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{KI_searchBestZug}}
+\end{DoxyImageNoCaption}
+  
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_i_afa90fdb068e7b06e58db40b1ceeb8216_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{class_k_i_a93f7368fa6746ddb1e51d804ddaea096}{}\index{K\+I@{K\+I}!abrett@{abrett}}
+\index{abrett@{abrett}!K\+I@{K\+I}}
+\subsubsection[{abrett}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spiel\+Brett}\& K\+I\+::abrett\hspace{0.3cm}{\ttfamily [private]}}\label{class_k_i_a93f7368fa6746ddb1e51d804ddaea096}
+\hypertarget{class_k_i_a16d7b067120b9b638781d5e5e6dcc005}{}\index{K\+I@{K\+I}!anzstrat@{anzstrat}}
+\index{anzstrat@{anzstrat}!K\+I@{K\+I}}
+\subsubsection[{anzstrat}]{\setlength{\rightskip}{0pt plus 5cm}const int K\+I\+::anzstrat =4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_k_i_a16d7b067120b9b638781d5e5e6dcc005}
+\hypertarget{class_k_i_a34cb945060f752556a068ccf1771c531}{}\index{K\+I@{K\+I}!dv@{dv}}
+\index{dv@{dv}!K\+I@{K\+I}}
+\subsubsection[{dv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ss\+K}$\ast$ K\+I\+::dv\hspace{0.3cm}{\ttfamily [private]}}\label{class_k_i_a34cb945060f752556a068ccf1771c531}
+\hypertarget{class_k_i_acfefb24fdddb36cbfe2dff9e1d5d8296}{}\index{K\+I@{K\+I}!n\+Zug@{n\+Zug}}
+\index{n\+Zug@{n\+Zug}!K\+I@{K\+I}}
+\subsubsection[{n\+Zug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf zug} K\+I\+::n\+Zug\hspace{0.3cm}{\ttfamily [private]}}\label{class_k_i_acfefb24fdddb36cbfe2dff9e1d5d8296}
+\hypertarget{class_k_i_a6e07007b67f0a2778de3148ed5612921}{}\index{K\+I@{K\+I}!strat@{strat}}
+\index{strat@{strat}!K\+I@{K\+I}}
+\subsubsection[{strat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Strategie}$\ast$ K\+I\+::strat\mbox{[}{\bf anzstrat}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\label{class_k_i_a6e07007b67f0a2778de3148ed5612921}
+\hypertarget{class_k_i_a611b37548d94d9dce7e68024aa943733}{}\index{K\+I@{K\+I}!t@{t}}
+\index{t@{t}!K\+I@{K\+I}}
+\subsubsection[{t}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Team}\& K\+I\+::t\hspace{0.3cm}{\ttfamily [private]}}\label{class_k_i_a611b37548d94d9dce7e68024aa943733}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_k_i_8h}{K\+I.\+h}\item 
+\hyperlink{_k_i_8cpp}{K\+I.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,101 @@
+\hypertarget{class_sf_h}{}\section{Sf\+H Klassenreferenz}
+\label{class_sf_h}\index{Sf\+H@{Sf\+H}}
+
+
+{\ttfamily \#include $<$Sf\+H.\+h$>$}
+
+
+
+Klassendiagramm für Sf\+H\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{class_sf_h__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von Sf\+H\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sf_h__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_sf_h_a9790a3fab6619e16961568d735678d4f}{bewerten} () override
+\item 
+\hyperlink{class_sf_h_a97daf9dffa4529ca2ed4ce98ac9d0e67}{Sf\+H} (\hyperlink{class_team}{Team} \&\hyperlink{class_strategie_a4f55e74f189ec8c6df88a57119fb3def}{team}, \hyperlink{class_spiel_brett}{Spiel\+Brett} \&b)
+\item 
+virtual \hyperlink{class_sf_h_a320c8f54cfd3a4ab7759a4c76cf08877}{$\sim$\+Sf\+H} ()
+\end{DoxyCompactItemize}
+\subsection*{Weitere Geerbte Elemente}
+
+
+\subsection{Ausführliche Beschreibung}
+class \hyperlink{class_sf_h}{Sf\+H} (\hyperlink{class_strategie}{Strategie} fange Helfer) implementiert die Methode \hyperlink{class_sf_h_a9790a3fab6619e16961568d735678d4f}{bewerten()}; \subparagraph*{}
+
+Diese \hyperlink{class_strategie}{Strategie} sorgt dafür, dass die gegnerischen Helfer festgesetzt/gefangen werden. Ein festgesetzter/gefangener Helfer stellt insofern keine Bedrohung mehr dar, bis er wieder vom \hyperlink{class_koenig}{Koenig} befreit wird. Dies gilt es durch andere Strategien zu verhindern. \subparagraph*{}
+
+
+\begin{DoxyParams}{Parameter}
+{\em \&team} & Referenz auf Instanz von \hyperlink{class_team}{Team} \\
+\hline
+{\em \&b} & Referenz auf Instanz von \hyperlink{class_spiel_brett}{Spiel\+Brett} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{class_sf_h_a97daf9dffa4529ca2ed4ce98ac9d0e67}{}\index{Sf\+H@{Sf\+H}!Sf\+H@{Sf\+H}}
+\index{Sf\+H@{Sf\+H}!Sf\+H@{Sf\+H}}
+\subsubsection[{Sf\+H}]{\setlength{\rightskip}{0pt plus 5cm}Sf\+H\+::\+Sf\+H (
+\begin{DoxyParamCaption}
+\item[{{\bf Team} \&}]{team, }
+\item[{{\bf Spiel\+Brett} \&}]{b}
+\end{DoxyParamCaption}
+)}\label{class_sf_h_a97daf9dffa4529ca2ed4ce98ac9d0e67}
+\hypertarget{class_sf_h_a320c8f54cfd3a4ab7759a4c76cf08877}{}\index{Sf\+H@{Sf\+H}!````~Sf\+H@{$\sim$\+Sf\+H}}
+\index{````~Sf\+H@{$\sim$\+Sf\+H}!Sf\+H@{Sf\+H}}
+\subsubsection[{$\sim$\+Sf\+H}]{\setlength{\rightskip}{0pt plus 5cm}Sf\+H\+::$\sim$\+Sf\+H (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_sf_h_a320c8f54cfd3a4ab7759a4c76cf08877}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_sf_h_a9790a3fab6619e16961568d735678d4f}{}\index{Sf\+H@{Sf\+H}!bewerten@{bewerten}}
+\index{bewerten@{bewerten}!Sf\+H@{Sf\+H}}
+\subsubsection[{bewerten}]{\setlength{\rightskip}{0pt plus 5cm}void Sf\+H\+::bewerten (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_sf_h_a9790a3fab6619e16961568d735678d4f}
+\hyperlink{class_sf_h_a9790a3fab6619e16961568d735678d4f}{bewerten()} Bewertet mögliche Züge nach der Möglichkeit gegnerische Helfer zu fangen.  
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{SfH_bewerten.png}}
+\end{DoxyImageNoCaption}
+  
+
+Implementiert \hyperlink{class_strategie_a6e11413c1c8e4ca8bd0bcac21be3c1bf}{Strategie}.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sf_h_a9790a3fab6619e16961568d735678d4f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_sf_h_8h}{Sf\+H.\+h}\item 
+\hyperlink{_sf_h_8cpp}{Sf\+H.\+cpp}\end{DoxyCompactItemize}
