@@ -21,7 +21,7 @@ void SfK::bewerten(){
 	}
 
 	std::sort(aZuege.begin(),aZuege.end());
-	if(!aZuege.size()) std::cerr<<"Error SfK::bewerten :Keine ZÃ¼ge"<<std::endl;
+	if(!aZuege.size()) std::cerr<<"Error SfK::bewerten :Keine Züge"<<std::endl;
 	nZug=aZuege[0];
 	wert=(!nZug.wert)?0:1;
 }

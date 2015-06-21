@@ -26,10 +26,27 @@
  */
 class SfK: public Strategie {
 public:
-	/*
-	 * bewerten()
-	 * Bewertet moegliche Zuege nach der Moeglichkeit gegnerischen Koenig zu fangen.
-	 */
+	/**
+		 * bewerten()
+		 * Bewertet mögliche Züge nach der Möglichkeit gegnerischen König zu fangen.
+		 * \image html SfK_bewerten.png
+		 * \image latex SfK_bewerten.eps
+		 * @startuml{SfK_bewerten.png}
+		 * start
+		 * :Berechne Mögliche Züge;
+		 * :Hohle Position vom gegnerischen König;
+		 * note right: Wert initalisiert mit 100
+		 * while (nächster Zug?)
+		 *  :zug wert=|x_zug-x_könig| + |y_zug - y_könig|;
+		 * endwhile
+		 * :Sortiere Züge nach Wert;
+		 * if (Erster zug wert = 0) then (ja)
+		 *  :Wert der Strategie = 0;
+		 * else (nein)
+		 *  :Wert der Strategie = 1;
+		 * end
+		 * @enduml
+		 */
 	virtual void bewerten() override;
 	SfK(Team &team, SpielBrett &b);
 	SfK();
